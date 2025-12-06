@@ -1,0 +1,5000 @@
+addStudent 1239
+addStudent 2683
+addCourse 615 1
+addStudent 3375
+addStudent 2749
+addCourse 4032 4
+addStudent 2683
+addStudent 2500
+enrollStudent 2500 4032
+enrollStudent 3375 615
+addStudent 1122
+enrollStudent 2500 4032
+enrollStudent 2749 615
+enrollStudent 3375 615
+addStudent 3576
+addStudent 2405
+addStudent 3294
+removeStudent 1122
+awardAcademicPoints 4
+addCourse 765 3
+addStudent 2466
+enrollStudent 3294 765
+enrollStudent 3294 615
+getStudentPoints 2500
+addCourse 1855 1
+addStudent 678
+enrollStudent 3375 -12
+addStudent 2444
+addStudent 2466
+getStudentPoints 1239
+removeCourse 1855
+enrollStudent 2683 615
+getStudentPoints 2466
+addStudent 819
+addStudent 1696
+enrollStudent 3576 4032
+completeCourse 3576 4032
+getStudentPoints 3375
+addCourse -14 0
+enrollStudent 2405 4032
+enrollStudent 3576 615
+addCourse 3010 1
+completeCourse 2749 615
+completeCourse -5 -16
+addStudent 2026
+removeStudent 2444
+enrollStudent 3576 615
+enrollStudent 819 4032
+enrollStudent 2683 4032
+enrollStudent 1239 615
+completeCourse 819 4032
+addCourse 3858 2
+removeStudent 1696
+enrollStudent 2405 765
+addStudent 697
+addStudent 621
+enrollStudent 3375 3858
+completeCourse 2683 615
+enrollStudent 819 3010
+enrollStudent 2405 4032
+addStudent 3285
+enrollStudent 2026 3858
+addStudent 1692
+completeCourse 2405 4032
+removeCourse 3858
+addStudent 4687
+addCourse 3010 2
+addStudent 1055
+enrollStudent 3576 615
+addStudent 735
+enrollStudent 2405 3010
+addCourse 1437 2
+awardAcademicPoints 4
+completeCourse 819 3010
+removeStudent 3285
+enrollStudent 2683 1437
+addStudent 203
+addStudent 2154
+removeStudent 2154
+addStudent 2683
+completeCourse 1239 615
+addStudent 8
+enrollStudent 621 3010
+addStudent 4313
+addStudent 976
+completeCourse 2683 4032
+addStudent 1838
+getStudentPoints 4687
+enrollStudent 2026 3858
+removeStudent 8
+addStudent 3892
+addStudent 2857
+addStudent 2387
+completeCourse 3375 3858
+completeCourse 3294 615
+addStudent 2895
+removeStudent 1692
+addStudent 0
+addCourse 3718 3
+addStudent 4174
+awardAcademicPoints 2
+addStudent 3520
+awardAcademicPoints 0
+addStudent -24
+removeStudent 1055
+completeCourse 2683 1437
+addCourse 615 -4
+removeCourse 1882
+enrollStudent 2026 3858
+awardAcademicPoints 2
+enrollStudent 678 3718
+awardAcademicPoints 3
+addStudent 1774
+enrollStudent 4313 4032
+addStudent 2836
+removeStudent 2387
+getStudentPoints 2749
+enrollStudent 2749 3718
+awardAcademicPoints 4
+completeCourse 1920 2085
+addStudent 878
+addStudent 2237
+addStudent 2044
+addStudent 2012
+addCourse 4032 2
+getStudentPoints 1774
+enrollStudent 2044 3010
+removeStudent -4
+enrollStudent 2466 3010
+enrollStudent -25 0
+addStudent 3179
+enrollStudent 2895 765
+addStudent 2075
+removeStudent 3179
+addStudent 3035
+addStudent 1469
+addStudent 1241
+addStudent 194
+addStudent 194
+getStudentPoints 2012
+addStudent 4606
+addStudent 3508
+enrollStudent 3520 3858
+awardAcademicPoints 4
+enrollStudent 3576 3718
+addStudent 4121
+awardAcademicPoints 5
+enrollStudent 4174 3010
+enrollStudent 678 4032
+enrollStudent 203 615
+enrollStudent 3375 4032
+addStudent 4114
+enrollStudent 3375 3010
+enrollStudent 621 3858
+enrollStudent 1469 615
+addCourse 3052 2
+addStudent 252
+addStudent 4555
+enrollStudent 2012 765
+getStudentPoints 919
+getStudentPoints 4555
+completeCourse 1469 615
+getStudentPoints 3035
+removeStudent 4687
+enrollStudent 4606 3718
+enrollStudent 976 615
+getStudentPoints 203
+enrollStudent 3520 4032
+completeCourse 2012 765
+addStudent 735
+enrollStudent 1774 3010
+addCourse 2586 5
+removeStudent 1239
+enrollStudent 2044 4032
+completeCourse 3375 3010
+enrollStudent 3576 3858
+completeCourse 2500 4032
+removeCourse 3052
+completeCourse 2466 3010
+addStudent 2780
+enrollStudent 878 1437
+completeCourse 3375 615
+getStudentPoints 4606
+addStudent 1724
+enrollStudent 3520 2586
+addStudent 2683
+addStudent 2722
+enrollStudent 2237 615
+addStudent 2075
+addStudent 1146
+completeCourse 2044 3010
+getStudentPoints 1146
+addStudent 466
+addStudent 961
+addCourse 1832 1
+addStudent 4606
+enrollStudent 976 1437
+addCourse 256 3
+removeStudent 2012
+enrollStudent 2026 256
+completeCourse 621 3010
+removeCourse 1832
+removeStudent 3892
+enrollStudent 961 4032
+addStudent 2282
+awardAcademicPoints 5
+addCourse 3910 3
+addCourse 3858 4
+getStudentPoints 2500
+enrollStudent 2780 765
+completeCourse 3639 4408
+enrollStudent 3294 1437
+completeCourse 621 3858
+addStudent 749
+enrollStudent 4555 765
+enrollStudent 1838 3910
+removeCourse -20
+addStudent 1263
+addStudent 2623
+getStudentPoints 2722
+awardAcademicPoints 1
+enrollStudent 3520 3718
+enrollStudent 2075 4032
+enrollStudent 2623 3010
+enrollStudent 621 615
+addStudent 328
+enrollStudent 4599 1993
+enrollStudent 2722 3858
+enrollStudent 3294 3858
+addStudent 3742
+addStudent 2313
+addCourse 4439 3
+completeCourse 2405 3010
+addStudent 2597
+addStudent 3481
+addStudent 3203
+enrollStudent 2500 615
+getStudentPoints 4284
+completeCourse 2237 615
+awardAcademicPoints 0
+awardAcademicPoints 1
+enrollStudent 203 3858
+enrollStudent 2895 -4
+addCourse 2952 3
+enrollStudent 4555 3910
+removeCourse 4439
+enrollStudent 3481 4032
+removeCourse 2952
+awardAcademicPoints 4
+enrollStudent 2405 3718
+addStudent 1168
+addStudent 2487
+enrollStudent 466 3010
+enrollStudent 2282 3910
+enrollStudent 4114 765
+enrollStudent 2857 3910
+addCourse 4790 5
+addStudent 4729
+enrollStudent 1844 914
+addStudent 1518
+awardAcademicPoints 0
+addCourse 4867 4
+addCourse 3483 3
+addStudent 4840
+addStudent 2354
+getStudentPoints 1837
+addStudent 3360
+awardAcademicPoints 1
+addStudent 4510
+enrollStudent 757 943
+addCourse 256 4
+removeStudent 3742
+enrollStudent 2282 3010
+completeCourse 678 4032
+completeCourse 2500 615
+enrollStudent 1469 4032
+addStudent 1879
+awardAcademicPoints 0
+addCourse 1718 3
+enrollStudent 819 -7
+enrollStudent 4555 1718
+addCourse 4905 4
+addCourse 4129 2
+enrollStudent 3576 2586
+enrollStudent 1724 4867
+addCourse 3231 4
+completeCourse 976 615
+removeStudent 328
+addCourse 857 5
+removeStudent 3035
+getStudentPoints 3576
+enrollStudent 2597 857
+addStudent -7
+awardAcademicPoints 3
+removeStudent 2237
+removeStudent 4729
+enrollStudent 2500 2586
+addStudent 1464
+addStudent 4486
+completeCourse 2780 765
+completeCourse 2722 3858
+completeCourse 3863 1785
+addStudent 3681
+addStudent 0
+enrollStudent 2857 615
+addStudent 4767
+addStudent 3919
+awardAcademicPoints 4
+addStudent 1716
+getStudentPoints 4114
+enrollStudent 1464 3483
+enrollStudent 2487 615
+enrollStudent 1774 4790
+addCourse 2044 4
+completeCourse 3294 1437
+completeCourse 2282 3010
+addCourse 188 3
+enrollStudent 3919 4129
+awardAcademicPoints 4
+enrollStudent 203 4905
+enrollStudent 4174 3010
+addStudent 3940
+enrollStudent 2313 3231
+addCourse -2 -4
+addStudent 1642
+addStudent 1481
+completeCourse 2282 3910
+removeStudent 1241
+enrollStudent 194 1437
+enrollStudent 2683 4790
+completeCourse 3481 4032
+enrollStudent 2026 2586
+enrollStudent 678 615
+enrollStudent 976 3231
+enrollStudent 2780 3858
+addStudent 397
+addStudent 2911
+enrollStudent 3919 3010
+removeStudent 397
+addStudent 4573
+addStudent 2780
+addStudent 894
+enrollStudent 1263 1437
+completeCourse 678 615
+enrollStudent 1473 4516
+enrollStudent 2857 4867
+enrollStudent 659 2951
+awardAcademicPoints 2
+addStudent 1222
+enrollStudent 2749 1718
+enrollStudent 601 4461
+enrollStudent 3360 4790
+completeCourse 1724 4867
+addStudent 2015
+addStudent 3347
+removeStudent 4486
+addStudent 4830
+enrollStudent 961 3718
+addCourse 3434 1
+addCourse 3481 2
+enrollStudent 3576 1718
+addStudent 3254
+enrollStudent 2836 256
+getStudentPoints 4555
+completeCourse 3375 4032
+addStudent 1356
+awardAcademicPoints 1
+enrollStudent 606 134
+addStudent 764
+completeCourse 4114 765
+addStudent 3828
+enrollStudent 4840 3434
+addStudent 2895
+completeCourse 2044 4032
+enrollStudent 621 4129
+addStudent 4648
+getStudentPoints 671
+enrollStudent 2895 857
+addStudent 1520
+getStudentPoints -23
+completeCourse 466 3010
+addCourse 68 4
+addStudent 1433
+addCourse 346 1
+addStudent 4064
+getStudentPoints 3508
+addStudent 2591
+enrollStudent 2591 188
+addStudent 2283
+removeCourse 68
+addStudent 2533
+addStudent 4429
+awardAcademicPoints 0
+addStudent 2630
+addStudent 4840
+enrollStudent 2591 3434
+enrollStudent 1168 1718
+enrollStudent 1518 3858
+addStudent 471
+enrollStudent 1481 3910
+completeCourse 2683 4790
+addStudent -1
+completeCourse 1464 3483
+enrollStudent 466 4032
+awardAcademicPoints 0
+addStudent 2205
+addStudent 580
+removeStudent 1433
+addStudent 2643
+addStudent 2245
+addStudent 791
+completeCourse 3520 3858
+addStudent 1765
+enrollStudent 678 3858
+removeStudent 2245
+addCourse 1330 4
+enrollStudent 194 3483
+addStudent 2683
+addStudent 2189
+getStudentPoints 1222
+addStudent 2842
+addStudent 819
+enrollStudent 2044 3718
+enrollStudent 3508 1718
+enrollStudent 3919 346
+enrollStudent 1879 4129
+removeStudent 2683
+completeCourse 1838 3910
+addStudent 4648
+enrollStudent 3919 4790
+enrollStudent 1481 1718
+completeCourse 2026 256
+enrollStudent 2895 3910
+addStudent 1020
+addCourse 2165 5
+enrollStudent 1020 3434
+enrollStudent 3481 -18
+enrollStudent 1774 1437
+getStudentPoints 2044
+completeCourse 621 615
+enrollStudent 1397 1051
+addStudent 3254
+addStudent 1078
+addStudent 4332
+completeCourse 1774 1437
+addStudent 603
+enrollStudent 2597 857
+enrollStudent 1716 1437
+completeCourse -9 -27
+awardAcademicPoints 0
+addStudent -19
+addCourse 3901 4
+addStudent 2082
+addStudent 1283
+addStudent 2052
+enrollStudent 1724 -27
+enrollStudent 603 3901
+completeCourse 678 3718
+enrollStudent 4573 4905
+removeCourse 2044
+addStudent 3816
+enrollStudent 961 188
+addStudent 415
+enrollStudent 203 3481
+addStudent 4313
+addStudent 4505
+addCourse 1374 2
+enrollStudent 4121 3858
+addStudent 3520
+addCourse 2057 1
+addStudent 2643
+removeCourse 1330
+addCourse 1897 4
+getStudentPoints 4174
+addStudent 2153
+completeCourse 2857 615
+enrollStudent 1222 4032
+addStudent 3652
+addCourse 557 1
+addCourse 3879 3
+completeCourse 3919 4129
+getStudentPoints 2643
+addStudent 3551
+enrollStudent 3375 3901
+addStudent 3078
+addStudent 4863
+enrollStudent 3223 4331
+enrollStudent 2026 3910
+enrollStudent 3681 3910
+completeCourse 466 4032
+enrollStudent 4848 2791
+completeCourse 2026 3858
+addStudent 3547
+enrollStudent 1795 4307
+addCourse 2161 2
+getStudentPoints 735
+enrollStudent 819 4032
+addCourse 225 5
+enrollStudent 4830 3858
+enrollStudent 2895 2586
+addCourse 2605 3
+enrollStudent 3681 3910
+enrollStudent 203 3481
+addStudent -29
+enrollStudent 2722 4905
+addCourse 4216 5
+enrollStudent 3671 2581
+enrollStudent 1168 3718
+addStudent 1172
+addCourse 3240 4
+enrollStudent 3087 3799
+addStudent 3231
+addCourse 557 0
+addCourse 3203 4
+completeCourse 961 3718
+enrollStudent 4775 4556
+addCourse 4297 4
+awardAcademicPoints 0
+awardAcademicPoints 2
+enrollStudent 861 1585
+getStudentPoints 2026
+addStudent 3527
+addStudent -14
+awardAcademicPoints 1
+completeCourse 1481 1718
+completeCourse 203 615
+addCourse 1345 4
+enrollStudent 2052 4129
+enrollStudent 3828 1345
+enrollStudent 343 492
+removeStudent 1078
+addStudent 1556
+getStudentPoints 2205
+addStudent 215
+addCourse 110 2
+completeCourse 4181 1491
+enrollStudent -10 2586
+enrollStudent 215 3203
+addStudent 2101
+addStudent -2
+enrollStudent 4863 188
+addStudent 3526
+enrollStudent 3360 3901
+addStudent 545
+enrollStudent 3551 3483
+awardAcademicPoints 2
+addStudent 3337
+addStudent 153
+completeCourse 2313 3231
+addCourse 288 1
+addStudent 2662
+enrollStudent 2500 225
+addCourse 3939 1
+addStudent 3115
+getStudentPoints 4095
+getStudentPoints 1774
+awardAcademicPoints 5
+enrollStudent 4840 2605
+addCourse 3 3
+enrollStudent 2466 110
+enrollStudent 3115 225
+enrollStudent 203 857
+completeCourse 976 3231
+addStudent 3843
+addStudent 537
+addStudent -10
+enrollStudent 3681 225
+completeCourse 3294 3858
+addCourse 3539 5
+completeCourse 621 4129
+enrollStudent 580 3901
+enrollStudent 537 188
+enrollStudent 252 3879
+addCourse 460 1
+addStudent 3035
+addStudent 4636
+enrollStudent 4510 3231
+enrollStudent 2205 2586
+addStudent 580
+enrollStudent 1520 2605
+addStudent 1518
+enrollStudent 2015 2057
+addCourse 656 2
+enrollStudent 4313 2161
+addStudent 1056
+completeCourse 537 188
+addStudent 3619
+removeStudent 3940
+addStudent 3259
+removeCourse 1119
+getStudentPoints 4863
+addStudent 3482
+removeStudent 4505
+getStudentPoints 3375
+getStudentPoints 3723
+enrollStudent 2313 3901
+addStudent 4501
+completeCourse 4510 3231
+addStudent 4167
+enrollStudent 2153 4032
+addCourse 3858 5
+addStudent 2958
+completeCourse 305 4185
+addCourse 2935 1
+addStudent 1765
+addStudent 889
+enrollStudent 878 1345
+getStudentPoints 2101
+removeStudent 1283
+addCourse 4447 2
+addStudent 579
+enrollStudent 4313 288
+addStudent 620
+awardAcademicPoints 3
+enrollStudent 3816 2165
+enrollStudent 3228 528
+getStudentPoints 4501
+completeCourse 2313 3901
+getStudentPoints 2533
+addStudent 3170
+addStudent 691
+awardAcademicPoints 1
+enrollStudent 2354 3718
+enrollStudent 1518 615
+addStudent 3997
+addStudent 3628
+addStudent 4529
+addStudent 1561
+addStudent 4923
+enrollStudent 4648 2057
+enrollStudent -22 -22
+enrollStudent 2623 857
+enrollStudent 889 288
+removeCourse 557
+addStudent 3673
+addStudent 3347
+completeCourse 3520 4032
+addStudent 4747
+enrollStudent 1168 3483
+enrollStudent 4767 4297
+enrollStudent 4031 732
+enrollStudent 2597 3240
+addStudent 2271
+addStudent -1
+addStudent 1263
+enrollStudent 215 1374
+removeStudent 3843
+addStudent 2317
+addStudent 1889
+addStudent 3115
+enrollStudent 2643 3203
+removeCourse 656
+enrollStudent 678 4129
+enrollStudent 415 615
+enrollStudent 4174 3240
+addStudent 1932
+enrollStudent 2500 1374
+addStudent 4002
+completeCourse 3816 2165
+enrollStudent 252 4867
+enrollStudent 4606 3240
+addStudent 1358
+addCourse 4532 1
+removeCourse 3
+addStudent 1696
+addStudent 2075
+enrollStudent 3681 2586
+removeStudent 537
+addStudent 4724
+addStudent 4341
+getStudentPoints 2533
+removeStudent 4114
+enrollStudent 4341 3879
+addCourse 1461 3
+addCourse 836 3
+enrollStudent 603 -23
+enrollStudent 1356 1437
+addStudent 1960
+addStudent 2549
+removeCourse 2165
+addStudent 2837
+addStudent 1549
+addStudent 4830
+addStudent 2478
+removeStudent 4636
+enrollStudent 889 2057
+enrollStudent 1356 3434
+enrollStudent 2283 225
+addStudent 3177
+addStudent 3542
+getStudentPoints 3652
+enrollStudent 889 3231
+enrollStudent 791 4532
+enrollStudent 4573 3539
+completeCourse 4840 2605
+addStudent 2732
+enrollStudent 194 4216
+addStudent 3746
+addStudent 4373
+completeCourse 2597 857
+enrollStudent 691 3240
+addCourse 0 -4
+completeCourse 1716 1437
+awardAcademicPoints 0
+addCourse 4939 5
+addStudent 3371
+addStudent 4408
+addStudent 1263
+enrollStudent 153 288
+enrollStudent 4313 288
+enrollStudent 2232 4707
+addStudent 2008
+removeCourse 2892
+completeCourse 1097 2943
+addStudent 4296
+enrollStudent 2749 615
+enrollStudent 2597 3939
+removeCourse 836
+enrollStudent 2313 1437
+enrollStudent 252 857
+getStudentPoints 3746
+addCourse 2113 1
+awardAcademicPoints 4
+addStudent 580
+addStudent 4486
+addStudent 1551
+getStudentPoints -6
+addCourse -9 5
+awardAcademicPoints 0
+enrollStudent 2837 460
+enrollStudent 4486 3879
+completeCourse 4606 3718
+addStudent 778
+enrollStudent 749 288
+addStudent 2313
+addCourse 1508 4
+enrollStudent 961 1461
+enrollStudent 961 3434
+addStudent 1710
+awardAcademicPoints 2
+addStudent 1730
+addStudent 4750
+removeStudent 4429
+removeStudent 1146
+completeCourse 2015 4814
+completeCourse 1020 3434
+getStudentPoints 2008
+getStudentPoints 4529
+addStudent 394
+addStudent 2320
+addStudent 1103
+enrollStudent 3576 3231
+enrollStudent 2749 1461
+addCourse 3796 2
+enrollStudent 3652 2605
+enrollStudent 4573 3718
+enrollStudent 4064 4790
+addStudent 4846
+enrollStudent 4121 1508
+addStudent 3504
+removeStudent 3526
+addStudent 2673
+completeCourse 1518 615
+enrollStudent 2673 615
+removeCourse 1897
+enrollStudent 4510 857
+enrollStudent 3576 3434
+removeStudent 2549
+addStudent 547
+enrollStudent 3527 1374
+addStudent 4426
+completeCourse 3294 765
+enrollStudent 1642 3481
+enrollStudent 3508 4216
+addStudent 2478
+enrollStudent 3008 4572
+removeCourse 2935
+enrollStudent -13 3481
+removeStudent 2101
+enrollStudent 4750 188
+enrollStudent 415 1345
+awardAcademicPoints 3
+addStudent 1495
+enrollStudent 203 3718
+addStudent -13
+addCourse 909 1
+getStudentPoints 3170
+addStudent 3966
+enrollStudent 4648 3434
+addStudent 1543
+getStudentPoints 3681
+addStudent 1279
+enrollStudent 2487 4216
+addStudent 4512
+enrollStudent 4923 3434
+awardAcademicPoints 4
+addStudent 1544
+awardAcademicPoints 3
+completeCourse 1518 3858
+addStudent 778
+addCourse 791 4
+enrollStudent 579 4905
+addStudent 1035
+addStudent 3203
+enrollStudent 1168 3231
+addCourse 3887 4
+getStudentPoints 579
+addStudent 2504
+enrollStudent 4573 3434
+completeCourse 2836 256
+enrollStudent 2836 4447
+enrollStudent 3681 460
+removeStudent 1279
+addCourse 4394 5
+removeStudent 697
+removeStudent 4522
+enrollStudent 194 1374
+enrollStudent 4426 2057
+completeCourse 2749 615
+getStudentPoints 2630
+enrollStudent 3035 2161
+addStudent 583
+enrollStudent 1556 110
+addCourse 2795 2
+enrollStudent 3508 460
+addCourse 1659 2
+addStudent 972
+enrollStudent 972 1374
+enrollStudent 4002 460
+addStudent 941
+awardAcademicPoints 2
+getStudentPoints 1838
+addCourse 499 1
+addStudent 1139
+addCourse 2830 3
+enrollStudent -29 225
+awardAcademicPoints 2
+addStudent 128
+enrollStudent 749 2830
+enrollStudent 3203 4297
+enrollStudent 1561 3240
+removeCourse 4939
+completeCourse 2597 3939
+addCourse 3023 1
+addStudent 1723
+enrollStudent 1838 4790
+completeCourse 2313 1437
+addStudent 637
+enrollStudent 215 1718
+addStudent 3793
+addStudent 878
+enrollStudent 2662 857
+enrollStudent 252 2586
+addStudent 670
+enrollStudent 3177 4790
+awardAcademicPoints 1
+enrollStudent 3360 3879
+enrollStudent 1556 4905
+enrollStudent 4923 188
+addStudent 167
+addCourse 176 5
+enrollStudent 2722 3718
+enrollStudent 961 4216
+enrollStudent 1358 857
+addStudent 4124
+addStudent 4201
+addStudent 2529
+addStudent 1202
+completeCourse 2015 2057
+removeStudent 1716
+completeCourse 2354 3718
+completeCourse 3576 2586
+enrollStudent 415 4905
+addCourse 4793 5
+completeCourse 3508 1718
+completeCourse 4648 3434
+addStudent 4461
+addStudent 4873
+addStudent 1990
+removeCourse 2113
+awardAcademicPoints 5
+getStudentPoints 545
+enrollStudent 1642 3539
+enrollStudent 203 2161
+enrollStudent 2749 1718
+addCourse 4623 1
+addStudent 1479
+addStudent 3433
+addStudent 2978
+enrollStudent 3115 3010
+enrollStudent 1879 2605
+enrollStudent 1932 3887
+enrollStudent 972 1345
+addStudent 2210
+getStudentPoints 889
+enrollStudent 4529 4532
+enrollStudent 1520 3887
+addStudent 3401
+addStudent 2321
+enrollStudent 3504 3203
+addStudent 3552
+enrollStudent 2008 4297
+enrollStudent 4201 3879
+enrollStudent 4846 -25
+addStudent 2159
+enrollStudent 3701 2735
+removeCourse 3023
+addCourse 2795 5
+addStudent 1138
+addCourse 3700 2
+addStudent 2991
+enrollStudent 2722 857
+enrollStudent 1889 3901
+enrollStudent 4174 3231
+addStudent 229
+enrollStudent 3481 3879
+enrollStudent 2205 4032
+addStudent 1388
+addCourse 3318 3
+addStudent 3370
+addStudent 4501
+addStudent 1159
+addStudent 4271
+getStudentPoints 1388
+addStudent 3110
+enrollStudent 1263 3203
+addStudent 63
+enrollStudent 203 3483
+addStudent 4219
+enrollStudent 3371 3203
+enrollStudent 3628 1508
+completeCourse 3375 3901
+enrollStudent 3482 499
+enrollStudent 4461 3481
+addStudent 593
+removeStudent 2911
+completeCourse 2895 765
+enrollStudent 203 3796
+enrollStudent 2189 3901
+removeStudent 1103
+removeCourse 176
+enrollStudent 2978 4793
+addStudent 4691
+enrollStudent 2500 1461
+addStudent 667
+addCourse 3302 1
+enrollStudent 4691 3481
+getStudentPoints 2008
+enrollStudent 2082 3483
+completeCourse 4201 3879
+completeCourse 194 1374
+addStudent 1611
+addStudent 2474
+addStudent 1194
+enrollStudent 4552 747
+getStudentPoints 1556
+addStudent 795
+enrollStudent 3816 3240
+enrollStudent 3547 110
+addStudent -28
+enrollStudent 3628 3481
+removeCourse 256
+completeCourse 3203 4297
+enrollStudent 2978 4216
+enrollStudent 215 3910
+addStudent -16
+addStudent 3720
+completeCourse 2591 188
+enrollStudent 3966 3481
+addStudent 22
+awardAcademicPoints 3
+removeCourse 1659
+addStudent 1788
+enrollStudent 3504 4790
+addStudent 2516
+addStudent 4606
+addStudent 2247
+completeCourse 2500 2586
+addStudent 1004
+addStudent 3680
+addStudent 1497
+enrollStudent 4606 3901
+awardAcademicPoints 5
+completeCourse 1879 2605
+enrollStudent 3552 4790
+addCourse 4876 2
+enrollStudent 2478 3483
+enrollStudent 1889 4394
+enrollStudent 2630 615
+awardAcademicPoints 3
+enrollStudent 627 841
+addStudent 31
+getStudentPoints 580
+enrollStudent 1544 2605
+removeStudent 4724
+addStudent 2026
+addStudent 255
+addStudent 1253
+addStudent 1860
+addStudent 2600
+addCourse 4140 2
+enrollStudent 4648 4532
+enrollStudent 358 4209
+enrollStudent 3481 3700
+removeCourse 3302
+enrollStudent 4002 615
+enrollStudent 2052 1461
+addCourse 2898 5
+addStudent 1200
+completeCourse 678 4129
+completeCourse 2895 3910
+awardAcademicPoints 3
+enrollStudent 2082 3718
+addCourse 237 4
+addStudent 3221
+completeCourse 2466 110
+enrollStudent 3115 4532
+addCourse 3193 1
+completeCourse 2478 3483
+enrollStudent 3542 1461
+enrollStudent 1960 499
+completeCourse 4174 3231
+completeCourse 4573 3539
+awardAcademicPoints 1
+addCourse 2045 1
+addCourse 841 1
+awardAcademicPoints 3
+awardAcademicPoints 4
+addStudent 2392
+addStudent 3009
+getStudentPoints 2478
+addCourse 575 2
+completeCourse 3504 3203
+enrollStudent 4174 3939
+enrollStudent 2991 3010
+addStudent 1991
+addStudent 3508
+completeCourse 194 4216
+addStudent 4457
+completeCourse 4510 857
+completeCourse 878 1345
+addStudent 910
+removeCourse 2045
+getStudentPoints 252
+addStudent 1481
+removeStudent 1788
+addStudent 4087
+addStudent 2405
+addStudent 1454
+enrollStudent 153 4793
+enrollStudent 4219 460
+enrollStudent 2189 3240
+removeStudent 4332
+addStudent 3714
+enrollStudent 2749 791
+enrollStudent 215 4876
+addStudent 3817
+completeCourse 2044 3718
+completeCourse 1520 2605
+addStudent 340
+awardAcademicPoints 2
+addStudent 3486
+enrollStudent 2317 4905
+addCourse 463 4
+enrollStudent 547 4447
+removeCourse 909
+addCourse 3840 3
+enrollStudent 603 3434
+removeStudent 3448
+enrollStudent 22 4140
+removeCourse 2795
+addStudent 3576
+addCourse 4182 2
+addStudent 2215
+addStudent 3587
+addStudent 4751
+removeStudent 3254
+addCourse 1637 4
+enrollStudent 2500 1345
+addStudent 1332
+enrollStudent 3259 841
+addCourse 2504 4
+addCourse 4447 5
+awardAcademicPoints 2
+awardAcademicPoints 1
+completeCourse 1358 857
+enrollStudent 1560 4011
+completeCourse 153 4793
+addStudent 1925
+enrollStudent 1356 1437
+enrollStudent 2210 2898
+enrollStudent 1730 1345
+enrollStudent 1253 2161
+addStudent 3280
+enrollStudent 2153 3910
+addStudent 1960
+removeCourse 3808
+enrollStudent 3294 2161
+addCourse 4495 4
+addCourse 1910 1
+enrollStudent 3817 2161
+enrollStudent 4555 3240
+getStudentPoints 4174
+addCourse 3701 5
+addStudent 2263
+addStudent 1178
+enrollStudent 691 1718
+removeStudent 3347
+completeCourse 203 3858
+addCourse 4032 -4
+removeCourse 2210
+completeCourse 3320 3622
+addCourse 2136 3
+addStudent -24
+addStudent 2846
+completeCourse 4174 3240
+removeCourse 3318
+removeStudent 3793
+enrollStudent 2392 460
+addStudent 1202
+completeCourse 4923 3434
+completeCourse 3547 110
+addStudent 2679
+removeCourse 4182
+awardAcademicPoints 1
+removeCourse 4623
+addCourse 4658 2
+completeCourse 3628 1508
+addCourse 4886 3
+enrollStudent 63 1508
+addStudent 2345
+completeCourse 4313 2161
+enrollStudent 3203 4129
+removeCourse 3193
+completeCourse 603 3901
+addStudent 3953
+enrollStudent 3551 3481
+addStudent 452
+enrollStudent 976 237
+enrollStudent 466 4886
+addStudent -21
+enrollStudent 1035 2586
+removeStudent 3673
+enrollStudent 795 2504
+getStudentPoints 4923
+enrollStudent 1222 -27
+addStudent 815
+enrollStudent 1497 3910
+completeCourse 429 288
+addStudent 2402
+awardAcademicPoints 2
+enrollStudent 2728 1465
+enrollStudent 3551 2830
+enrollStudent 2153 4793
+completeCourse 4555 3910
+addStudent 876
+enrollStudent 1202 2605
+getStudentPoints 3551
+completeCourse 1556 4905
+enrollStudent 2008 460
+addCourse 3356 2
+completeCourse 4174 3010
+addCourse 675 3
+completeCourse 4648 2057
+addCourse 4297 3
+addCourse 1085 5
+completeCourse 215 1718
+addCourse 3484 5
+addStudent 4982
+removeStudent 2271
+enrollStudent 1056 2605
+enrollStudent 1479 2830
+enrollStudent 3110 2605
+addCourse 2054 1
+addStudent 2827
+addCourse 4179 3
+completeCourse 203 3718
+completeCourse 4341 -3
+addStudent 2810
+addCourse 4180 3
+enrollStudent 1549 3484
+addStudent 2336
+getStudentPoints 3652
+addCourse 3485 1
+enrollStudent 1344 3800
+addStudent 4267
+addCourse 746 4
+completeCourse 4750 188
+enrollStudent 3481 3231
+completeCourse 203 3483
+getStudentPoints 2215
+removeStudent 255
+addStudent 4177
+enrollStudent 1469 3203
+awardAcademicPoints 1
+awardAcademicPoints 2
+enrollStudent 3919 2586
+addStudent 207
+enrollStudent 4278 780
+completeCourse 252 2586
+enrollStudent 167 4140
+enrollStudent 3177 1437
+addStudent 1439
+removeCourse 1452
+enrollStudent 1889 3718
+addStudent 1002
+addCourse 2042 4
+addCourse 3755 3
+addStudent 3072
+getStudentPoints 4177
+completeCourse 4064 4790
+addStudent 4373
+addStudent 208
+addStudent 4760
+addStudent 2780
+addCourse 4544 3
+completeCourse 2895 2586
+enrollStudent -28 -13
+addCourse 2504 3
+addStudent 4438
+addStudent 3390
+addStudent 4669
+completeCourse 4691 3481
+enrollStudent 1495 1718
+enrollStudent 819 3485
+removeStudent 2466
+enrollStudent 4117 1528
+enrollStudent 3527 3910
+enrollStudent 997 1448
+enrollStudent 22 3483
+addStudent 1926
+enrollStudent 3953 3483
+enrollStudent 4341 460
+addStudent 4530
+addStudent 3094
+enrollStudent 3652 4495
+enrollStudent 621 2586
+addStudent 948
+removeCourse 3440
+getStudentPoints 3551
+awardAcademicPoints 3
+addStudent 4391
+addStudent 4040
+addStudent 4962
+enrollStudent 1053 843
+addStudent 3453
+addCourse 4950 5
+enrollStudent 2630 615
+getStudentPoints 3504
+awardAcademicPoints 5
+enrollStudent 2159 746
+enrollStudent 2247 2057
+getStudentPoints 1544
+addCourse -25 2
+completeCourse 2780 3858
+addCourse 272 1
+completeCourse 961 4216
+addStudent 2338
+completeCourse 2857 4867
+addStudent 4239
+addStudent 3926
+enrollStudent 3552 225
+removeStudent 1388
+removeCourse 3718
+addCourse 1090 5
+enrollStudent 2846 3910
+addStudent 313
+removeStudent 4750
+removeCourse 2136
+awardAcademicPoints 0
+enrollStudent 2052 1374
+enrollStudent 3997 4793
+addStudent 480
+addCourse 4061 2
+removeStudent 340
+removeCourse -17
+removeStudent 667
+enrollStudent 2504 4140
+enrollStudent 1202 615
+removeStudent 2474
+completeCourse 3919 4790
+completeCourse 2205 2586
+enrollStudent 4555 4394
+enrollStudent 3576 575
+addStudent 1450
+enrollStudent 2597 1508
+addStudent 1518
+addCourse 3286 3
+addCourse 3257 2
+addStudent 1035
+enrollStudent 3035 3203
+enrollStudent 4751 272
+completeCourse 3280 -3
+awardAcademicPoints 3
+removeCourse 4180
+enrollStudent 843 3391
+addCourse 3483 2
+awardAcademicPoints 0
+enrollStudent 1358 110
+addCourse 792 3
+addStudent 3710
+enrollStudent 2313 1508
+getStudentPoints 3360
+enrollStudent 4385 4407
+addStudent 326
+enrollStudent 1194 -4
+enrollStudent 2504 841
+enrollStudent 1002 791
+completeCourse 3360 4790
+completeCourse 22 3483
+getStudentPoints 547
+addStudent 10
+enrollStudent 735 463
+awardAcademicPoints 5
+addCourse 3519 5
+addStudent 4253
+enrollStudent 3453 3240
+completeCourse 3542 1461
+addCourse 503 3
+addStudent 1890
+addStudent 97
+addCourse 1463 5
+enrollStudent 1222 765
+addCourse -24 3
+addStudent 4299
+addStudent 2958
+getStudentPoints 4656
+enrollStudent -5 -23
+addCourse 607 1
+enrollStudent 1638 469
+removeStudent 4201
+enrollStudent 1860 607
+addCourse 3575 5
+enrollStudent 1544 1374
+awardAcademicPoints 1
+addStudent 1995
+addStudent 4782
+enrollStudent 4313 288
+getStudentPoints 1035
+enrollStudent 791 4544
+enrollStudent 2529 2605
+addStudent 993
+enrollStudent 4864 3597
+addStudent 181
+addStudent 4156
+addStudent 2712
+enrollStudent 1332 765
+addStudent 4004
+completeCourse 4313 288
+addStudent 115
+enrollStudent 63 460
+removeStudent 583
+removeStudent 1723
+addStudent 4765
+enrollStudent 1356 110
+removeCourse 1463
+enrollStudent 3576 3700
+completeCourse 2623 3010
+enrollStudent 4461 3939
+enrollStudent 3997 2042
+addCourse 746 5
+addStudent 574
+enrollStudent 31 2898
+addStudent 3814
+completeCourse 1712 4562
+completeCourse 3966 3481
+addStudent 1666
+addStudent 252
+awardAcademicPoints 5
+completeCourse 2749 1718
+enrollStudent 1139 3879
+removeStudent 1020
+enrollStudent 4606 4867
+completeCourse 1889 4394
+completeCourse 3817 2161
+addCourse 2144 1
+addCourse 3534 5
+addStudent 4208
+enrollStudent 215 1090
+addCourse 3217 3
+removeCourse 3519
+addStudent 4652
+addStudent 4277
+enrollStudent 1860 188
+addStudent -15
+completeCourse 4698 649
+addStudent 230
+completeCourse 1481 3910
+addCourse 2524 5
+getStudentPoints 4747
+enrollStudent 4486 4179
+addStudent 4962
+enrollStudent 2722 4876
+addStudent 3410
+addCourse 575 -2
+completeCourse 4486 3879
+enrollStudent 670 4129
+enrollStudent 1730 3240
+addStudent 715
+addStudent 351
+addCourse 3476 5
+getStudentPoints 208
+addCourse 1043 4
+addStudent 3960
+enrollStudent 2732 346
+completeCourse 1860 188
+addCourse 4234 2
+removeStudent 4844
+completeCourse 2857 3910
+addStudent 964
+addStudent 231
+addCourse 4495 3
+enrollStudent 2215 4950
+addStudent 4975
+addCourse 1797 4
+enrollStudent 3280 3434
+addStudent 1002
+enrollStudent 2533 288
+addStudent 1318
+enrollStudent 2205 1043
+addStudent 4121
+addCourse 4354 5
+getStudentPoints 579
+addCourse 4858 1
+enrollStudent 167 4867
+addStudent 3816
+addStudent 3319
+enrollStudent 961 4532
+awardAcademicPoints 5
+completeCourse 203 857
+enrollStudent 1995 225
+addStudent 451
+addStudent 2748
+enrollStudent 1991 3217
+enrollStudent 3094 3701
+getStudentPoints 3746
+enrollStudent -16 2057
+enrollStudent 394 765
+enrollStudent 3619 237
+enrollStudent 252 3476
+addStudent 95
+enrollStudent 3828 3858
+addStudent 3552
+enrollStudent 1611 1090
+addStudent 2667
+getStudentPoints 961
+addCourse 1591 4
+addStudent 3202
+removeStudent 778
+awardAcademicPoints 2
+completeCourse 889 3231
+addStudent 2265
+addStudent 4859
+enrollStudent 3552 4858
+addStudent 4529
+completeCourse 749 288
+addCourse 2087 1
+removeCourse 682
+addStudent 1630
+addCourse 2137 2
+addCourse 335 1
+addStudent 3275
+enrollStudent 691 2504
+awardAcademicPoints 1
+addCourse 1315 5
+enrollStudent 1004 3534
+enrollStudent 1932 3910
+enrollStudent 1543 675
+enrollStudent 4751 460
+completeCourse 3576 575
+addStudent 1055
+completeCourse 4923 -23
+addStudent 160
+awardAcademicPoints 3
+enrollStudent 230 1591
+enrollStudent 208 4858
+enrollStudent 1630 499
+enrollStudent 2842 3910
+getStudentPoints 4486
+enrollStudent 637 3481
+awardAcademicPoints 0
+enrollStudent 326 575
+getStudentPoints 3410
+addStudent -18
+enrollStudent 1202 3840
+enrollStudent 3294 1718
+addStudent 2386
+enrollStudent 10 2898
+addStudent 637
+enrollStudent 2810 335
+completeCourse 2405 765
+enrollStudent 2015 3203
+addCourse 866 4
+addStudent 2706
+addStudent -9
+awardAcademicPoints 4
+addStudent 2426
+addStudent 4209
+enrollStudent 878 2524
+addStudent 2542
+addStudent 4797
+enrollStudent 1138 2161
+addCourse 4926 4
+addStudent 3842
+addCourse 4608 1
+removeStudent 1450
+enrollStudent 1263 346
+enrollStudent 4461 4234
+completeCourse 2317 4905
+addStudent 1890
+enrollStudent 1556 3010
+addStudent 921
+removeStudent 3714
+enrollStudent 3746 1591
+addStudent 3133
+completeCourse 3652 2605
+addCourse 3307 3
+enrollStudent 3547 3575
+enrollStudent 2321 4926
+removeStudent 649
+addStudent 2650
+enrollStudent 160 615
+addStudent 4592
+addStudent 1611
+enrollStudent 1055 2057
+removeStudent 452
+enrollStudent 1222 765
+addCourse 4911 5
+addCourse 2830 5
+enrollStudent 4040 1374
+addStudent 4659
+completeCourse 889 2057
+addCourse 5 1
+addStudent 4480
+addStudent 411
+completeCourse 4341 460
+addStudent 1792
+completeCourse 3527 3910
+addStudent 4156
+addStudent 771
+addStudent 3061
+enrollStudent 2320 3534
+enrollStudent 4457 4544
+enrollStudent 964 866
+enrollStudent 3919 4858
+enrollStudent 878 3840
+enrollStudent 2722 4886
+addStudent 3426
+enrollStudent 4239 746
+addCourse 4249 5
+enrollStudent 1543 463
+removeStudent 764
+addStudent 184
+enrollStudent 2159 3858
+addStudent 1168
+enrollStudent 156 1023
+addStudent 2670
+awardAcademicPoints 1
+enrollStudent 579 1345
+enrollStudent 1168 503
+addStudent 4648
+awardAcademicPoints 1
+addStudent 2597
+enrollStudent 4457 841
+addCourse 1794 5
+addStudent 1807
+enrollStudent 1056 2137
+addStudent 1230
+addStudent 2340
+awardAcademicPoints 3
+enrollStudent 415 1461
+enrollStudent 2153 288
+enrollStudent 2542 4926
+awardAcademicPoints 0
+enrollStudent 3966 1794
+addStudent 1658
+enrollStudent 3968 1405
+awardAcademicPoints 5
+getStudentPoints 3508
+addStudent 3199
+addCourse 2124 2
+addStudent 3730
+enrollStudent 2630 1508
+addStudent 299
+enrollStudent 3966 2057
+enrollStudent 63 4129
+addCourse 1121 1
+completeCourse 3576 615
+completeCourse 3158 4997
+completeCourse 1544 2605
+enrollStudent 2345 503
+addStudent 10
+enrollStudent 3858 4098
+awardAcademicPoints 5
+enrollStudent 2667 110
+addCourse 1173 4
+addCourse 3710 3
+addStudent 364
+addStudent 2054
+addStudent -26
+completeCourse 2159 746
+getStudentPoints 4426
+addStudent 412
+enrollStudent 4840 288
+enrollStudent 4219 4495
+completeCourse 1035 2586
+addStudent 3386
+addCourse 1759 2
+addStudent 3438
+enrollStudent 326 3939
+addStudent 2668
+enrollStudent 876 1759
+completeCourse 4606 4867
+removeStudent 1439
+removeStudent 2478
+addStudent 351
+awardAcademicPoints 4
+addStudent 2173
+addCourse 3759 5
+addStudent 1172
+awardAcademicPoints 1
+addStudent 2149
+enrollStudent 1838 3476
+addStudent 2060
+addStudent 2796
+addStudent 2253
+completeCourse 2283 225
+removeStudent 4296
+addStudent 2342
+addStudent 1848
+enrollStudent 1792 3759
+addStudent 4092
+addStudent 2547
+getStudentPoints 819
+completeCourse -4 -10
+addStudent 1851
+addCourse 4073 1
+enrollStudent 4461 4495
+addStudent -3
+getStudentPoints 3482
+addStudent 1395
+addStudent 4124
+enrollStudent 1543 3434
+awardAcademicPoints 4
+completeCourse 1556 110
+addCourse 2301 5
+awardAcademicPoints 1
+completeCourse 1139 3879
+enrollStudent 921 1173
+addStudent 3432
+addStudent 2363
+addStudent 1478
+removeStudent 3412
+getStudentPoints 4501
+addStudent 2396
+addStudent 203
+removeCourse 1637
+addStudent 789
+addStudent 4470
+removeStudent 4982
+enrollStudent 998 869
+enrollStudent 4606 288
+removeStudent 181
+enrollStudent 231 4905
+addStudent 2495
+addStudent 355
+completeCourse 3481 3879
+enrollStudent 4470 335
+addCourse 4037 1
+addStudent 1202
+completeCourse 3552 4858
+awardAcademicPoints 5
+enrollStudent 471 1374
+awardAcademicPoints 5
+completeCourse 415 4905
+awardAcademicPoints 0
+removeStudent 3486
+addStudent 2247
+addCourse 3181 4
+completeCourse 961 188
+addCourse 1517 5
+completeCourse 3508 460
+enrollStudent 1561 4032
+addStudent 4743
+addStudent 2352
+getStudentPoints 394
+addStudent 1709
+enrollStudent 3433 3575
+getStudentPoints 153
+getStudentPoints 2846
+enrollStudent 579 188
+addStudent 3275
+enrollStudent 2679 1085
+enrollStudent 878 3484
+removeStudent 4659
+addStudent 2614
+enrollStudent 1848 3231
+addStudent 1367
+completeCourse 4767 4297
+addStudent 3864
+enrollStudent 3035 4129
+completeCourse 4461 4234
+enrollStudent 4408 3858
+enrollStudent 2712 866
+addStudent 550
+completeCourse 2008 4297
+enrollStudent 411 1718
+enrollStudent 735 4297
+addCourse 3356 4
+awardAcademicPoints 0
+enrollStudent 2210 346
+enrollStudent 1658 857
+enrollStudent 2075 4354
+addCourse 4321 5
+addStudent 2578
+removeStudent 2340
+addCourse 1367 3
+addStudent 2498
+addStudent 3333
+getStudentPoints 3061
+completeCourse 2500 1374
+addCourse 787 4
+awardAcademicPoints 4
+removeStudent 1200
+enrollStudent 4765 2301
+enrollStudent 3319 2898
+addCourse 2940 3
+completeCourse 1544 1374
+enrollStudent 2597 335
+enrollStudent 4299 1345
+completeCourse 4461 3939
+removeStudent 2054
+enrollStudent 2837 4886
+addStudent 3989
+addStudent 2963
+removeCourse 1367
+awardAcademicPoints 3
+enrollStudent 2978 4495
+removeStudent 3432
+addStudent 450
+addStudent 1914
+getStudentPoints 2317
+enrollStudent 941 1517
+addStudent 1431
+enrollStudent 3433 2940
+completeCourse 878 3840
+addCourse 113 2
+enrollStudent 3202 4321
+enrollStudent 3619 2605
+enrollStudent 735 2054
+completeCourse 2405 3718
+awardAcademicPoints 2
+enrollStudent 351 4032
+removeStudent 2495
+addCourse 4535 4
+enrollStudent 3613 4162
+getStudentPoints 208
+enrollStudent 3628 288
+enrollStudent 3720 1437
+removeCourse 3755
+completeCourse 2075 4354
+getStudentPoints 921
+enrollStudent 941 2301
+addStudent 1710
+addStudent 2978
+addCourse 3170 1
+enrollStudent 4797 3939
+enrollStudent 3386 1085
+enrollStudent 1497 3476
+addStudent 469
+addCourse 2251 3
+addStudent 1966
+addStudent 4346
+enrollStudent 351 335
+getStudentPoints -8
+addCourse 2549 2
+completeCourse 2555 4533
+addCourse 4924 3
+addStudent 1862
+addStudent 4521
+enrollStudent 394 288
+enrollStudent 715 3483
+completeCourse 961 1461
+addStudent -4
+enrollStudent 1730 3483
+awardAcademicPoints 0
+removeCourse 5
+awardAcademicPoints 5
+addStudent 690
+addStudent 1253
+removeStudent 550
+addStudent 4184
+getStudentPoints 4002
+addStudent 2622
+addCourse 2169 1
+enrollStudent 2827 4447
+enrollStudent 2614 4535
+addStudent 559
+completeCourse 2354 -14
+addStudent 4322
+enrollStudent 3989 113
+enrollStudent 4322 765
+addStudent 2980
+addStudent 4140
+addStudent 2598
+addStudent 553
+removeStudent 1666
+addCourse 776 4
+addCourse 961 1
+enrollStudent 791 3217
+getStudentPoints 4177
+enrollStudent 1658 3858
+addCourse 610 2
+enrollStudent 2173 1794
+enrollStudent 2205 3170
+getStudentPoints 4691
+enrollStudent 2591 237
+addStudent 33
+addStudent 2763
+addCourse 652 3
+completeCourse 3919 346
+removeStudent 3009
+addStudent 260
+enrollStudent 876 2169
+enrollStudent 1478 1910
+addCourse 1945 1
+completeCourse 2827 4447
+completeCourse 203 4905
+addStudent 2680
+removeStudent 3061
+addCourse 50 5
+addCourse 4671 1
+completeCourse 2597 3240
+enrollStudent 4501 2830
+completeCourse 941 2301
+addStudent 1938
+enrollStudent 231 1461
+enrollStudent 3730 792
+addCourse 2647 1
+enrollStudent 3333 4073
+enrollStudent 2320 1797
+completeCourse 2978 4216
+enrollStudent 2691 22
+enrollStudent 2622 1121
+enrollStudent 450 4535
+removeStudent 4253
+getStudentPoints 3390
+awardAcademicPoints 0
+removeStudent 4156
+enrollStudent 1004 4790
+addStudent 2229
+enrollStudent 4529 1437
+enrollStudent 1543 1517
+addStudent 1373
+addStudent 1282
+enrollStudent 480 1945
+addStudent 1657
+enrollStudent 2052 4495
+awardAcademicPoints 0
+addCourse 3245 4
+awardAcademicPoints 5
+enrollStudent 4529 4924
+enrollStudent 4830 610
+addStudent 2127
+addStudent 4050
+enrollStudent 4121 3910
+addStudent 3552
+enrollStudent 1765 2054
+addStudent 1263
+addCourse 2704 2
+addStudent 3179
+enrollStudent 2670 4249
+enrollStudent 1263 1315
+getStudentPoints 4743
+completeCourse -25 4216
+addCourse 4909 2
+enrollStudent 876 4950
+addStudent 564
+enrollStudent 3504 1591
+completeCourse 2622 1121
+awardAcademicPoints 4
+addStudent 2420
+enrollStudent 4219 2586
+addStudent 4519
+awardAcademicPoints 0
+enrollStudent 4863 4179
+addStudent 4321
+enrollStudent 2836 3010
+addStudent 795
+addStudent 2621
+enrollStudent 1518 3887
+enrollStudent 2274 588
+enrollStudent 3746 1374
+addStudent 4438
+addCourse 511 1
+awardAcademicPoints 5
+enrollStudent 1479 3796
+addStudent 4197
+completeCourse 252 4867
+addStudent 3029
+addStudent 4717
+addStudent 3135
+completeCourse 4002 615
+addStudent 2438
+addCourse 2848 3
+enrollStudent 620 4032
+addStudent 2664
+completeCourse 3177 1437
+addStudent 2814
+addStudent 3926
+enrollStudent 1960 4179
+addStudent 4716
+enrollStudent 3135 2137
+awardAcademicPoints 0
+addStudent 4168
+enrollStudent 2621 1043
+addCourse 272 5
+addStudent 3476
+getStudentPoints 4519
+addStudent 2324
+addCourse 652 2
+addStudent 2150
+addStudent 3547
+getStudentPoints 3527
+enrollStudent 2352 4886
+completeCourse 160 615
+getStudentPoints 3919
+enrollStudent 2712 3434
+addStudent 4450
+addStudent 260
+addStudent 417
+enrollStudent 252 1718
+addStudent 1370
+addStudent 3524
+enrollStudent 4341 2524
+completeCourse 876 2169
+completeCourse 1549 3484
+enrollStudent 351 4234
+addStudent 2039
+addStudent 4818
+addStudent 2918
+enrollStudent 2039 3484
+addStudent 208
+removeStudent 1476
+completeCourse 471 1374
+addStudent 1166
+enrollStudent 2712 4793
+addCourse 3715 1
+addStudent 4961
+removeCourse 776
+addStudent 2723
+addStudent 4341
+addStudent 1976
+enrollStudent 4743 3257
+addCourse 4393 3
+enrollStudent 350 2752
+addStudent 1166
+enrollStudent 2082 746
+enrollStudent 2670 3257
+addStudent 1145
+completeCourse 972 1345
+enrollStudent 2749 1315
+addStudent 2381
+awardAcademicPoints 5
+completeCourse 4751 460
+addStudent 2833
+addStudent 2891
+enrollStudent 1851 4924
+addStudent 199
+awardAcademicPoints 5
+awardAcademicPoints 3
+getStudentPoints 3547
+completeCourse 4408 3858
+addStudent 3583
+awardAcademicPoints 2
+enrollStudent 1395 3245
+enrollStudent 1056 1461
+getStudentPoints 910
+addStudent 3174
+addStudent 655
+getStudentPoints 655
+completeCourse 4797 3939
+addCourse 4765 3
+enrollStudent 1253 2504
+enrollStudent 2748 225
+removeCourse 2124
+enrollStudent 2386 4234
+enrollStudent 1282 4863
+awardAcademicPoints 5
+completeCourse 4121 3910
+awardAcademicPoints 4
+addStudent -9
+enrollStudent 2500 2704
+addStudent 3813
+removeCourse 3307
+addStudent 1990
+addStudent 940
+addStudent 2134
+completeCourse 4925 3913
+completeCourse 63 1508
+addStudent 4827
+enrollStudent 3813 2137
+addStudent 1780
+enrollStudent 1002 3231
+addStudent 4128
+completeCourse 2842 3910
+addCourse 3864 1
+enrollStudent 2679 4765
+addStudent 959
+addStudent 4628
+getStudentPoints 1968
+removeStudent 4267
+getStudentPoints 1556
+enrollStudent 4501 3245
+addStudent 104
+completeCourse 3576 3858
+enrollStudent 948 3879
+enrollStudent 1976 1121
+enrollStudent 4457 4354
+enrollStudent 620 272
+enrollStudent 1067 1809
+completeCourse 2667 110
+addStudent 2186
+getStudentPoints 1724
+removeStudent 1194
+enrollStudent 4341 463
+completeCourse 1518 3887
+addStudent 1881
+awardAcademicPoints 0
+enrollStudent 299 2504
+completeCourse 819 4032
+completeCourse 2153 288
+enrollStudent 3141 707
+enrollStudent 1807 225
+getStudentPoints 2416
+completeCourse 153 288
+getStudentPoints 2336
+addStudent 3466
+completeCourse 3576 3434
+enrollStudent 2597 3217
+enrollStudent 2039 463
+addStudent 2161
+addStudent 4960
+awardAcademicPoints 5
+removeStudent 771
+enrollStudent 1549 3217
+awardAcademicPoints 0
+addStudent 1551
+enrollStudent 910 1461
+removeCourse 4061
+addStudent 1130
+addCourse 2636 1
+enrollStudent 4555 4495
+addStudent 3553
+removeStudent 4975
+removeStudent 97
+addCourse 1048 5
+awardAcademicPoints 2
+completeCourse 1774 4790
+completeCourse 948 3879
+enrollStudent 4747 2251
+addStudent 1516
+addStudent 1208
+enrollStudent 3583 511
+addStudent 665
+completeCourse 3681 225
+completeCourse 2749 1461
+removeStudent 469
+completeCourse 2205 4032
+enrollStudent 3453 3356
+enrollStudent 3202 4394
+completeCourse 876 4950
+addStudent -9
+enrollStudent 2670 857
+addStudent 4510
+awardAcademicPoints 2
+enrollStudent 4760 2137
+addCourse 2270 2
+removeStudent 1130
+awardAcademicPoints 0
+enrollStudent 3508 4608
+enrollStudent 2547 4249
+completeCourse 1879 4129
+enrollStudent 2516 1315
+addStudent 1141
+enrollStudent 2958 3864
+awardAcademicPoints 2
+addCourse 965 2
+enrollStudent 3542 3231
+addStudent 792
+enrollStudent 3110 3910
+getStudentPoints 4840
+addStudent 1508
+getStudentPoints 3816
+addCourse 1332 2
+enrollStudent 795 3575
+removeStudent 1367
+enrollStudent 4124 841
+enrollStudent 2542 1517
+addStudent 342
+enrollStudent 4004 2704
+removeCourse 4658
+enrollStudent 4373 4950
+enrollStudent 2392 2636
+enrollStudent 2336 3575
+getStudentPoints 4208
+addStudent 193
+addStudent 2210
+removeStudent 2598
+addStudent 1102
+enrollStudent 4373 4544
+getStudentPoints 3527
+addStudent 3007
+enrollStudent 1263 3257
+enrollStudent 1234 3158
+addStudent 359
+addCourse 3747 5
+enrollStudent 2396 965
+enrollStudent 2396 4867
+enrollStudent 4529 511
+addStudent 3408
+addStudent 1544
+addStudent 4581
+getStudentPoints 3094
+enrollStudent 451 857
+addStudent 273
+enrollStudent 1860 -20
+addStudent 203
+completeCourse 3746 1374
+enrollStudent 3619 1437
+addStudent 4638
+addStudent 2746
+addStudent 1441
+addStudent -30
+completeCourse 579 4905
+enrollStudent 3375 3759
+enrollStudent 2732 4216
+enrollStudent 2189 1718
+enrollStudent 1926 1332
+completeCourse 1168 3718
+awardAcademicPoints 0
+enrollStudent 4743 3910
+completeCourse 252 3476
+completeCourse 2722 4876
+addCourse -19 1
+completeCourse 299 2504
+addStudent 3399
+addStudent 4693
+enrollStudent 789 503
+completeCourse 2623 857
+awardAcademicPoints 5
+awardAcademicPoints 1
+removeCourse 4671
+addCourse 2736 3
+addStudent 2205
+addStudent 4574
+addStudent 29
+awardAcademicPoints 2
+addCourse 4662 5
+addCourse -3 3
+addCourse 534 5
+enrollStudent 3401 3181
+enrollStudent 2229 3858
+removeStudent 3170
+addStudent 577
+awardAcademicPoints 1
+enrollStudent 2846 4886
+addCourse 4744 5
+addStudent 4411
+addCourse 4774 1
+addStudent 2008
+addStudent 0
+enrollStudent 1765 1048
+enrollStudent 1838 4909
+addStudent 649
+addStudent 913
+addStudent 4246
+enrollStudent 2600 4234
+addCourse 4618 1
+completeCourse 976 237
+enrollStudent 3542 4793
+addStudent 4924
+enrollStudent 1168 4886
+completeCourse 4606 3901
+enrollStudent 1710 3534
+addStudent 4812
+enrollStudent 3408 -2
+addStudent 1713
+enrollStudent 2650 4179
+getStudentPoints 545
+addStudent -24
+completeCourse 1561 4032
+getStudentPoints 4530
+addStudent 2023
+completeCourse 3115 4532
+addStudent 2605
+addStudent 2185
+addStudent 4815
+addCourse 3876 3
+enrollStudent 2498 4140
+addStudent 779
+enrollStudent 2722 2251
+enrollStudent 993 3575
+awardAcademicPoints 3
+addStudent 2104
+removeStudent 4197
+removeStudent 4168
+removeCourse -28
+enrollStudent 2149 3010
+removeStudent 1518
+completeCourse 167 4867
+addStudent 1844
+addStudent 4699
+completeCourse 165 567
+addStudent 2137
+addCourse 66 2
+addStudent 3706
+enrollStudent 4391 4032
+enrollStudent 3386 4447
+addStudent 749
+addStudent 2039
+addStudent 953
+getStudentPoints 1102
+addStudent 3497
+enrollStudent 3433 4765
+addStudent 280
+addStudent 2963
+addStudent 3108
+addStudent 690
+removeStudent 940
+addStudent 696
+addStudent 3710
+getStudentPoints 1642
+removeStudent 1611
+addStudent 1058
+removeStudent 4652
+completeCourse 1387 1331
+addStudent 4539
+addStudent -7
+enrollStudent 4529 787
+addCourse 2549 2
+awardAcademicPoints 3
+completeCourse 1263 1315
+getStudentPoints 4408
+enrollStudent 4128 50
+addStudent 3113
+completeCourse 3453 3240
+completeCourse 2052 4129
+addCourse 3999 4
+addStudent 3853
+enrollStudent -1 -22
+completeCourse 2722 3718
+removeCourse 3715
+enrollStudent 749 3858
+completeCourse 3035 4129
+enrollStudent 4691 3840
+removeStudent 4846
+addStudent 3350
+addStudent 184
+enrollStudent 779 746
+addStudent 3081
+addStudent 2893
+addCourse 2624 2
+removeCourse 2736
+addStudent 1544
+enrollStudent 4751 4909
+addCourse 3457 5
+addCourse 180 5
+addStudent 3446
+enrollStudent 3029 503
+enrollStudent -21 3476
+addStudent 2822
+enrollStudent 2810 746
+getStudentPoints 2623
+enrollStudent 4840 4774
+completeCourse 4341 463
+addStudent 1977
+addStudent 2628
+addStudent 2888
+addStudent 2150
+completeCourse 1543 1517
+enrollStudent 2039 4924
+addStudent 4001
+addStudent 3361
+enrollStudent 4923 2087
+enrollStudent 4299 4297
+awardAcademicPoints 3
+enrollStudent 3989 4216
+addStudent 2935
+getStudentPoints 3482
+enrollStudent 4840 503
+addStudent 3914
+removeCourse 3286
+addStudent 672
+enrollStudent 3482 1315
+addStudent 453
+addStudent 866
+enrollStudent 2918 965
+addStudent 82
+awardAcademicPoints 2
+completeCourse 4765 2301
+addCourse 4874 2
+enrollStudent 1630 3876
+removeStudent 193
+enrollStudent 1253 2144
+removeStudent 2104
+getStudentPoints 3135
+enrollStudent 2667 4790
+removeStudent 4346
+enrollStudent 1724 3484
+enrollStudent 3333 3457
+enrollStudent 1543 3864
+addStudent 3636
+addStudent 2463
+addStudent 2590
+addStudent 3433
+addStudent 594
+addStudent 494
+addCourse 1236 3
+addStudent 230
+addStudent 1386
+enrollStudent 2342 4140
+enrollStudent 3551 4495
+addStudent 3031
+addStudent 4020
+completeCourse 961 3434
+enrollStudent 3361 4905
+enrollStudent -30 4911
+completeCourse 735 4297
+awardAcademicPoints 3
+addStudent -4
+addCourse 883 1
+enrollStudent 3814 4216
+enrollStudent 3035 1173
+addStudent 3951
+getStudentPoints 2153
+removeStudent 4530
+getStudentPoints 3853
+completeCourse 1947 3687
+addStudent 4994
+enrollStudent 4408 3217
+enrollStudent 3564 4798
+removeStudent 4827
+enrollStudent 4209 3257
+addStudent 3383
+enrollStudent 4219 2624
+addStudent 406
+enrollStudent 1159 3879
+addStudent 1886
+enrollStudent 4962 4129
+addStudent 3181
+enrollStudent 3371 1797
+awardAcademicPoints 3
+removeCourse 652
+addStudent 4198
+enrollStudent 1881 2898
+addStudent 4658
+addStudent 4128
+completeCourse 3527 1374
+addStudent 4603
+removeCourse 3747
+addStudent 1313
+enrollStudent 3864 607
+enrollStudent 1055 2169
+enrollStudent 2247 1718
+removeCourse 883
+addCourse 428 3
+removeCourse 2270
+addStudent 759
+addCourse 3436 3
+addStudent 2284
+addStudent 904
+addStudent 1849
+addCourse 972 2
+addStudent 3681
+enrollStudent 941 4249
+awardAcademicPoints 2
+enrollStudent 1774 4905
+addStudent 2566
+enrollStudent 4438 2940
+enrollStudent 32 3898
+enrollStudent 2386 2087
+addStudent 4072
+removeStudent 4859
+removeStudent 1139
+addStudent 793
+awardAcademicPoints 0
+addStudent 289
+addStudent 4572
+addStudent 3739
+addCourse -22 4
+addStudent 3022
+addCourse 4230 1
+removeStudent 2566
+addStudent 712
+enrollStudent 1332 1945
+enrollStudent 2210 1043
+addStudent 3360
+addStudent 2626
+completeCourse 2392 460
+enrollStudent 450 1910
+enrollStudent 1713 3534
+enrollStudent 1386 4793
+enrollStudent 3583 3240
+enrollStudent 1520 1437
+completeCourse 2846 3910
+enrollStudent 1431 2144
+enrollStudent 3914 237
+enrollStudent 749 3718
+addStudent 2609
+addStudent 2772
+addCourse 1326 5
+addCourse 800 1
+enrollStudent 2127 4765
+enrollStudent 471 1910
+enrollStudent 1386 3879
+enrollStudent 2150 3485
+enrollStudent 1230 4886
+enrollStudent 2500 4662
+addStudent 2834
+addStudent 555
+addCourse 2887 4
+enrollStudent 2149 792
+removeStudent -29
+enrollStudent 3720 3010
+enrollStudent 3221 3217
+addStudent 494
+getStudentPoints 593
+addCourse 1786 4
+addStudent 1833
+addCourse 3857 2
+addStudent 1278
+addStudent 2695
+enrollStudent 3360 3901
+removeStudent 690
+addStudent 879
+addCourse 1623 1
+enrollStudent 1358 2636
+enrollStudent 1278 288
+addStudent 3914
+completeCourse 3720 1437
+getStudentPoints 128
+awardAcademicPoints 5
+enrollStudent 3433 3231
+addCourse 2742 1
+removeStudent 1282
+getStudentPoints 4087
+getStudentPoints 1058
+addCourse 4944 3
+removeStudent 4693
+addStudent 3604
+addStudent 4767
+addStudent 827
+addStudent 2368
+addCourse 4832 2
+completeCourse -2 -13
+addStudent -10
+addCourse 1001 4
+addStudent 1719
+addStudent 3709
+enrollStudent 3547 1236
+enrollStudent 3466 3476
+enrollStudent 3029 1345
+enrollStudent 4529 3718
+addStudent 3777
+enrollStudent 1159 180
+awardAcademicPoints 5
+addStudent 1569
+enrollStudent 4818 3170
+addStudent 3941
+addCourse 1395 3
+addStudent 2906
+enrollStudent 921 1236
+enrollStudent 1914 3231
+addStudent 2944
+removeStudent 2772
+enrollStudent 3706 1315
+addStudent 2701
+addCourse 2081 3
+completeCourse 1222 4032
+removeCourse 4944
+enrollStudent 2082 575
+removeCourse 2887
+addStudent 1506
+getStudentPoints 2547
+enrollStudent 2732 4544
+awardAcademicPoints 1
+completeCourse 4457 4354
+awardAcademicPoints 1
+addStudent 777
+addStudent 2179
+completeCourse 4747 2251
+addStudent 2541
+addStudent 2420
+addStudent 231
+awardAcademicPoints 5
+addStudent 1759
+enrollStudent 4209 3257
+addStudent 3730
+addStudent 3229
+removeCourse 693
+enrollStudent 252 3901
+enrollStudent 417 3245
+addStudent 4184
+awardAcademicPoints 5
+addStudent 4108
+enrollStudent 2906 4774
+addStudent 2154
+enrollStudent 1544 4544
+enrollStudent 299 50
+completeCourse 3919 4858
+enrollStudent 4628 2898
+addCourse 2444 5
+removeCourse 1706
+removeStudent 545
+enrollStudent 1035 3481
+addStudent 443
+awardAcademicPoints 0
+completeCourse 2918 965
+enrollStudent 1004 1945
+enrollStudent 3816 428
+enrollStudent 889 110
+addStudent 1477
+enrollStudent 2533 3356
+removeCourse 1001
+removeStudent 4924
+enrollStudent 3817 2647
+enrollStudent 1004 4140
+awardAcademicPoints 4
+addStudent 4860
+removeCourse 2301
+completeCourse 2810 335
+addStudent 1410
+addCourse 3285 3
+addStudent 1950
+enrollStudent 793 4765
+removeCourse 3710
+completeCourse 3319 2898
+addStudent 1820
+enrollStudent 409 2951
+enrollStudent 4658 1085
+enrollStudent 3777 2742
+getStudentPoints 3177
+enrollStudent 1138 4744
+enrollStudent -26 1345
+enrollStudent 1395 -21
+enrollStudent 29 2081
+removeCourse 1395
+enrollStudent 2891 3939
+addStudent 3503
+completeCourse 3029 503
+removeCourse 534
+enrollStudent 4277 3245
+completeCourse 2500 225
+enrollStudent 415 3203
+enrollStudent 2498 4662
+enrollStudent 2519 1053
+addStudent 82
+addStudent 4795
+enrollStudent 2159 4216
+addStudent 1391
+enrollStudent 4923 2087
+removeStudent 2980
+addStudent 3606
+enrollStudent 4438 961
+enrollStudent 4691 3231
+addStudent 4913
+addStudent 3401
+enrollStudent 203 3796
+addStudent 2863
+enrollStudent 2127 4926
+enrollStudent 2978 4234
+addStudent 4013
+addCourse 986 3
+addStudent 3553
+enrollStudent 2547 3240
+completeCourse 972 1374
+enrollStudent 4818 1374
+addStudent 556
+completeCourse 3583 511
+addStudent 450
+enrollStudent 4863 792
+addStudent 966
+enrollStudent 229 3434
+completeCourse 3551 3483
+enrollStudent 3859 100
+enrollStudent 4691 791
+completeCourse 2082 3718
+enrollStudent 3709 3700
+enrollStudent 203 3910
+getStudentPoints 1410
+enrollStudent 3383 4858
+addStudent 3817
+completeCourse 3453 3356
+addStudent -20
+addCourse 4414 2
+addStudent 4434
+completeCourse 1356 110
+addStudent -27
+addStudent -6
+addStudent 4635
+enrollStudent 3926 2647
+addStudent 3638
+addStudent 4486
+enrollStudent 579 4140
+enrollStudent 2723 237
+awardAcademicPoints 1
+addStudent 1954
+completeCourse 3989 113
+addStudent 256
+enrollStudent 3371 3231
+getStudentPoints 4160
+awardAcademicPoints 4
+enrollStudent 3508 2444
+completeCourse 3481 3231
+enrollStudent 406 2054
+addStudent 3414
+enrollStudent 1222 1786
+removeStudent 4669
+addStudent 3636
+enrollStudent 2888 4447
+completeCourse 3552 225
+addStudent 890
+enrollStudent 4782 4394
+enrollStudent 3552 1786
+enrollStudent 3371 3759
+removeCourse 3857
+addCourse 3823 3
+addStudent 2215
+removeStudent 3527
+addStudent 4119
+addStudent 3026
+enrollStudent 4512 3257
+completeCourse 471 1910
+addStudent 2263
+addStudent 4859
+enrollStudent 4119 2057
+addStudent 655
+enrollStudent 1495 3876
+addStudent 3026
+completeCourse 351 4032
+awardAcademicPoints 0
+enrollStudent 620 1945
+enrollStudent 3709 3257
+addStudent 3765
+addStudent 1451
+addStudent 415
+enrollStudent 777 225
+addStudent 4838
+addCourse 1712 3
+enrollStudent 2426 4618
+getStudentPoints 953
+enrollStudent 559 4774
+enrollStudent 793 4793
+completeCourse 450 1910
+addStudent 2462
+enrollStudent 2978 1759
+removeStudent 4321
+enrollStudent 2392 2647
+completeCourse 2226 3319
+completeCourse 1478 1910
+awardAcademicPoints 3
+completeCourse 2352 4886
+removeStudent 2402
+enrollStudent 1082 3277
+addStudent 744
+addStudent 2754
+enrollStudent 866 188
+completeCourse 2015 3203
+addStudent 4257
+getStudentPoints 199
+enrollStudent 2541 4073
+enrollStudent 3553 3436
+completeCourse 394 288
+enrollStudent 2763 2586
+getStudentPoints 3813
+addStudent 2951
+addStudent 152
+addStudent 2336
+enrollStudent 3202 503
+awardAcademicPoints 0
+addStudent 4389
+addCourse 2079 3
+removeCourse 66
+enrollStudent 63 4129
+enrollStudent 4257 3910
+enrollStudent 1881 4321
+addStudent 3367
+addStudent 3502
+completeCourse 2836 4447
+enrollStudent 4461 335
+addStudent 1622
+enrollStudent 4209 615
+awardAcademicPoints 5
+awardAcademicPoints 2
+addStudent 1814
+addStudent 707
+removeStudent 256
+enrollStudent 1410 4909
+addStudent 4545
+completeCourse 4840 3434
+completeCourse 1469 3203
+addStudent 4277
+completeCourse 3817 2647
+addStudent 4730
+addStudent 2391
+enrollStudent 2500 4905
+enrollStudent 2498 1121
+completeCourse 2149 3010
+removeStudent 4108
+addCourse 3074 3
+enrollStudent 655 2042
+addCourse 1159 3
+enrollStudent 3438 4608
+awardAcademicPoints 3
+removeStudent 3031
+addCourse 2224 3
+removeStudent 2796
+addStudent 3113
+addCourse 4957 5
+removeCourse 3999
+addStudent 3301
+completeCourse 2082 575
+enrollStudent 735 2636
+addStudent 4276
+awardAcademicPoints 4
+enrollStudent 4743 -5
+removeStudent 2754
+addStudent 824
+getStudentPoints 2052
+addStudent 1160
+addStudent 1604
+removeStudent 2827
+enrollStudent 2906 1159
+addStudent 2075
+completeCourse 4782 4394
+addStudent 4932
+awardAcademicPoints 1
+addCourse 3289 1
+addStudent 102
+addCourse 192 2
+enrollStudent 1611 1159
+addStudent 3135
+removeCourse 4874
+addStudent 1280
+enrollStudent 3390 288
+addStudent 4722
+completeCourse 215 3203
+enrollStudent 4818 -10
+addStudent 4164
+addStudent 3508
+addStudent 2150
+completeCourse 964 866
+completeCourse 1062 52
+addStudent 1123
+getStudentPoints 1886
+enrollStudent 2034 4608
+addCourse 624 5
+enrollStudent 4408 4909
+completeCourse 4628 2898
+completeCourse 2026 2586
+enrollStudent 1630 3910
+addStudent 1639
+enrollStudent 2547 791
+completeCourse 4529 3718
+addStudent 4479
+addCourse 3684 5
+awardAcademicPoints 3
+addCourse 3998 1
+enrollStudent 351 1437
+enrollStudent 1881 4394
+addStudent 879
+addCourse 4525 2
+enrollStudent 1549 1591
+completeCourse 2205 3170
+enrollStudent 649 237
+addStudent 3470
+addStudent -4
+enrollStudent 1358 1910
+completeCourse 1056 2137
+getStudentPoints 2265
+enrollStudent 2189 -27
+enrollStudent 2044 3170
+enrollStudent 2405 237
+addCourse 3845 5
+addCourse 3095 1
+enrollStudent 1990 4129
+addStudent 2290
+completeCourse 3914 237
+enrollStudent 2173 4911
+addStudent 4877
+awardAcademicPoints 0
+enrollStudent 547 4495
+addStudent 1601
+enrollStudent 2178 2146
+addCourse 3961 3
+addStudent 1561
+addCourse 848 4
+enrollStudent 2189 188
+addStudent 4310
+addCourse 2647 1
+addStudent 3457
+enrollStudent 451 746
+enrollStudent 2075 3858
+addStudent 724
+addCourse 3976 4
+addStudent 511
+enrollStudent 1166 4867
+removeStudent 4164
+addStudent 4229
+addStudent 239
+enrollStudent 2498 841
+addStudent 3194
+enrollStudent 4635 3289
+removeStudent 3638
+completeCourse 394 765
+enrollStudent 1780 2087
+completeCourse 231 1461
+addStudent 1222
+addCourse 2649 4
+addStudent 2394
+addStudent 760
+addStudent 4077
+addStudent 2387
+removeStudent 2368
+enrollStudent 3181 3976
+addStudent 3663
+addCourse 2854 5
+addStudent 1373
+enrollStudent 3390 2898
+addStudent 811
+addStudent -25
+removeStudent 3739
+addCourse 1431 4
+addCourse 2172 1
+completeCourse 4299 4297
+enrollStudent 152 3887
+addStudent 3325
+enrollStudent 724 3203
+removeCourse 4297
+addStudent 1163
+addStudent 3156
+enrollStudent 167 4321
+enrollStudent 3524 499
+awardAcademicPoints 0
+addStudent 3847
+addStudent 1300
+enrollStudent 1724 1236
+enrollStudent 4391 1121
+addStudent 2338
+addCourse 247 5
+enrollStudent 4818 4765
+enrollStudent 2263 1048
+addStudent 4409
+getStudentPoints 1477
+enrollStudent 3765 1461
+addCourse 2095 5
+addStudent 2772
+addCourse 2384 1
+addStudent 3013
+addStudent 1574
+addStudent 776
+removeStudent -25
+enrollStudent 4174 1345
+removeStudent 4877
+addCourse 3271 1
+addStudent 4495
+completeCourse 3966 2057
+enrollStudent 4198 2095
+enrollStudent 2888 3181
+addCourse 2176 1
+enrollStudent 406 1043
+enrollStudent 4812 4535
+enrollStudent 3370 335
+awardAcademicPoints 1
+completeCourse 2052 4495
+enrollStudent 1926 3864
+addStudent 2296
+removeStudent 4815
+completeCourse 3520 2586
+completeCourse 4863 792
+enrollStudent 4426 1374
+enrollStudent 2386 4032
+completeCourse 4529 4532
+enrollStudent 1960 2144
+awardAcademicPoints 5
+removeStudent 2834
+addCourse 570 5
+enrollStudent 2650 2042
+enrollStudent 3497 4876
+awardAcademicPoints 5
+enrollStudent 2039 3840
+getStudentPoints 2345
+enrollStudent 2313 4140
+completeCourse 2837 4886
+removeCourse 570
+enrollStudent 1145 1437
+enrollStudent 1990 3257
+completeCourse 3202 503
+completeCourse 649 237
+addStudent 4464
+enrollStudent 4167 3271
+enrollStudent 4994 0
+removeCourse 1005
+removeCourse 972
+enrollStudent 2772 4393
+enrollStudent 1889 237
+enrollStudent 4277 1794
+enrollStudent 620 2549
+awardAcademicPoints 5
+enrollStudent 3133 2251
+enrollStudent 2290 4911
+addStudent 3754
+addStudent -15
+completeCourse 4501 3245
+removeStudent 712
+addStudent 3828
+addStudent 2709
+enrollStudent 2504 2524
+addCourse 3659 1
+addStudent 1688
+addStudent 4723
+addStudent 3888
+addStudent 3146
+enrollStudent 4782 4037
+completeCourse 4555 3240
+addCourse 114 2
+enrollStudent 4923 113
+addStudent 2487
+enrollStudent 603 4321
+enrollStudent 4277 1121
+enrollStudent 2888 3961
+completeCourse 4121 1508
+awardAcademicPoints 4
+addStudent 1258
+completeCourse 4119 2057
+enrollStudent 2014 3712
+enrollStudent 2650 4495
+getStudentPoints 2810
+addStudent 417
+enrollStudent 793 746
+addStudent 346
+enrollStudent 3438 1345
+removeCourse 2384
+awardAcademicPoints 5
+addCourse 3463 2
+enrollStudent 789 3864
+addStudent 4774
+addCourse 1870 3
+getStudentPoints 2154
+removeCourse 2649
+addStudent 2103
+addStudent 4635
+addStudent 1179
+completeCourse 3401 3181
+addStudent 2234
+awardAcademicPoints 1
+removeStudent 3445
+removeStudent 3663
+enrollStudent 655 1786
+awardAcademicPoints 0
+completeCourse 3035 3203
+enrollStudent 496 2551
+enrollStudent 2991 2137
+addStudent 4023
+removeStudent 3453
+addCourse 1508 5
+enrollStudent 890 2087
+completeCourse 2712 3434
+addStudent 3076
+addCourse 1236 1
+addCourse 3377 3
+enrollStudent 1059 176
+enrollStudent 2723 4876
+enrollStudent 3280 114
+removeStudent 4013
+addCourse 4845 4
+addStudent 690
+removeCourse 1623
+enrollStudent 2363 675
+addStudent 2047
+enrollStudent 1332 575
+removeStudent 3446
+enrollStudent 2590 3203
+addStudent 641
+addCourse 2176 3
+addStudent 3002
+addStudent 411
+addStudent 1861
+enrollStudent 4658 3759
+enrollStudent 1950 3701
+enrollStudent 621 4129
+completeCourse 252 3879
+addStudent 3390
+addStudent 3844
+enrollStudent 2748 1794
+enrollStudent 3989 3484
+addStudent 3710
+removeCourse 4832
+enrollStudent 4184 3823
+addCourse 4111 3
+enrollStudent 3504 3879
+enrollStudent 2296 4354
+addStudent 3431
+enrollStudent 4004 3240
+addStudent 4347
+addStudent 731
+removeStudent 346
+awardAcademicPoints 2
+completeCourse 2722 857
+enrollStudent 3466 2742
+completeCourse 3280 114
+enrollStudent 2763 4111
+awardAcademicPoints 3
+enrollStudent 2836 675
+awardAcademicPoints 2
+enrollStudent 1551 2940
+enrollStudent 4389 675
+enrollStudent 2263 3457
+addStudent 243
+enrollStudent 3926 3257
+addCourse 3872 1
+addCourse 3292 5
+enrollStudent 4347 1121
+addStudent -6
+addStudent 3505
+addCourse 4193 5
+addStudent 617
+addCourse -7 1
+removeCourse 3074
+addStudent 470
+awardAcademicPoints 3
+addStudent 2597
+enrollStudent 4409 4111
+addStudent 3546
+enrollStudent 792 4249
+removeStudent 2701
+enrollStudent 795 4774
+enrollStudent 411 3575
+addStudent -3
+addCourse 934 4
+enrollStudent 1370 3285
+enrollStudent 203 3879
+enrollStudent 1169 3167
+addStudent 820
+enrollStudent 2234 675
+addCourse 3203 4
+addCourse 1012 1
+removeStudent 394
+addCourse 2066 2
+awardAcademicPoints 0
+completeCourse 4219 2624
+addStudent 3452
+addCourse 4731 3
+removeStudent 564
+addStudent 779
+enrollStudent 3816 4867
+completeCourse 3433 3575
+awardAcademicPoints 1
+addStudent 161
+getStudentPoints 824
+addStudent 1971
+enrollStudent 3383 765
+addStudent 467
+enrollStudent 4426 3976
+addStudent 1440
+addStudent 2575
+addStudent 2210
+enrollStudent 1160 2586
+addStudent 4400
+addStudent 4037
+completeCourse 4124 841
+completeCourse 450 4535
+getStudentPoints 3370
+completeCourse 2650 4495
+enrollStudent 2746 4950
+addStudent 2870
+removeCourse 1431
+enrollStudent 4581 4447
+enrollStudent 2888 615
+completeCourse 1263 3257
+addStudent 4158
+addStudent 124
+completeCourse 4818 3170
+enrollStudent 364 3845
+completeCourse 749 3858
+addStudent 3901
+removeStudent 2626
+addStudent 3111
+enrollStudent 2161 2504
+removeCourse 1504
+enrollStudent 2317 3289
+enrollStudent 1464 3887
+removeCourse 4731
+enrollStudent 573 3430
+completeCourse 2321 4926
+enrollStudent 2438 3823
+enrollStudent 547 3292
+addStudent 2438
+enrollStudent 1724 3483
+getStudentPoints 3370
+completeCourse 2320 3534
+enrollStudent 1278 787
+enrollStudent 890 4886
+removeStudent 3754
+enrollStudent 2673 1326
+addCourse 3620 1
+addCourse 4177 5
+completeCourse 1630 3910
+addStudent 2669
+enrollStudent 2047 1332
+addCourse 3678 2
+addStudent 1744
+awardAcademicPoints 1
+addStudent 1262
+enrollStudent 2891 4909
+addStudent 3785
+enrollStudent 4743 4950
+enrollStudent 4923 3095
+awardAcademicPoints 5
+getStudentPoints 1861
+addCourse 3356 4
+removeStudent 3194
+addStudent 4721
+enrollStudent 1230 675
+completeCourse 3576 1718
+addStudent 1045
+addStudent 1173
+addCourse 3381 5
+addStudent 1066
+removeStudent 2321
+enrollStudent 3583 610
+addStudent 1131
+getStudentPoints 1639
+awardAcademicPoints 1
+enrollStudent 556 2054
+enrollStudent 2047 1437
+addStudent 1251
+enrollStudent 152 3620
+addCourse 466 2
+removeStudent 1178
+enrollStudent 4092 4193
+completeCourse 1168 3483
+addStudent -19
+addStudent 4931
+awardAcademicPoints 0
+addStudent 982
+addCourse 2185 3
+enrollStudent 815 2605
+addCourse 1075 3
+enrollStudent 313 4790
+removeCourse 466
+addStudent 606
+addStudent 2588
+getStudentPoints 820
+addCourse 367 3
+enrollStudent 4119 3434
+enrollStudent 3814 4495
+addCourse 4829 2
+enrollStudent 415 3203
+addStudent 1114
+addStudent 3715
+addStudent 1334
+addCourse 1197 1
+enrollStudent 4040 3659
+enrollStudent 4751 4535
+addStudent 2045
+enrollStudent 4087 4926
+enrollStudent 760 4177
+removeStudent 3680
+enrollStudent 2161 1326
+awardAcademicPoints 2
+enrollStudent 779 192
+addCourse 2314 2
+removeCourse 986
+addCourse 4395 1
+enrollStudent 4635 1075
+enrollStudent 4322 1437
+awardAcademicPoints 3
+addStudent 3349
+removeStudent 494
+addCourse 2989 1
+completeCourse 3497 4876
+addStudent 3787
+addCourse 4276 2
+removeStudent 4246
+addStudent 1763
+addCourse 80 1
+addCourse 4855 2
+addCourse 1319 1
+completeCourse 2313 1508
+enrollStudent 4464 4957
+enrollStudent 1724 1759
+removeStudent 1601
+completeCourse 3110 2605
+addCourse 3746 3
+enrollStudent 2628 866
+enrollStudent 4592 3170
+awardAcademicPoints 3
+enrollStudent 3133 4532
+completeCourse 961 4532
+getStudentPoints 3081
+completeCourse 2710 3802
+addCourse 4100 2
+addCourse 731 1
+awardAcademicPoints 3
+enrollStudent 3110 2704
+enrollStudent 412 4535
+enrollStudent 2045 346
+addStudent 2141
+addStudent 3205
+addCourse 545 1
+enrollStudent 2324 1374
+enrollStudent 2354 3245
+addStudent 2845
+addStudent 3815
+enrollStudent 1520 -2
+addStudent -19
+enrollStudent 1451 3746
+completeCourse 2386 4234
+addStudent 3474
+addStudent 1244
+completeCourse 412 4535
+addStudent 1269
+addStudent 3433
+enrollStudent 1976 188
+removeStudent 2842
+enrollStudent 1358 247
+addStudent 875
+removeCourse 545
+addCourse 1947 1
+enrollStudent 2500 746
+awardAcademicPoints 2
+addStudent 2459
+addStudent 2230
+addStudent 564
+removeStudent 1604
+getStudentPoints 2584
+enrollStudent 4277 3095
+addCourse 3530 3
+addStudent 1193
+removeCourse 731
+enrollStudent 2392 3285
+enrollStudent 4064 2176
+removeStudent 2893
+enrollStudent 3504 4216
+addStudent 2961
+addStudent 4740
+addStudent 2641
+addStudent 1628
+enrollStudent 3319 3746
+enrollStudent 2732 50
+completeCourse 795 2504
+addStudent 3095
+removeCourse 4230
+addCourse 1506 1
+addCourse 2807 3
+removeStudent 3231
+removeStudent 2154
+enrollStudent 3133 3620
+enrollStudent 1719 3864
+addCourse 3602 5
+addStudent 4089
+enrollStudent 2338 237
+completeCourse 1356 3434
+addStudent 1084
+addStudent 2839
+enrollStudent 1630 1786
+enrollStudent 913 3746
+awardAcademicPoints 1
+addStudent 4306
+enrollStudent 3576 2161
+enrollStudent 4721 1591
+addStudent 795
+addStudent 4335
+addCourse -29 -2
+awardAcademicPoints 3
+addStudent 511
+enrollStudent 2857 4909
+enrollStudent 3777 827
+enrollStudent 789 1910
+enrollStudent 3508 2504
+enrollStudent 1543 675
+completeCourse 1976 1121
+removeStudent 4539
+addCourse 4028 1
+enrollStudent 1230 746
+addCourse 186 4
+enrollStudent 3156 1173
+completeCourse 2324 1374
+addCourse 3809 3
+addStudent 4054
+removeCourse 1319
+removeStudent 1258
+enrollStudent 3785 4199
+addStudent 1586
+enrollStudent 230 2848
+enrollStudent 480 3858
+removeStudent 1820
+enrollStudent 2189 4744
+addStudent 4388
+enrollStudent 2839 1870
+completeCourse 215 3910
+removeCourse 3809
+addStudent 4281
+addStudent 3482
+addStudent 3763
+addStudent 2707
+addStudent 2391
+removeCourse 4855
+completeCourse 480 3858
+addStudent 334
+enrollStudent 239 1794
+addStudent 3144
+addStudent 2176
+addCourse 585 3
+removeCourse 4829
+addStudent 1
+completeCourse 1160 2586
+enrollStudent 10 1870
+addStudent 588
+addStudent 2891
+enrollStudent 4077 3998
+enrollStudent 1451 4950
+addStudent 4856
+addStudent 2209
+addStudent 3574
+enrollStudent 3606 4193
+addStudent 4191
+enrollStudent 879 3434
+completeCourse 3652 4495
+enrollStudent 4391 3271
+enrollStudent 1569 1461
+awardAcademicPoints 5
+awardAcademicPoints 5
+addStudent 950
+removeStudent 4856
+completeCourse 4529 787
+addStudent 4973
+addCourse 383 2
+removeStudent 4089
+enrollStudent 3280 2066
+addStudent 1795
+addStudent 3319
+addStudent 3079
+enrollStudent 2547 4909
+addStudent -10
+awardAcademicPoints 5
+addStudent 4614
+addStudent 4850
+addStudent 2177
+enrollStudent 1926 4447
+addStudent 2145
+removeStudent 4973
+enrollStudent 2290 675
+addStudent 1448
+completeCourse 3386 4447
+addCourse 3737 3
+addStudent 2118
+addStudent 4514
+removeStudent 3337
+enrollStudent 3888 3701
+addCourse 358 5
+enrollStudent 3160 371
+enrollStudent 2848 343
+addCourse 5000 2
+addCourse 4183 2
+removeStudent 3079
+addStudent 2927
+addStudent 2359
+completeCourse 1932 3887
+enrollStudent 2044 358
+enrollStudent -4 -7
+removeStudent 208
+enrollStudent 966 2586
+enrollStudent 3583 3485
+enrollStudent 4830 3245
+enrollStudent 1586 3257
+getStudentPoints 1358
+removeStudent 1300
+addStudent 2170
+completeCourse 3583 610
+completeCourse 3524 499
+addStudent 4481
+enrollStudent 3002 1090
+addStudent 3904
+completeCourse 4743 3257
+enrollStudent 3576 2144
+enrollStudent 3174 4662
+awardAcademicPoints 1
+enrollStudent 3989 4193
+addStudent 2953
+enrollStudent 1724 2468
+enrollStudent 941 857
+awardAcademicPoints 0
+enrollStudent 696 1591
+enrollStudent 3966 1085
+addStudent 1005
+awardAcademicPoints 1
+addStudent 4388
+completeCourse 4863 4179
+completeCourse 2667 4790
+addStudent 1214
+completeCourse 203 3481
+enrollStudent 3546 2830
+completeCourse 1168 3231
+addStudent 519
+addCourse -24 -5
+addCourse 151 1
+addStudent 4492
+enrollStudent 1808 4103
+completeCourse 3438 4608
+enrollStudent 731 4535
+addCourse 610 5
+addStudent 1636
+completeCourse 621 2586
+removeStudent 82
+removeStudent 4514
+addStudent 924
+addStudent 4812
+enrollStudent 2052 1591
+enrollStudent 3497 1159
+enrollStudent 789 3872
+awardAcademicPoints 4
+addStudent 2303
+addStudent 1530
+addStudent 296
+enrollStudent 2215 3289
+enrollStudent 2201 4324
+addStudent 4547
+addStudent 102
+addStudent 2061
+addStudent 1234
+enrollStudent 3113 1085
+enrollStudent 3433 4321
+enrollStudent 770 2934
+enrollStudent 308 2909
+enrollStudent 128 3457
+enrollStudent 2542 3530
+addCourse 3826 2
+enrollStudent 4547 675
+enrollStudent 1168 3864
+enrollStudent 451 3271
+enrollStudent 1792 114
+addCourse 4480 1
+getStudentPoints 2324
+removeStudent 776
+removeStudent 1814
+addStudent 3437
+removeStudent 2578
+awardAcademicPoints 4
+enrollStudent 3966 3575
+addStudent 1369
+addStudent 2671
+addStudent 3822
+addStudent 1718
+addCourse -13 -3
+addCourse 3271 -4
+addStudent 2794
+removeStudent 1862
+addStudent 2097
+getStudentPoints 2951
+enrollStudent 2215 3181
+getStudentPoints 2622
+addStudent 3764
+completeCourse 411 3575
+addCourse 4987 1
+completeCourse 921 1173
+addStudent 922
+addStudent 4720
+addStudent 1487
+addStudent 4974
+enrollStudent 2008 511
+enrollStudent 326 4480
+enrollStudent 1863 155
+enrollStudent 4743 3910
+addStudent 4440
+addStudent 2671
+addStudent 3904
+getStudentPoints -19
+enrollStudent 4239 428
+enrollStudent 3552 3659
+awardAcademicPoints 2
+completeCourse 4341 3879
+enrollStudent 3604 2137
+removeStudent 1487
+addStudent 3749
+enrollStudent 4658 4790
+enrollStudent 594 624
+addCourse 3960 3
+removeCourse 3960
+addCourse 3434 2
+addStudent 1170
+addStudent 239
+enrollStudent 2541 866
+addCourse 3153 5
+addStudent 2753
+enrollStudent 724 4480
+addStudent 1109
+addStudent 1118
+addCourse 2063 1
+addStudent 4239
+addStudent 4742
+addStudent 1726
+getStudentPoints 1141
+enrollStudent 2600 3483
+addStudent 4155
+addStudent 1980
+addStudent 1842
+addStudent 1142
+enrollStudent 2026 2624
+addStudent 2845
+addStudent 1173
+addCourse 3536 3
+completeCourse 4691 791
+addStudent 2060
+addStudent 1857
+addStudent 2534
+enrollStudent 3823 3863
+addStudent 752
+enrollStudent 199 1508
+addStudent 2395
+addStudent 3896
+enrollStudent 1543 4032
+addStudent 1126
+enrollStudent 1544 610
+enrollStudent 313 2185
+enrollStudent 2906 3356
+completeCourse 2504 2524
+awardAcademicPoints 1
+enrollStudent 4391 3217
+addStudent 4461
+enrollStudent 1055 4845
+addStudent 2917
+enrollStudent 953 3901
+addStudent 4904
+enrollStudent 553 3289
+completeCourse 620 2549
+addStudent 1275
+enrollStudent 2359 1085
+addStudent 1979
+awardAcademicPoints 4
+enrollStudent 4529 4876
+enrollStudent 4574 2176
+enrollStudent 289 4321
+enrollStudent 4830 3010
+addStudent 3269
+addStudent 535
+completeCourse 3280 3434
+completeCourse 4341 2524
+addStudent 2319
+awardAcademicPoints 2
+removeCourse 4276
+enrollStudent 1410 2057
+addStudent 2917
+addStudent 2482
+enrollStudent 3115 1591
+completeCourse 194 3483
+enrollStudent 547 188
+enrollStudent 2336 1591
+addCourse 482 1
+enrollStudent 670 4447
+enrollStudent 343 2172
+completeCourse 4635 3289
+completeCourse 4128 50
+enrollStudent 1313 3602
+addStudent 1909
+enrollStudent 4573 3872
+enrollStudent 4614 3203
+addStudent 2657
+enrollStudent 4198 1945
+addStudent 2776
+getStudentPoints -12
+addStudent 752
+enrollStudent 4584 662
+addStudent 640
+getStudentPoints 3921
+enrollStudent 3013 3476
+enrollStudent 207 1345
+addCourse 4665 4
+addStudent 2364
+enrollStudent 63 1437
+addStudent 1001
+addStudent 2729
+removeStudent 3847
+addStudent 3176
+removeStudent 3844
+removeStudent 1173
+addStudent 159
+enrollStudent 1118 1712
+addStudent 2077
+completeCourse 480 1945
+addStudent 3158
+enrollStudent 4481 2057
+addStudent 2236
+enrollStudent 2978 3257
+addStudent 4271
+addStudent 3186
+addStudent 2188
+awardAcademicPoints 3
+enrollStudent 819 3292
+addStudent 4593
+awardAcademicPoints 4
+addStudent 511
+enrollStudent 4020 4394
+addStudent 4204
+addStudent 4248
+addCourse 4488 4
+enrollStudent 4177 4535
+enrollStudent 3457 792
+awardAcademicPoints 5
+addStudent 4927
+enrollStudent 678 4216
+addStudent 2758
+enrollStudent 791 4447
+addCourse 4985 4
+completeCourse 3294 1718
+enrollStudent 2794 1326
+removeCourse 1197
+addCourse 2524 1
+enrollStudent 1724 2989
+enrollStudent 2284 2172
+completeCourse 1253 2504
+addStudent 1157
+enrollStudent 1142 2940
+addStudent 4069
+enrollStudent 879 1315
+addCourse 2224 2
+enrollStudent 3966 4073
+enrollStudent 2137 3746
+removeStudent 2381
+addStudent -6
+getStudentPoints 2391
+removeStudent 1844
+completeCourse 1230 4886
+addStudent 3379
+addStudent 3558
+awardAcademicPoints 4
+enrollStudent 3960 -17
+addStudent 2737
+addCourse -19 -3
+enrollStudent 2667 460
+completeCourse 889 110
+removeStudent 2015
+addStudent 4265
+enrollStudent 2927 4845
+removeCourse 585
+completeCourse 2504 841
+enrollStudent 4699 3245
+completeCourse 1244 -23
+enrollStudent 3997 1075
+getStudentPoints 4699
+removeCourse -20
+addStudent 2
+enrollStudent 203 4193
+enrollStudent 3229 237
+addStudent 4074
+addStudent 268
+removeCourse 480
+addStudent 2047
+completeCourse 2500 4905
+getStudentPoints 2839
+getStudentPoints 1696
+addStudent 4714
+enrollStudent 1718 3484
+enrollStudent 1464 3701
+getStudentPoints 1056
+addStudent 3739
+enrollStudent 4391 1718
+completeCourse 1724 1236
+addStudent 2174
+enrollStudent 161 4183
+completeCourse -24 2185
+addStudent 4129
+addStudent 3132
+addCourse 2732 5
+addStudent 3883
+addStudent 4961
+enrollStudent 4742 4858
+completeCourse 791 4447
+addCourse 4146 4
+addStudent 2764
+addStudent 1049
+addCourse 3401 2
+addStudent 3933
+enrollStudent 3132 4354
+enrollStudent 672 4414
+addStudent 4257
+addCourse 4802 3
+removeStudent 3007
+enrollStudent 4050 2624
+completeCourse 4782 4037
+completeCourse 2891 3939
+removeStudent 2695
+enrollStudent 4512 2989
+enrollStudent 3777 2087
+addCourse 3173 3
+completeCourse 2189 3901
+removeStudent 2174
+enrollStudent 1454 2524
+addStudent 655
+addCourse 2572 4
+enrollStudent 4001 4216
+enrollStudent 2529 3998
+removeStudent 1109
+enrollStudent 4717 1315
+completeCourse 2679 4765
+enrollStudent 4521 1461
+removeStudent 412
+enrollStudent 2359 2586
+addStudent 3978
+removeStudent 355
+enrollStudent 453 848
+enrollStudent 4475 1696
+enrollStudent 1628 934
+awardAcademicPoints 0
+addStudent 854
+enrollStudent 3476 4858
+enrollStudent 289 3356
+getStudentPoints 4077
+addStudent 1251
+awardAcademicPoints 0
+addStudent 2282
+addStudent 2173
+addStudent 3121
+enrollStudent 3547 2989
+addStudent 600
+addStudent 3328
+addStudent 1482
+enrollStudent 152 272
+removeStudent 2482
+addStudent 3838
+addCourse 4999 4
+addStudent 4081
+removeCourse 4987
+enrollStudent 913 3271
+removeStudent 2023
+enrollStudent 2487 4028
+getStudentPoints 4904
+removeStudent 3111
+addStudent 2316
+enrollStudent 3709 1506
+enrollStudent 3002 4957
+enrollStudent 2145 3901
+addCourse 1990 2
+completeCourse 4592 3170
+enrollStudent 959 1517
+addStudent 3152
+removeCourse 2224
+addStudent 691
+awardAcademicPoints 3
+addStudent 1815
+enrollStudent 961 4177
+addStudent 2446
+enrollStudent 2209 1048
+enrollStudent 2283 2854
+addStudent 940
+removeStudent 564
+getStudentPoints 966
+enrollStudent 2209 575
+addCourse 425 3
+enrollStudent 4743 4495
+addCourse 4213 4
+addStudent 2588
+enrollStudent 3787 1345
+awardAcademicPoints 5
+addStudent 2476
+addStudent 2519
+removeStudent 2179
+addStudent 3287
+removeStudent 2236
+enrollStudent 4658 2807
+enrollStudent 415 1506
+enrollStudent 4751 188
+enrollStudent 3710 1718
+addStudent 806
+addStudent 2581
+addCourse 2137 2
+addCourse 4414 4
+enrollStudent 4373 3153
+addCourse 520 5
+enrollStudent 1795 3961
+removeStudent 1176
+addCourse 2888 2
+addStudent 983
+addCourse 4342 1
+enrollStudent 4994 3217
+addCourse 3714 1
+getStudentPoints 3816
+addCourse 400 4
+addStudent 1960
+addStudent 1166
+getStudentPoints 555
+awardAcademicPoints 5
+completeCourse 3383 4858
+addStudent 2285
+addStudent -13
+completeCourse 3813 2137
+addCourse 3366 3
+addStudent 602
+enrollStudent 670 288
+awardAcademicPoints 0
+getStudentPoints 2391
+addCourse 1267 4
+enrollStudent 4271 1910
+enrollStudent 415 3292
+awardAcademicPoints 0
+enrollStudent 2052 2172
+enrollStudent 3379 2989
+addStudent 880
+removeStudent 1879
+addStudent 1494
+addStudent 2196
+enrollStudent 3553 4488
+addStudent 2929
+awardAcademicPoints 4
+enrollStudent 815 503
+addCourse 4808 2
+addCourse 3422 2
+addStudent 4179
+enrollStudent 1469 746
+getStudentPoints 894
+addStudent 2956
+addStudent 772
+enrollStudent 3146 2042
+addCourse 941 1
+enrollStudent 4782 624
+addStudent 784
+addStudent 651
+completeCourse 203 4193
+addStudent 186
+addCourse 830 4
+enrollStudent 3186 3939
+enrollStudent 2386 346
+addStudent 1893
+enrollStudent 3199 186
+enrollStudent 1549 2079
+addStudent 4430
+addStudent 198
+enrollStudent 4574 2647
+addCourse 4900 3
+awardAcademicPoints 4
+getStudentPoints 1400
+getStudentPoints 2680
+addStudent 184
+addStudent 4388
+enrollStudent 2794 3961
+completeCourse 1914 3231
+completeCourse 3481 3700
+enrollStudent 3815 4100
+enrollStudent 4854 2649
+enrollStudent 2196 237
+enrollStudent 3269 3463
+addStudent 3555
+awardAcademicPoints 1
+getStudentPoints 1479
+enrollStudent 913 3840
+completeCourse 3628 3481
+addCourse 2497 2
+awardAcademicPoints 1
+enrollStudent 4064 499
+completeCourse 3199 186
+enrollStudent 1482 2742
+enrollStudent 2513 474
+enrollStudent 1055 4950
+addStudent 3272
+addCourse 2885 5
+addStudent 378
+getStudentPoints 2780
+enrollStudent 4923 965
+enrollStudent 789 237
+addCourse 4213 2
+completeCourse 4198 1945
+awardAcademicPoints 4
+removeCourse 4146
+removeCourse 2497
+getStudentPoints 124
+enrollStudent 4077 4394
+removeStudent 3652
+addStudent 3772
+enrollStudent 313 4183
+getStudentPoints 1410
+enrollStudent 1123 787
+enrollStudent 735 800
+getStudentPoints 2137
+addStudent 1496
+addStudent 2370
+addStudent 529
+awardAcademicPoints 3
+enrollStudent 529 3463
+addStudent 513
+addStudent 544
+addStudent 4304
+addStudent 1363
+addStudent 3730
+enrollStudent 1056 1236
+completeCourse 1520 1437
+enrollStudent 4545 1315
+enrollStudent 2044 3939
+addStudent 3509
+removeStudent 1648
+getStudentPoints 4740
+enrollStudent 3110 2079
+removeCourse 2572
+enrollStudent 1441 3457
+addCourse 2820 4
+removeStudent 4037
+getStudentPoints 2951
+enrollStudent 3076 4774
+addCourse 2163 4
+addStudent 676
+enrollStudent 1886 2885
+enrollStudent 1808 4078
+addStudent 4962
+addCourse 3047 4
+addStudent 2215
+awardAcademicPoints 1
+addStudent 1546
+enrollStudent 1730 4394
+addStudent 356
+addStudent 834
+completeCourse 2149 792
+addCourse 4837 4
+addStudent 1622
+completeCourse 2533 3356
+completeCourse 2749 1315
+addStudent 926
+addCourse 4442 4
+addStudent 3846
+enrollStudent 637 4100
+enrollStudent 2296 335
+completeCourse 3814 4495
+enrollStudent 910 2704
+enrollStudent 1995 4924
+addCourse 1298 5
+enrollStudent 2342 2314
+addCourse 2008 2
+awardAcademicPoints 2
+enrollStudent 547 3845
+completeCourse 1795 3961
+getStudentPoints 2837
+enrollStudent 2392 2057
+removeStudent 2141
+enrollStudent 3072 4774
+enrollStudent 243 4140
+addStudent 3007
+addStudent -4
+addStudent 3871
+completeCourse 4573 4905
+completeCourse 2888 3181
+addStudent 3787
+enrollStudent 3146 1910
+enrollStudent 2664 5000
+addStudent 4268
+addStudent -4
+addStudent 2150
+addStudent 3879
+completeCourse 3997 2042
+enrollStudent 3452 4662
+enrollStudent 1530 4354
+completeCourse 1004 4140
+removeCourse 3422
+enrollStudent 1208 403
+enrollStudent 2590 4213
+addCourse 1278 4
+completeCourse 3552 4790
+addStudent 4741
+enrollStudent 4593 4618
+addCourse 240 3
+awardAcademicPoints 5
+addStudent -20
+addStudent 888
+enrollStudent 4450 237
+addStudent -8
+addStudent 4036
+removeCourse 3536
+addStudent 1441
+removeStudent 1639
+addStudent 1077
+enrollStudent 2680 240
+addCourse 1475 4
+addCourse 1662 2
+awardAcademicPoints 5
+addStudent 1449
+addStudent 1814
+enrollStudent 3482 4999
+addCourse 3176 5
+addCourse 4946 3
+addStudent 339
+enrollStudent 1464 791
+enrollStudent 1508 1159
+enrollStudent 3272 2161
+completeCourse 3814 4216
+addStudent 4236
+completeCourse 819 3485
+enrollStudent 1980 4793
+awardAcademicPoints 0
+addStudent 2489
+addStudent 3573
+completeCourse 749 2830
+addStudent 1477
+removeStudent 651
+addCourse 908 2
+enrollStudent 545 2329
+completeCourse 3628 288
+enrollStudent 268 4129
+removeStudent -6
+enrollStudent 3362 3098
+enrollStudent 2609 3684
+addStudent 2886
+addStudent 338
+awardAcademicPoints 3
+completeCourse 1710 3534
+getStudentPoints 2173
+addStudent 185
+enrollStudent 2614 -24
+enrollStudent 2303 1374
+getStudentPoints 3789
+addStudent 683
+getStudentPoints 1440
+removeCourse 2820
+enrollStudent 1508 4837
+addStudent -24
+addStudent 4551
+completeCourse 547 4447
+addCourse 1557 4
+enrollStudent 2354 4480
+addStudent -25
+addStudent 3031
+completeCourse 4177 4535
+addCourse 4331 2
+enrollStudent 4717 3700
+enrollStudent 1544 2742
+addStudent 977
+addCourse 4234 2
+enrollStudent 2927 3845
+addCourse 1921 1
+completeCourse 415 1461
+addStudent 2798
+addStudent 1036
+addCourse 3551 4
+getStudentPoints 2303
+enrollStudent 1234 1557
+awardAcademicPoints 2
+addStudent 1513
+addStudent 435
+addStudent 719
+enrollStudent 3792 3430
+enrollStudent 1713 4845
+enrollStudent 1494 792
+addStudent 4226
+addStudent 3370
+enrollStudent 3350 3678
+enrollStudent 1363 3289
+addStudent 3454
+enrollStudent 1179 2172
+addStudent 3360
+addStudent 4992
+removeStudent 2822
+addCourse 513 5
+addStudent 2474
+completeCourse 2159 4216
+awardAcademicPoints 3
+enrollStudent 2776 3285
+enrollStudent 4529 1794
+addCourse 2989 3
+completeCourse 3174 3474
+awardAcademicPoints 3
+addCourse 4442 5
+addCourse 3095 1
+addStudent 4174
+enrollStudent 1222 4037
+enrollStudent 3401 3976
+addStudent 3967
+addStudent 152
+completeCourse 1995 225
+addCourse 2860 5
+enrollStudent -16 1910
+awardAcademicPoints 1
+addCourse 4880 2
+addStudent -18
+enrollStudent 4717 4442
+completeCourse 3497 1159
+enrollStudent 3379 2314
+enrollStudent 2888 1159
+addStudent 3162
+addCourse 2888 3
+enrollStudent 2798 3381
+removeCourse 186
+addStudent 1430
+enrollStudent 3370 2063
+addStudent 88
+addCourse 2294 3
+addStudent 1995
+addStudent 748
+addCourse 1551 2
+enrollStudent 4479 2163
+addStudent 812
+enrollStudent 1938 4193
+addStudent 1551
+enrollStudent 4158 2989
+addCourse 2658 4
+enrollStudent 378 2647
+enrollStudent 4077 857
+removeStudent 1890
+addStudent 1476
+addCourse 4328 1
+addStudent 1073
+enrollStudent 806 792
+enrollStudent 3094 463
+addCourse 4546 4
+enrollStudent 3816 4414
+completeCourse 1234 1557
+addStudent 1534
+addCourse -13 -5
+enrollStudent 4960 3826
+removeStudent 2420
+addCourse 1361 4
+enrollStudent 3542 4393
+addStudent 3796
+addStudent 2201
+addStudent 1892
+enrollStudent 3552 4393
+getStudentPoints 603
+addStudent 2158
+completeCourse 2794 3961
+enrollStudent 2010 3871
+enrollStudent 2045 4028
+completeCourse 364 3845
+getStudentPoints 4932
+removeStudent 334
+enrollStudent 1356 2251
+awardAcademicPoints 3
+addStudent 1160
+getStudentPoints 4158
+awardAcademicPoints 3
+addStudent 3390
+addStudent 1980
+completeCourse 4004 3240
+completeCourse 1520 3887
+removeStudent 4572
+addCourse 4395 1
+enrollStudent 795 460
+completeCourse 3076 4774
+addStudent 1701
+addStudent 209
+addCourse 1480 5
+addCourse 1543 5
+enrollStudent 2338 4354
+completeCourse -2 -3
+getStudentPoints 3146
+addStudent 135
+addCourse 1642 5
+getStudentPoints 3333
+addStudent 4202
+addStudent 4761
+addStudent 2105
+addStudent 4004
+enrollStudent 184 3737
+addStudent 2173
+addCourse 2040 1
+addStudent 2576
+enrollStudent 748 866
+completeCourse 4606 288
+enrollStudent 203 4765
+enrollStudent 752 3289
+addCourse 2742 -5
+enrollStudent 4592 4535
+enrollStudent 894 3887
+enrollStudent 2320 765
+enrollStudent 547 3678
+enrollStudent 1976 4867
+completeCourse 1551 4498
+enrollStudent 2392 1043
+addStudent 3810
+enrollStudent 2173 4863
+completeCourse 4064 2176
+addStudent 4564
+completeCourse 1718 3484
+addStudent 163
+completeCourse 3259 841
+completeCourse 1719 3864
+completeCourse 1056 2605
+enrollStudent 4119 4193
+enrollStudent 4064 4867
+addStudent 4272
+completeCourse 230 1591
+enrollStudent 1441 247
+addStudent 711
+completeCourse 1332 765
+enrollStudent 1332 358
+getStudentPoints 1977
+addCourse 3484 5
+addCourse 2654 2
+enrollStudent 3081 4802
+awardAcademicPoints 5
+enrollStudent 3787 288
+enrollStudent 4747 3530
+enrollStudent 3642 1893
+enrollStudent 3555 961
+completeCourse -16 3463
+getStudentPoints 2906
+enrollStudent 811 151
+addStudent 2123
+addStudent 345
+completeCourse 4457 4544
+awardAcademicPoints 4
+removeCourse 4946
+enrollStudent 875 499
+completeCourse 2044 3939
+enrollStudent 1979 2144
+enrollStudent 3883 2294
+removeCourse 170
+addStudent 2079
+removeCourse 1551
+addStudent 2363
+addCourse 1289 4
+addCourse 2133 1
+enrollStudent 1926 1461
+addCourse 3474 4
+addStudent 1438
+addStudent 4621
+awardAcademicPoints 4
+removeStudent 4638
+enrollStudent 2176 3714
+addStudent 2705
+getStudentPoints 4299
+completeCourse 2392 1043
+addStudent 1474
+enrollStudent 640 4073
+addStudent 604
+awardAcademicPoints 3
+enrollStudent 3709 1289
+addCourse 1792 3
+enrollStudent 1726 787
+completeCourse 2487 615
+addCourse 4169 1
+addStudent 1612
+completeCourse 4322 765
+addStudent 97
+removeStudent 600
+completeCourse 2215 4950
+addStudent 4714
+removeStudent 3505
+enrollStudent 4177 848
+enrollStudent 752 1278
+addCourse 2269 2
+addCourse 2695 5
+enrollStudent 3978 2081
+addCourse 713 1
+addStudent 1090
+addStudent 4257
+addCourse 2898 4
+enrollStudent 924 4393
+completeCourse 29 2081
+enrollStudent 2077 4546
+addCourse 4434 3
+addStudent 760
+removeStudent 102
+addCourse 4260 5
+enrollStudent 4119 4183
+awardAcademicPoints 3
+addStudent 1724
+completeCourse 2748 225
+addStudent 990
+enrollStudent 2392 3436
+addStudent 1323
+completeCourse 1482 2742
+addStudent 2261
+addCourse 3800 1
+addStudent 3301
+addStudent 475
+removeStudent 4054
+completeCourse 811 151
+addStudent 1500
+enrollStudent 1556 4766
+enrollStudent 2082 1945
+addCourse 2465 4
+addStudent 1719
+addCourse 3895 4
+completeCourse 2082 1945
+removeStudent 435
+enrollStudent 97 1289
+addCourse 1239 4
+enrollStudent 4931 110
+enrollStudent 2398 331
+enrollStudent 1253 941
+getStudentPoints 4658
+addCourse 2647 1
+enrollStudent 4167 2605
+addStudent 966
+addCourse -28 1
+enrollStudent -22 -25
+addStudent 3112
+enrollStudent 904 624
+awardAcademicPoints 3
+addStudent 2036
+addStudent 580
+addStudent 4787
+enrollStudent 2888 499
+addStudent 2312
+addStudent -4
+enrollStudent 4960 4774
+addCourse 4154 4
+enrollStudent 2036 4260
+awardAcademicPoints 2
+removeCourse 1361
+enrollStudent 2342 4249
+removeStudent 535
+enrollStudent 3205 4028
+enrollStudent 197 326
+enrollStudent 922 3684
+addStudent 2146
+getStudentPoints 1160
+completeCourse 953 3901
+addStudent -5
+enrollStudent 61 4528
+addStudent 891
+addStudent 4521
+addStudent 4273
+awardAcademicPoints 4
+addCourse 3155 5
+addCourse 793 1
+enrollStudent 207 2066
+addStudent 1229
+enrollStudent 2597 1797
+enrollStudent 2944 50
+addStudent 2488
+removeStudent 2285
+enrollStudent 2354 4618
+enrollStudent 2186 511
+enrollStudent 2211 3225
+enrollStudent 1658 5000
+addStudent 1838
+addCourse 218 2
+addStudent 133
+removeCourse 3377
+enrollStudent 3838 830
+enrollStudent 2252 4803
+completeCourse 3508 4216
+addStudent 2197
+enrollStudent 2958 499
+addStudent 13
+enrollStudent 1814 225
+addStudent 1926
+enrollStudent 1744 3217
+enrollStudent 3706 2294
+enrollStudent 2426 240
+completeCourse 2189 1718
+addStudent 3048
+enrollStudent 2283 3193
+addStudent 1210
+enrollStudent 3551 3872
+enrollStudent 1657 3684
+completeCourse 4559 1891
+addStudent 2756
+getStudentPoints 1546
+addStudent 4111
+enrollStudent 1574 4037
+addCourse 3845 5
+awardAcademicPoints -5
+awardAcademicPoints 0
+enrollStudent 2667 3170
+completeCourse 2082 3483
+enrollStudent 2609 192
+enrollStudent 2237 2838
+addCourse 4989 4
+addStudent 4941
+getStudentPoints 167
+enrollStudent 4495 1475
+enrollStudent 2641 2042
+removeCourse 1662
+completeCourse 2026 3910
+enrollStudent 3796 1374
+enrollStudent 3504 941
+completeCourse 4656 3998
+addStudent 1478
+enrollStudent 719 3910
+addStudent 595
+addStudent 67
+enrollStudent 1516 3737
+getStudentPoints 3709
+addCourse 4738 3
+enrollStudent 606 1759
+addCourse 394 3
+removeStudent 480
+enrollStudent 636 4395
+completeCourse 1549 1591
+removeStudent 104
+removeStudent 2753
+addStudent 4952
+removeStudent 711
+addStudent 1346
+enrollStudent 231 2524
+awardAcademicPoints 1
+addStudent 180
+enrollStudent 260 513
+enrollStudent 299 425
+awardAcademicPoints 0
+removeStudent 159
+enrollStudent 4281 383
+addStudent 4250
+enrollStudent 1860 1332
+addCourse 1770 4
+addStudent 1395
+addStudent 1787
+addStudent 4018
+removeCourse 4985
+getStudentPoints 3636
+addStudent 1645
+addStudent 3110
+enrollStudent 1991 3292
+enrollStudent 3772 394
+addStudent 1889
+addCourse 4367 2
+addCourse 3996 5
+addStudent 1595
+enrollStudent 1950 3939
+enrollStudent 811 383
+enrollStudent 3746 624
+enrollStudent 950 787
+getStudentPoints 451
+addCourse 1048 2
+addStudent 4499
+enrollStudent 3681 2314
+enrollStudent 3361 3895
+completeCourse 2772 4393
+addStudent 2221
+enrollStudent 2338 113
+enrollStudent 2548 633
+addCourse 1432 2
+addStudent -20
+enrollStudent 3110 961
+enrollStudent 3922 3289
+awardAcademicPoints 3
+addStudent 2906
+enrollStudent 31 3901
+getStudentPoints 824
+addCourse 825 2
+enrollStudent 160 3153
+addCourse 4281 2
+removeCourse 713
+addStudent 2806
+enrollStudent 1410 961
+removeCourse 1642
+enrollStudent 4042 1737
+enrollStudent 3132 2654
+getStudentPoints 2794
+addStudent 4574
+enrollStudent 3221 3575
+addStudent 2283
+removeStudent 3904
+addStudent 613
+addCourse 1502 2
+getStudentPoints 1960
+addStudent 2921
+enrollStudent 1356 4790
+addCourse 1974 4
+addCourse 1971 3
+addStudent 210
+getStudentPoints 2438
+addStudent 3834
+addStudent 280
+addStudent 3918
+getStudentPoints 3224
+enrollStudent 2748 4975
+addStudent 1361
+getStudentPoints 3370
+addStudent 2978
+enrollStudent 2956 4858
+enrollStudent 3474 4367
+completeCourse 672 4414
+addStudent 314
+removeCourse 3077
+addStudent 3921
+enrollStudent 1494 4394
+getStudentPoints 4341
+enrollStudent 678 4260
+completeCourse 1056 1236
+addStudent 1228
+enrollStudent 1892 288
+addStudent 735
+awardAcademicPoints 4
+enrollStudent 4434 247
+addStudent 1248
+addStudent 2359
+addStudent 3884
+addStudent 3547
+removeStudent 3941
+completeCourse 1995 4924
+addCourse 1770 3
+enrollStudent 1280 1374
+addStudent -19
+addStudent 2809
+enrollStudent 1995 1759
+completeCourse 4931 110
+removeStudent 3093
+getStudentPoints 1370
+enrollStudent 2590 4177
+completeCourse 1179 2172
+addCourse 47 1
+addStudent 3742
+addStudent 4351
+removeStudent 4204
+awardAcademicPoints 5
+completeCourse 1932 3910
+addCourse 3667 2
+enrollStudent 2609 3463
+addCourse 624 5
+completeCourse 879 1315
+enrollStudent 3022 188
+completeCourse 910 2704
+enrollStudent 2118 2087
+enrollStudent 1543 1075
+addStudent 2142
+addCourse 1332 5
+addCourse 1137 4
+awardAcademicPoints 2
+addCourse 3551 2
+enrollStudent 3294 1718
+enrollStudent 2956 4532
+completeCourse 231 4905
+enrollStudent 3822 4905
+addStudent 613
+completeCourse 184 3737
+addStudent 1795
+addStudent 375
+enrollStudent 2833 3534
+enrollStudent 3746 3231
+enrollStudent 2664 2066
+addStudent 3908
+enrollStudent 215 895
+addCourse 272 2
+removeStudent -15
+enrollStudent 3785 3534
+addCourse 936 2
+enrollStudent 466 2185
+removeStudent 2669
+enrollStudent 3452 4216
+enrollStudent -2 4193
+awardAcademicPoints -5
+addStudent 126
+addCourse 3050 3
+enrollStudent 2234 -6
+addStudent 286
+completeCourse 4077 3998
+addStudent 1045
+completeCourse 4442 3754
+enrollStudent 759 4216
+enrollStudent 1508 2586
+addStudent 387
+completeCourse 3504 4216
+addStudent 4092
+enrollStudent 1569 1137
+enrollStudent 2342 4100
+addStudent 3244
+enrollStudent 3375 1326
+addStudent 2004
+addCourse 583 1
+enrollStudent 1893 4957
+addStudent 1236
+getStudentPoints 1448
+enrollStudent 1438 1121
+enrollStudent 3202 825
+completeCourse 3438 1345
+addStudent 1642
+addStudent 4182
+enrollStudent 4335 4213
+addStudent 1203
+enrollStudent 2363 1792
+enrollStudent 1787 3155
+enrollStudent 4002 2695
+removeStudent 1771
+enrollStudent 2265 4442
+addCourse 4834 5
+getStudentPoints 4818
+enrollStudent 3749 2704
+addStudent 126
+addCourse 4808 -1
+enrollStudent 690 4367
+getStudentPoints 1543
+addStudent 2858
+addStudent 2239
+enrollStudent 3007 610
+completeCourse 913 3271
+enrollStudent 3244 1437
+addCourse 1585 1
+removeStudent 4390
+enrollStudent 4519 1921
+enrollStudent 4310 2885
+addCourse 2536 4
+addStudent 1676
+getStudentPoints 577
+enrollStudent 678 2063
+getStudentPoints 3864
+addCourse 63 5
+enrollStudent 345 1797
+removeCourse 1764
+removeStudent 2134
+completeCourse 579 188
+awardAcademicPoints 0
+addStudent 3094
+addStudent 1282
+enrollStudent 2052 1012
+addStudent 1974
+addStudent 3723
+addStudent 4473
+enrollStudent 4094 3463
+addStudent 1972
+removeStudent 3834
+addStudent 3548
+enrollStudent 2680 2040
+addStudent 3697
+addStudent 880
+addCourse 3789 3
+enrollStudent 450 5000
+enrollStudent 2221 3701
+completeCourse 451 3271
+enrollStudent 3742 367
+getStudentPoints 4723
+enrollStudent 2145 3155
+enrollStudent 4347 3401
+removeCourse 3047
+getStudentPoints 3094
+awardAcademicPoints 3
+addStudent 4869
+addStudent 4436
+addCourse 2436 4
+addCourse 3187 4
+enrollStudent 2438 4900
+removeStudent 4603
+addCourse 3380 4
+enrollStudent 4564 1267
+getStudentPoints 4980
+addStudent 3148
+enrollStudent 749 -27
+addStudent 4047
+addStudent 2137
+enrollStudent 2870 2133
+completeCourse 1543 1075
+addStudent 2299
+addCourse 1438 2
+enrollStudent 3587 81
+getStudentPoints 2921
+addStudent 784
+addStudent 2102
+enrollStudent 1346 848
+completeCourse 2906 1159
+completeCourse 3978 2081
+awardAcademicPoints 3
+addCourse 2747 3
+addStudent 1714
+addStudent 3587
+completeCourse 2196 237
+removeStudent 359
+enrollStudent 4740 3401
+removeStudent 824
+enrollStudent 3360 394
+enrollStudent 2780 3910
+addCourse 2934 4
+addStudent 1211
+enrollStudent 4952 358
+removeStudent 2105
+removeStudent 356
+completeCourse 4573 3434
+completeCourse 4335 4213
+addStudent 1950
+addStudent 1287
+enrollStudent 888 1910
+awardAcademicPoints 1
+completeCourse 1332 358
+addStudent 3919
+enrollStudent 3953 4790
+completeCourse 4277 3245
+addStudent 1050
+getStudentPoints 2707
+addStudent 3946
+addStudent 4028
+addStudent 1399
+enrollStudent 1278 4608
+addStudent 2356
+enrollStudent 3095 1517
+addStudent 3201
+getStudentPoints 3838
+enrollStudent 4438 3176
+addCourse 249 1
+getStudentPoints 3205
+getStudentPoints 4071
+enrollStudent 10 3289
+awardAcademicPoints 4
+completeCourse 691 3240
+enrollStudent 3576 4169
+removeStudent 3497
+awardAcademicPoints 3
+addStudent 1117
+addCourse 3220 5
+addStudent 2024
+getStudentPoints 2061
+enrollStudent 3578 477
+enrollStudent 603 2854
+removeStudent 3410
+addStudent 3237
+enrollStudent 553 848
+removeCourse 3599
+addStudent 247
+addStudent 4875
+addCourse 3426 1
+enrollStudent 553 3996
+completeCourse 981 105
+awardAcademicPoints 2
+enrollStudent 1730 4032
+completeCourse 1222 765
+addStudent 4286
+completeCourse 4529 1794
+enrollStudent 2670 3434
+getStudentPoints 3813
+enrollStudent 2767 4713
+addStudent 2290
+enrollStudent 451 1502
+addStudent 1850
+addStudent 3090
+addStudent 3365
+addStudent 2244
+addStudent 4606
+enrollStudent 3110 2169
+addStudent 4788
+addStudent 3194
+enrollStudent 1163 3823
+completeCourse 2205 1043
+addCourse -6 1
+enrollStudent 1710 460
+addStudent 4563
+addStudent 579
+awardAcademicPoints 1
+removeCourse 4328
+addStudent 1576
+enrollStudent 1947 2603
+completeCourse 2978 4495
+enrollStudent 3509 2989
+addCourse 4222 5
+getStudentPoints 2342
+enrollStudent 1045 4793
+addStudent 812
+addStudent 1100
+enrollStudent 977 1921
+addStudent 424
+enrollStudent 4018 3095
+addCourse 3346 2
+addStudent 4372
+addStudent 289
+addStudent 3382
+addStudent 4178
+enrollStudent 4178 4154
+removeStudent 1244
+enrollStudent 559 2636
+enrollStudent 1534 2524
+enrollStudent 2239 2176
+addCourse 3222 2
+addStudent 843
+completeCourse 2145 3901
+addCourse 2660 5
+addStudent 4169
+addStudent 4459
+enrollStudent 1118 3659
+completeCourse 4923 965
+enrollStudent 10 4834
+addCourse 3418 2
+addStudent 246
+addStudent 3203
+addCourse 1005 1
+completeCourse 1900 4286
+addStudent 904
+awardAcademicPoints 0
+addStudent 3939
+addStudent 4791
+completeCourse 4373 4544
+enrollStudent 2209 4802
+enrollStudent 3333 3187
+enrollStudent 2474 0
+enrollStudent 4495 3187
+addStudent 4632
+addStudent 4285
+addStudent 1679
+addStudent 944
+addStudent 136
+addCourse 4642 3
+addStudent 3544
+addStudent 3921
+removeStudent 1228
+addStudent 645
+completeCourse 3919 2586
+enrollStudent 3816 2133
+addCourse 1828 5
+enrollStudent 577 4886
+enrollStudent 2895 1480
+addCourse 4739 2
+addCourse -2 2
+enrollStudent 4163 2515
+enrollStudent 3504 791
+completeCourse 2045 -1
+removeStudent 146
+enrollStudent 243 1502
+enrollStudent 4310 4177
+enrollStudent 1114 3700
+completeCourse 1838 4909
+enrollStudent 876 3610
+enrollStudent 2317 151
+addStudent 4473
+addStudent 3589
+completeCourse 4741 2490
+addStudent 650
+addStudent 2270
+addStudent 3049
+awardAcademicPoints 3
+addStudent 2941
+enrollStudent 2516 4367
+enrollStudent 833 820
+addStudent 3904
+enrollStudent 2758 114
+addStudent 4753
+addCourse 1648 3
+addStudent 4380
+getStudentPoints 3319
+enrollStudent 4177 4957
+addCourse 2730 2
+removeCourse 1279
+enrollStudent 4699 2830
+completeCourse 2776 3285
+addStudent 715
+awardAcademicPoints 5
+addStudent 3420
+awardAcademicPoints 5
+addCourse 3420 2
+enrollStudent 375 4414
+addStudent 966
+addCourse 1756 2
+enrollStudent 1642 615
+getStudentPoints 1278
+addCourse 1471 4
+addStudent 1229
+enrollStudent 2489 4845
+getStudentPoints 2657
+getStudentPoints 2047
+enrollStudent 268 2848
+enrollStudent 2890 4250
+removeStudent 2462
+getStudentPoints 2247
+addStudent 720
+completeCourse 3765 1461
+enrollStudent 3904 2695
+removeStudent 4351
+enrollStudent 3884 3872
+addStudent 3885
+addStudent 4340
+getStudentPoints 2283
+enrollStudent 1208 1043
+addStudent 2241
+addCourse 4499 5
+enrollStudent 2541 2989
+addStudent 3261
+completeCourse 2547 791
+enrollStudent 2370 2524
+enrollStudent 1004 2888
+removeStudent 4335
+enrollStudent 910 841
+addStudent 4811
+enrollStudent 3205 3800
+enrollStudent 641 3961
+addStudent 4304
+addStudent 1829
+enrollStudent 4614 5000
+completeCourse 4555 4394
+enrollStudent 4787 4867
+enrollStudent 3828 240
+enrollStudent 2234 1557
+addStudent 2174
+addStudent 2642
+enrollStudent 2657 2040
+addStudent 3939
+addCourse 228 2
+addStudent 2161
+addCourse 1712 2
+enrollStudent 4389 4738
+addCourse 3790 3
+addStudent 2388
+enrollStudent 707 3170
+addStudent 851
+completeCourse 2643 3203
+addStudent 3862
+addStudent 3366
+addStudent 1956
+completeCourse 1441 247
+awardAcademicPoints 2
+enrollStudent -15 3901
+enrollStudent 2122 3856
+addCourse 4831 3
+removeCourse 3346
+addStudent 2778
+completeCourse 4119 4193
+addStudent 4909
+addCourse 2550 1
+removeStudent 364
+addStudent 4750
+addStudent 4058
+removeCourse 2008
+enrollStudent 4730 3790
+enrollStudent 1448 3539
+enrollStudent 948 4393
+addStudent 1157
+enrollStudent 2342 40
+addCourse 4909 -4
+enrollStudent 1977 4216
+addStudent 1615
+enrollStudent 2756 3540
+addStudent 297
+completeCourse 1838 4790
+enrollStudent 827 3463
+enrollStudent 3350 4260
+completeCourse 3926 3257
+addStudent 3343
+enrollStudent 1495 4793
+completeCourse 1222 4037
+enrollStudent 3509 3678
+getStudentPoints 4613
+enrollStudent 4286 2654
+enrollStudent 719 3222
+enrollStudent 2103 4535
+addStudent 3773
+addStudent 4036
+completeCourse 3777 2742
+addStudent 1464
+enrollStudent 4875 4802
+addStudent 3675
+completeCourse 4277 1794
+addStudent 4442
+awardAcademicPoints 3
+completeCourse 4450 237
+enrollStudent 4859 4909
+completeCourse 2464 3633
+addStudent 2264
+completeCourse 2667 460
+enrollStudent 2668 2549
+addStudent 4960
+addCourse 4977 5
+enrollStudent 3108 4499
+getStudentPoints 3697
+enrollStudent 1230 2989
+completeCourse 2810 746
+removeStudent 4873
+completeCourse 2284 2172
+removeStudent 2324
+addStudent 2187
+addStudent 4832
+enrollStudent 338 4354
+getStudentPoints 3094
+addCourse 254 2
+addCourse 538 2
+enrollStudent 230 2314
+addStudent 1420
+completeCourse 1495 -26
+addStudent 2297
+addStudent -29
+enrollStudent 1701 3289
+addCourse 1269 1
+enrollStudent 2123 4111
+addCourse 79 2
+addStudent 4795
+enrollStudent 3933 511
+addCourse 4029 5
+addStudent 1650
+getStudentPoints 1141
+addStudent 366
+enrollStudent 3547 3800
+enrollStudent 2052 1508
+addStudent 4445
+enrollStudent 4486 2161
+completeCourse 1370 3285
+completeCourse 641 3961
+completeCourse 326 3939
+awardAcademicPoints 4
+removeStudent 1334
+addCourse 559 5
+removeCourse 2860
+enrollStudent 4236 857
+addCourse 2130 1
+addStudent 4819
+enrollStudent 2664 3659
+enrollStudent 2354 2294
+awardAcademicPoints 1
+enrollStudent 4923 2848
+enrollStudent 1431 3380
+enrollStudent 3524 4037
+addStudent 3193
+enrollStudent 772 4216
+enrollStudent 1814 2137
+removeCourse 4434
+addCourse 1236 5
+addStudent 1525
+completeCourse 4209 615
+addCourse 2704 3

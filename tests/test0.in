@@ -1,0 +1,10 @@
+awardAcademicPoints 2
+addStudent 5
+removeStudent 5
+addStudent 10
+addCourse 10 2
+addCourse 6 4
+enrollStudent 10 6
+enrollStudent 9 1
+addStudent 1
+enrollStudent 10 10

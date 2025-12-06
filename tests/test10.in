@@ -1,0 +1,250 @@
+addStudent 53
+addCourse 208 2
+addStudent 244
+removeStudent 221
+addStudent 212
+enrollStudent 53 208
+addStudent 249
+enrollStudent 212 208
+addStudent 198
+getStudentPoints 53
+enrollStudent 249 208
+awardAcademicPoints 0
+enrollStudent 249 208
+addStudent 154
+addStudent 114
+addStudent 111
+removeStudent 111
+enrollStudent 244 208
+addStudent 200
+addStudent 58
+addStudent 82
+addStudent 41
+addCourse 62 5
+removeCourse 62
+addStudent 103
+addStudent 100
+enrollStudent 114 208
+getStudentPoints 90
+addStudent 205
+enrollStudent 82 208
+addCourse 118 4
+addCourse 190 2
+addCourse 232 5
+enrollStudent 30 247
+addStudent 75
+getStudentPoints 53
+removeCourse 118
+enrollStudent 154 208
+removeCourse 232
+addStudent 228
+removeStudent 205
+completeCourse 249 208
+addStudent 161
+addStudent 98
+awardAcademicPoints 3
+completeCourse 154 208
+enrollStudent 212 190
+enrollStudent 82 190
+enrollStudent 244 190
+awardAcademicPoints 4
+completeCourse 212 190
+removeStudent 161
+enrollStudent 100 190
+addStudent 156
+addStudent 203
+completeCourse 244 190
+removeStudent 203
+getStudentPoints 228
+addStudent 134
+removeStudent 198
+awardAcademicPoints 0
+enrollStudent 58 208
+addStudent 43
+addStudent 90
+addStudent 16
+addStudent 157
+enrollStudent 82 190
+awardAcademicPoints 3
+addCourse 11 2
+enrollStudent 82 11
+addCourse 190 2
+addStudent 93
+awardAcademicPoints 3
+enrollStudent 43 190
+addStudent 120
+removeStudent 214
+getStudentPoints 100
+enrollStudent 212 208
+addStudent 186
+addStudent 89
+awardAcademicPoints 1
+enrollStudent 114 -12
+addStudent 148
+getStudentPoints 148
+removeStudent 120
+addStudent 228
+awardAcademicPoints 5
+addStudent 202
+addStudent 211
+addStudent 140
+enrollStudent 134 208
+addStudent -1
+enrollStudent 100 190
+addStudent 47
+enrollStudent 140 11
+addCourse 9 4
+enrollStudent 58 208
+addStudent 4
+addStudent 37
+completeCourse 58 208
+completeCourse 114 208
+removeStudent 156
+enrollStudent 89 190
+enrollStudent 93 9
+addStudent -16
+enrollStudent 114 9
+addStudent 212
+addStudent 210
+completeCourse 134 208
+addStudent 180
+addStudent 168
+removeStudent 186
+addStudent 241
+addCourse 11 5
+enrollStudent 154 208
+addStudent 112
+addStudent 170
+completeCourse 94 207
+enrollStudent 93 190
+enrollStudent 90 190
+awardAcademicPoints 5
+addCourse 138 2
+awardAcademicPoints 5
+addCourse 241 1
+enrollStudent 180 190
+addCourse 125 4
+addCourse -16 -5
+getStudentPoints 103
+addStudent 108
+enrollStudent 148 125
+addCourse 125 5
+addStudent 108
+removeStudent 170
+addCourse -20 -4
+enrollStudent 41 9
+addStudent 104
+addStudent 154
+completeCourse 82 11
+addStudent 42
+enrollStudent 140 208
+addStudent 197
+addStudent 130
+addStudent -21
+enrollStudent 162 175
+addCourse 190 -5
+enrollStudent 228 125
+completeCourse 212 208
+enrollStudent 124 171
+completeCourse 53 208
+addCourse 194 3
+addStudent -23
+enrollStudent 188 44
+addStudent 100
+addStudent 148
+awardAcademicPoints 4
+awardAcademicPoints 5
+getStudentPoints 148
+addStudent 104
+getStudentPoints 180
+enrollStudent 212 194
+awardAcademicPoints 1
+completeCourse 148 125
+enrollStudent 89 208
+enrollStudent 114 241
+addCourse 241 2
+completeCourse 82 190
+enrollStudent 148 9
+addStudent 72
+completeCourse 114 9
+completeCourse 93 190
+enrollStudent 93 190
+getStudentPoints 41
+enrollStudent 16 11
+addStudent 40
+enrollStudent 103 208
+enrollStudent 103 125
+enrollStudent 82 138
+enrollStudent 16 138
+enrollStudent 108 190
+removeStudent 72
+addCourse 143 5
+addStudent -24
+completeCourse 154 208
+addStudent 172
+addStudent 145
+enrollStudent 76 91
+getStudentPoints 47
+addStudent 217
+addStudent 114
+completeCourse 244 208
+enrollStudent 210 241
+enrollStudent 217 194
+addStudent 1
+addCourse 121 2
+completeCourse 212 194
+addCourse 24 1
+awardAcademicPoints 5
+completeCourse 82 208
+enrollStudent 41 121
+completeCourse 217 194
+getStudentPoints 199
+enrollStudent 180 143
+addStudent 128
+enrollStudent 180 121
+addStudent 97
+enrollStudent 82 121
+enrollStudent 221 238
+awardAcademicPoints 2
+addCourse 124 4
+addStudent 218
+enrollStudent 128 11
+addStudent 20
+enrollStudent 197 124
+addStudent 147
+completeCourse 180 143
+addStudent 235
+enrollStudent 134 138
+enrollStudent 212 138
+completeCourse 89 208
+addStudent 29
+removeStudent 244
+enrollStudent 130 9
+enrollStudent 40 208
+enrollStudent 97 121
+getStudentPoints 58
+addStudent 143
+addStudent 213
+addStudent 217
+getStudentPoints 148
+addCourse 57 3
+addStudent 2
+removeStudent 217
+addCourse 222 1
+addStudent 42
+enrollStudent 100 124
+enrollStudent 200 222
+addCourse -4 -2
+removeStudent 213
+completeCourse 41 9
+enrollStudent 103 24
+addStudent 6
+completeCourse 93 9
+addStudent 28
+enrollStudent 90 24
+removeStudent 168
+addStudent 210
+enrollStudent 27 218
+completeCourse 93 190
+awardAcademicPoints 5
+addStudent 77
