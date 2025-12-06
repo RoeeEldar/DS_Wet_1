@@ -14,6 +14,16 @@ int Student::getStudentPoints() const
     return completionPoints + (globalBonus - bonusPenalty);
 }
 
+void Student::enroll()
+{
+    courseCnt++;
+}
+
+void Student::unenroll()
+{
+    courseCnt--;
+}
+
 void Student::addCompletionPoints(const int points)
 {
     completionPoints += points;
@@ -22,4 +32,9 @@ void Student::addCompletionPoints(const int points)
 void Student::addToGlobalBonus(const int points)
 {
     globalBonus += points;
+}
+
+bool Student::hasAnyCourses() const
+{
+    return courseCnt > 0;
 }

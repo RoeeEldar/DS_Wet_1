@@ -8,14 +8,25 @@
 class Student
 {
     static int globalBonus;
-    const int bonusPenalty;
-    int completionPoints = 0;
 
+
+    const int bonusPenalty; // to account for coming later than past bonuses
+    int completionPoints = 0;
+    int courseCnt = 0;
 public:
-    Student();
-    int getStudentPoints() const;
-    void addCompletionPoints(int points);
     static void addToGlobalBonus(int points);
+
+
+    Student();
+
+    void enroll();
+
+    void unenroll();
+
+    void addCompletionPoints(int points);
+
+    int getStudentPoints() const;
+    bool hasAnyCourses() const;
 };
 
 
