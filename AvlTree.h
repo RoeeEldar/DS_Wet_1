@@ -53,6 +53,33 @@ class AvlTree {
         successor->value = tempValue;
     }
 
+    void updateHeight(Node* node) {
+        // height of node is the maximum of heights of both subtrees +1
+        // null height is -1
+        int leftHeight = (node->left) ? node->left->height : -1;
+        int rightHeight = (node->right) ? node->right->height : -1;
+        if (leftHeight >= rightHeight) {
+            node->height = leftHeight + 1;
+        }
+        else {
+            node->height = rightHeight + 1;
+        }
+    }
+
+    void updateTreeHeights(Node* node) {
+        // to be used in insert function
+        while (node != nullptr) {
+            int oldHeight = node->height;
+            updateHeight(node);
+            if (node->height == oldHeight) {
+                // if the height stops changing at some point before the root,
+                // the height of nodes above it also won't change
+                break;
+            }
+            node = node->parent;
+        }
+    }
+
     bool erase(Node* toDelete) {
         if (toDelete == nullptr) {
             // key not in tree
@@ -62,7 +89,7 @@ class AvlTree {
         if (toDelete->left == nullptr && toDelete->right == nullptr) {
             // the node is a leaf
             if (toDelete->parent != nullptr) {
-                // toDelete is not root
+                // the node is not the root
 
                 if (nodeIsRightSon(toDelete)) {
                     toDelete->parent->right = nullptr;
@@ -100,20 +127,22 @@ class AvlTree {
 
             Node* successor = findSuccessor(toDelete);
             swap(toDelete, successor);
-            erase(successor);
+            erase(successor); // is always either leaf, or has only right son
+            // if it had left son, it would have been the successor
             return true; // because we swapped by value
         }
 
+        updateTreeHeights(toDelete -> parent);
         delete toDelete;
         return true;
     }
 
-    void destruct (Node* root) {
+    void destruct(Node* root) {
         if (root == nullptr) {
             return;
         }
-        destruct(root -> left); // destruct left sub-tree
-        destruct(root -> right); // destruct right sub-tree
+        destruct(root->left); // destruct left sub-tree
+        destruct(root->right); // destruct right sub-tree
         delete root;
     }
 
@@ -181,6 +210,8 @@ public
         if (key > parent->key) {
             parent->right = new Node{key, value, parent};
         }
+
+        updateTreeHeights(parent);
         return true;
     }
 
