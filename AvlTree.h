@@ -286,15 +286,7 @@ class AvlTree {
         rollRR(A);
         rollLL(C);
     }
-
-public
-:
-    ~AvlTree() {
-        // need to traverse in postorder and destroy each node
-        destruct(root);
-    }
-
-    Node* find(const KeyType& key) const
+    Node* findNode(const KeyType& key) const
 
     {
         Node* current = root;
@@ -314,6 +306,22 @@ public
         }
         // key not found
         return nullptr;
+    }
+public:
+    ~AvlTree() {
+        // need to traverse in postorder and destroy each node
+        destruct(root);
+    }
+
+
+    ValueType* find(const KeyType& key) const
+    {
+        Node* result = findNode(key);
+        if (result == nullptr)
+        {
+            return nullptr;
+        }
+        return &result->value;
     }
 
     bool insert(const KeyType& key, const ValueType& value) // false if key already in tree
@@ -361,7 +369,7 @@ public
 
     bool erase(const KeyType& key) // false if doesnt exist
     {
-        Node* toDelete = find(key);
+        Node* toDelete = findNode(key);
         return erase(toDelete);
     }
 

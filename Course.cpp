@@ -4,13 +4,17 @@
 
 #include "Course.h"
 
-void Course::enroll(Student& student)
+Course::Course(const int courseCredit): courseCredit(courseCredit)
 {
+}
 
+void Course::enroll(const int studentId, Student& student)
+{
+    student.enroll(); // update student
+    enrolledStudents.insert(studentId, &student);
 }
 
 void Course::complete(const int studentId)
 {
-    // remove student from tree + send update is no longer enrolled
-
+    enrolledStudents.find(studentId);
 }

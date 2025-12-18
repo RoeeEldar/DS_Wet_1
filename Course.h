@@ -7,13 +7,16 @@
 
 
 #include "Student.h"
-
+#include "AvlTree.h"
 
 class Course
 {
-    AvlTree<int, Student &> students;
+    const int courseCredit;
+    AvlTree<int, Student *> enrolledStudents;
 
-    void enroll(Student &student);
+public:
+    explicit Course(int courseCredit);
+    void enroll(int studentId, Student &student);
 
     void complete(int studentId);
 };
