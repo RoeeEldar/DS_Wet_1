@@ -34,7 +34,6 @@
 
 # Executables
 *.exe
-*.out
 *.app
 
 # debug information files
@@ -44,3 +43,6 @@ cmake-build-debug/
 CMakeLists.txt
 AvlTree
 /Student
+/test_result/
+/main.out
+*.res

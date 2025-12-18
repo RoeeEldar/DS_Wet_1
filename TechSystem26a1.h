@@ -13,8 +13,8 @@
 #ifndef TechSystem26WINTER_WET1_H_
 #define TechSystem26WINTER_WET1_H_
 
-#include <Course.h>
-#include <Student.h>
+#include "Course.h"
+#include "Student.h"
 
 #include "wet1util.h"
 #include "AvlTree.h"

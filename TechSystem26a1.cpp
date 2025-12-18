@@ -122,5 +122,5 @@ output_t<int> TechSystem::getStudentPoints(int studentId) {
     if (studentN == nullptr) {
         return StatusType::FAILURE;
     }
-    return {studentN->getValue().getStudentPoints()};
+    return studentN->getValue().getStudentPoints();
 }
