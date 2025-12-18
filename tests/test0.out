@@ -1,0 +1,10 @@
+awardAcademicPoints: SUCCESS
+addStudent: SUCCESS
+removeStudent: SUCCESS
+addStudent: SUCCESS
+addCourse: SUCCESS
+addCourse: SUCCESS
+enrollStudent: SUCCESS
+enrollStudent: FAILURE
+addStudent: SUCCESS
+enrollStudent: SUCCESS

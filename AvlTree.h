@@ -1,28 +1,45 @@
 #pragma once
-#include <stdexcept>
 
 template <typename KeyType, typename ValueType>
+class AvlTree;
 
+template <typename KeyType, typename ValueType>
+class TreeNode {
+    friend class AvlTree<KeyType, ValueType>;
+    KeyType key;
+    ValueType value;
+    TreeNode* parent = nullptr;
+    TreeNode* left = nullptr;
+    TreeNode* right = nullptr;
+    int height = 0; // to calc balance factor, correct to hold here?
+    // need to add height to all functions
+    TreeNode(KeyType k, ValueType v, TreeNode* p = nullptr)
+        : key(k), value(v), parent(p) {}
+
+public:
+
+    ValueType& getValue() {
+        return value;
+    }
+
+};
+template <typename T>
+void swapFields(T &f1, T &f2)
+{
+    const auto temp = f1;
+    f1 = f2;
+    f2 = temp;
+}
+
+template <typename KeyType, typename ValueType>
 class AvlTree {
-    struct Node {
-        KeyType key;
-        ValueType value;
-        Node* parent = nullptr;
-        Node* left = nullptr;
-        Node* right = nullptr;
-        int height = 0; // to calc balance factor, correct to hold here?
-        // need to add height to all functions
-    };
+    using Node = TreeNode<KeyType,ValueType>;
 
     Node* root = nullptr;
 
-    // rolls...
-    // blance factor calc
-    // helper function to destroy tree starting from root - if using normal pointers
-    // destructor for Node and or for AvlTree
-    // need to  update height for nodes where its required
-
-    bool nodeIsRightSon(Node* node) const {
+    static bool nodeIsRightSon(Node* node)
+    {
+        // must make sure it's not null before calling function
         if (node->parent->right == node) {
             return true;
         }
@@ -31,9 +48,6 @@ class AvlTree {
 
     Node* findSuccessor(Node* node) const {
         // caller must ensure that node has right son before function call
-        if (node->right == nullptr) {
-            throw std::runtime_error("Error, next in order requires right son");
-        }
         Node* temp = node;
         temp = temp->right;
         while (temp->left != nullptr) {
@@ -42,90 +56,284 @@ class AvlTree {
         return temp;
     }
 
-    void swap(Node* current, Node* successor) {
-        KeyType tempKey = current->key;
-        ValueType tempValue = current->value;
 
-        current->key = successor->key;
-        current->value = successor->value;
+    void swapAdjacent(Node* toDelete, Node* successor) {
+        Node* parentOfDelete = toDelete->parent;
+        Node* successorLeft = successor->left;
+        Node* successorRight = successor->right;
+        Node* toDeleteLeft = toDelete->left;
 
-        successor->key = tempKey;
-        successor->value = tempValue;
+
+        if (parentOfDelete) {
+            if (nodeIsRightSon(toDelete)) {
+                parentOfDelete->right = successor;
+            } else {
+                parentOfDelete->left = successor;
+            }
+        }
+
+
+        successor->parent = parentOfDelete;
+        successor->right = toDelete;
+        successor->left = toDeleteLeft;
+
+
+        toDelete->parent = successor;
+        toDelete->left = successorLeft;
+        toDelete->right = successorRight;
+
+
+        if (toDeleteLeft) {
+            toDeleteLeft->parent = successor;
+        }
+
+        if (successorRight) {
+            successorRight->parent = toDelete;
+        }
+
+
+        if (successorLeft) {
+            successorLeft->parent = toDelete;
+        }
+
+        swapFields(toDelete->height, successor->height);
     }
 
-    bool erase(Node* toDelete) {
-        if (toDelete == nullptr) {
-            // key not in tree
+    void swap(Node* toDelete, Node* successor) {
+        // update root
+        if (toDelete == root)
+        {
+            root = successor;
+        }
+        if (successor->parent == toDelete)
+        {
+            swapAdjacent(toDelete, successor);
+            return;
+        }
+
+        Node *targets[2] = {toDelete, successor};
+
+        for (int i = 0; i < 2; i++)
+        {
+            const auto current = targets[i];
+            const auto other = targets[(i + 1) % 2];
+            const auto currParent = current->parent;
+            // update parents
+            if (currParent)
+            {
+                if (nodeIsRightSon(current))
+                {
+                    currParent->right = other;
+                }
+                else
+                {
+                    currParent->left = other;
+                }
+            }
+
+            // update children
+            Node *children[2] = {current->left, current->right};
+            for (int j = 0; j < 2; j++)
+            {
+                if (!children[j])
+                {
+                    continue;
+                }
+                children[j]->parent = other;
+            }
+        }
+
+        // update nodes themselves finally
+        swapFields(toDelete->parent, successor->parent);
+        swapFields(toDelete->left, successor->left);
+        swapFields(toDelete->right, successor->right);
+        swapFields(toDelete->height, successor->height);
+    }
+
+    static void updateNodeHeight(Node* node) {
+        // height of node is the maximum of heights of both subtrees +1
+        // null height is -1
+        const int leftHeight = node->left ? node->left->height : -1;
+        const int rightHeight = node->right ? node->right->height : -1;
+        if (leftHeight >= rightHeight) {
+            node->height = leftHeight + 1;
+        }
+        else {
+            node->height = rightHeight + 1;
+        }
+    }
+
+    void updateTreeHeights(Node* node) {
+        while (node != nullptr) {
+            int oldHeight = node->height;
+            updateNodeHeight(node);
+            if (node->height == oldHeight) {
+                // if the height stops changing at some point before the root,
+                // the height of nodes above it also won't change
+                break;
+            }
+            node = node->parent;
+        }
+    }
+
+    static int getHeight(Node* node) {
+        return node == nullptr ? -1 : node->height;
+    };
+
+    int balanceFactor(Node* node) {
+        if (node == nullptr) return 0;
+        return getHeight(node->left) - getHeight(node->right);
+    }
+
+    void destruct(Node* currentRoot) {
+        if (currentRoot == nullptr) {
+            return;
+        }
+        destruct(currentRoot->left); // destruct left subtree
+        destruct(currentRoot->right); // destruct right subtree
+        delete currentRoot;
+    }
+
+    bool rollHelper(Node* p) {
+        // returns if a roll has been committed
+
+        const int bf = balanceFactor(p);
+        if (bf != -2 && bf != 2) {
             return false;
         }
 
-        if (toDelete->left == nullptr && toDelete->right == nullptr) {
-            // the node is a leaf
-            if (toDelete->parent != nullptr) {
-                // toDelete is not root
-
-                if (nodeIsRightSon(toDelete)) {
-                    toDelete->parent->right = nullptr;
-                }
-                else {
-                    toDelete->parent->left = nullptr;
-                }
+        if (bf == 2) {
+            // if bf is 2, we're promised that p has left son
+            if (balanceFactor(p->left) == -1) {
+                rollLR(p);
             }
-            else { root = nullptr; } // toDelete is root and is leaf
-        }
-        // node is not a leaf
-        else if (toDelete->right == nullptr || toDelete->left == nullptr) {
-            // node has exactly one child
-
-            Node* child = toDelete->right ? toDelete->right : toDelete->left;
-            if (toDelete->parent != nullptr) {
-                // node is not root
-                if (nodeIsRightSon(toDelete)) {
-                    toDelete->parent->right = child;
-                }
-                else {
-                    toDelete->parent->left = child;
-                }
-            }
-            else {
-                //node is root
-                root = child;
-            }
-
-            child->parent = toDelete->parent;
+            else { rollLL(p); }
         }
         else {
-            // toDelete has 2 sons:
-            // find next Node by inorder:
-
-            Node* successor = findSuccessor(toDelete);
-            swap(toDelete, successor);
-            erase(successor);
-            return true; // because we swapped by value
+            // if bf is -2, we're promised that p has right son
+            if (balanceFactor(p->right) == 1) {
+                rollRL(p);
+            }
+            else { rollRR(p); }
         }
-
-        delete toDelete;
         return true;
     }
 
-    void destruct (Node* root) {
-        if (root == nullptr) {
-            return;
+    void insertReBalance(Node* node) {
+        // input node is newly inserted node - which is always a leaf
+        while (node->parent) {
+            Node* p = node->parent;
+            if (p->height >= node->height + 1) {
+                // adding node didn't change height of parent therefore didn't
+                // change balance factor of any node above parent therefore tree
+                // is still balanced
+                return;
+            }
+            p->height = node->height + 1; // update height
+
+            if (rollHelper(p)) {
+                return;
+            }
+            node = p;
         }
-        destruct(root -> left); // destruct left sub-tree
-        destruct(root -> right); // destruct right sub-tree
-        delete root;
     }
 
-public
-:
+    void eraseReBalance(Node* node) {
+        // input node is parent of newly removed node
+        while (node) {
+
+            updateNodeHeight(node); // update height
+
+            rollHelper(node); // determines if roll is necessary and rolls
+
+            node = node -> parent;
+        }
+    }
+
+    void rollRR(Node* B) {
+        // b is the node where the balance factor is disrupted
+        Node* A = B->right;
+        Node* AL = A->left;
+        // make the right son of A the left son of B
+        B->right = AL;
+        if (AL != nullptr) {
+            AL->parent = B;
+        }
+        A->parent = B->parent;
+        if (B == root) {
+            // it doesnt have a parent
+            root = A;
+        }
+        else if (nodeIsRightSon(B)) {
+            B->parent->right = A;
+        }
+        else {
+            // B is left son
+            B->parent->left = A;
+        }
+        // rotate A,B
+        A->left = B;
+        B->parent = A;
+
+        // update heights of changed nodes:
+        // update height of B before that of A, because B is now son of A
+        updateNodeHeight(B);
+        updateNodeHeight(A);
+    }
+
+    void rollRL(Node* C) {
+        Node* A = C->right;
+        rollLL(A);
+        rollRR(C);
+    }
+
+    void rollLL(Node* B) {
+        // b is the node where the balance factor is disrupted
+        Node* A = B->left;
+        Node* AR = A->right;
+        // make the right son of A the left son of B
+        B->left = AR;
+        if (AR != nullptr) {
+            AR->parent = B;
+        }
+        A->parent = B->parent;
+        if (B == root) {
+            // it doesnt have a parent
+            root = A;
+        }
+        else if (nodeIsRightSon(B)) {
+            B->parent->right = A;
+        }
+        else {
+            // B is left son
+            B->parent->left = A;
+        }
+        // rotate A,B
+        A->right = B;
+        B->parent = A;
+
+        // update heights of changed nodes:
+        // update height of B before that of A, because B is now son of A
+        updateNodeHeight(B);
+        updateNodeHeight(A);
+    }
+
+    void rollLR(Node* C) {
+        Node* A = C->left;
+        rollRR(A);
+        rollLL(C);
+    }
+
+
+public:
+
     ~AvlTree() {
         // need to traverse in postorder and destroy each node
         destruct(root);
     }
 
-    Node* find(const KeyType& key) const // doesnt change tree, might change node - (why?)
-    // if return as not smart pointer, others might access it after earased..
+    Node* find(const KeyType& key) const
+
     {
         Node* current = root;
         while (current != nullptr) {
@@ -175,12 +383,74 @@ public
                 current = current->right;
             }
         }
+        Node* newNode = new Node{key, value, parent};
+
         if (key < parent->key) {
-            parent->left = new Node{key, value, parent};
+            parent->left = newNode;
         }
+
         if (key > parent->key) {
-            parent->right = new Node{key, value, parent};
+            parent->right = newNode;
         }
+
+        insertReBalance(newNode);
+        return true;
+    }
+
+    bool erase(Node* toDelete) {
+        if (toDelete == nullptr) {
+            // key not in tree
+            return false;
+        }
+
+        if (toDelete->left == nullptr && toDelete->right == nullptr) {
+            // the node is a leaf
+            if (toDelete->parent != nullptr) {
+                // the node is not the root
+
+                if (nodeIsRightSon(toDelete)) {
+                    toDelete->parent->right = nullptr;
+                }
+                else {
+                    toDelete->parent->left = nullptr;
+                }
+            }
+            else { root = nullptr; } // toDelete is root and is leaf
+        }
+        // node is not a leaf
+        else if (toDelete->right == nullptr || toDelete->left == nullptr) {
+            // node has exactly one child
+
+            Node* child = toDelete->right ? toDelete->right : toDelete->left;
+            if (toDelete->parent != nullptr) {
+                // node is not root
+                if (nodeIsRightSon(toDelete)) {
+                    toDelete->parent->right = child;
+                }
+                else {
+                    toDelete->parent->left = child;
+                }
+            }
+            else {
+                //node is root
+                root = child;
+            }
+
+            child->parent = toDelete->parent;
+        }
+        else {
+            // toDelete has 2 sons:
+            // find next Node by inorder:
+
+            Node* successor = findSuccessor(toDelete);
+            swap(toDelete, successor);
+            erase(toDelete); // is always either leaf, or has only right son
+            // if it had left son, it would have been the successor
+            return true; // because we swapped by value
+        }
+
+        eraseReBalance(toDelete -> parent);
+        delete toDelete;
         return true;
     }
 
@@ -189,4 +459,11 @@ public
         Node* toDelete = find(key);
         return erase(toDelete);
     }
+
+    bool isEmpty() const
+    {
+        return root == nullptr;
+    }
+
+
 };
