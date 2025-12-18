@@ -38,9 +38,5 @@ FetchContent_MakeAvailable(ds_tester)
 # This connects the downloaded tester to your 'wet1_lib'
 ds_tester_attach(wet1_lib HW hw1)
 
-# --- STEP 4: Your Own Executable ---
-# The guide requires this specific target name ('techsystem26a1') for GitHub Actions to work.
 add_executable(techsystem26a1 main26a1.cpp)
-
-# This links your 'main' to the logic library we defined in Step 1
 target_link_libraries(techsystem26a1 PRIVATE wet1_lib)
