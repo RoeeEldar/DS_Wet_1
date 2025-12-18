@@ -5,16 +5,16 @@ template <typename KeyType, typename ValueType>
 class AvlTree;
 
 template <typename KeyType, typename ValueType>
-class Node {
+class TreeNode {
     friend class AvlTree<KeyType, ValueType>;
     KeyType key;
     ValueType value;
-    Node* parent = nullptr;
-    Node* left = nullptr;
-    Node* right = nullptr;
+    TreeNode* parent = nullptr;
+    TreeNode* left = nullptr;
+    TreeNode* right = nullptr;
     int height = 0; // to calc balance factor, correct to hold here?
     // need to add height to all functions
-    Node(KeyType k, ValueType v, Node* p = nullptr)
+    TreeNode(KeyType k, ValueType v, TreeNode* p = nullptr)
         : key(k), value(v), parent(p) {}
 
 public:
@@ -24,10 +24,17 @@ public:
     }
 
 };
+template <typename T>
+void swapFields(T &f1, T &f2)
+{
+    const auto temp = f1;
+    f1 = f2;
+    f2 = temp;
+}
 
 template <typename KeyType, typename ValueType>
 class AvlTree {
-    using Node = Node<KeyType,ValueType>;
+    using Node = TreeNode<KeyType,ValueType>;
 
     Node* root = nullptr;
 
@@ -51,15 +58,94 @@ class AvlTree {
         return temp;
     }
 
-    void swap(Node* current, Node* successor) {
-        KeyType tempKey = current->key;
-        ValueType tempValue = current->value;
 
-        current->key = successor->key;
-        current->value = successor->value;
+    void swapAdjacent(Node* toDelete, Node* successor) {
+        Node* parentOfDelete = toDelete->parent;
+        Node* successorLeft = successor->left;
+        Node* successorRight = successor->right;
+        Node* toDeleteLeft = toDelete->left;
 
-        successor->key = tempKey;
-        successor->value = tempValue;
+        // update parentOfDelete
+        if (parentOfDelete) {
+            if (nodeIsRightSon(toDelete))
+            {
+                parentOfDelete->right = successor;
+            }
+            parentOfDelete->left = successor;
+        }
+
+        // update successor
+        successor->parent = parentOfDelete;
+        successor->right = toDelete;
+        successor->left = toDeleteLeft;
+
+        // update toDelete
+        toDelete->parent = successor;
+        toDelete->left = successorLeft;
+        toDelete->right = successorRight;
+
+        if (toDeleteLeft)
+        {
+            toDeleteLeft->parent = successor;
+        }
+
+        if (successorRight)
+        {
+            successorRight->parent = toDelete;
+        }
+        swapFields(toDelete->height, successor->height);
+    }
+
+    void swap(Node* toDelete, Node* successor) {
+        assert(toDelete && successor);
+        // update root
+        if (toDelete == root)
+        {
+            root = successor;
+        }
+        if (successor->parent == toDelete)
+        {
+            swapAdjacent(toDelete, successor);
+            return;
+        }
+
+        Node *targets[2] = {toDelete, successor};
+
+        for (int i = 0; i < 2; i++)
+        {
+            const auto current = targets[i];
+            const auto other = targets[(i + 1) % 2];
+            const auto currParent = current->parent;
+            // update parents
+            if (currParent)
+            {
+                if (nodeIsRightSon(current))
+                {
+                    currParent->right = other;
+                }
+                else
+                {
+                    currParent->left = other;
+                }
+            }
+
+            // update children
+            Node *children[2] = {current->left, current->right};
+            for (int j = 0; j < 2; j++)
+            {
+                if (!children[j])
+                {
+                    continue;
+                }
+                children[j]->parent = other;
+            }
+        }
+
+        // update nodes themselves finally
+        swapFields(toDelete->parent, successor->parent);
+        swapFields(toDelete->left, successor->left);
+        swapFields(toDelete->right, successor->right);
+        swapFields(toDelete->height, successor->height);
     }
 
     static void updateNodeHeight(Node* node) {
@@ -363,7 +449,7 @@ public:
 
             Node* successor = findSuccessor(toDelete);
             swap(toDelete, successor);
-            erase(successor); // is always either leaf, or has only right son
+            erase(toDelete); // is always either leaf, or has only right son
             // if it had left son, it would have been the successor
             return true; // because we swapped by value
         }
