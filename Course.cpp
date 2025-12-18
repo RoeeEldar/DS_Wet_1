@@ -10,8 +10,11 @@ Course::Course(const int courseCredit) : courseCredit(courseCredit)
 
 bool Course::enroll(const int studentId, Student& student)
 {
-    student.enroll(); // update student
-    return enrolledStudents.insert(studentId, &student);
+    if( enrolledStudents.insert(studentId, &student)) {
+        student.enroll(); // update student
+        return true;
+    }
+    return false;
 }
 
 bool Course::complete(const int studentId)
