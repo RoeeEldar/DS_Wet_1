@@ -12,13 +12,17 @@
 class Course
 {
     const int courseCredit;
+
     AvlTree<int, Student *> enrolledStudents;
 
 public:
+
     explicit Course(int courseCredit);
+
     void enroll(int studentId, Student &student);
 
     void complete(int studentId);
+
 };
 
 

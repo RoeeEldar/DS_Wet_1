@@ -13,14 +13,19 @@
 #ifndef TechSystem26WINTER_WET1_H_
 #define TechSystem26WINTER_WET1_H_
 
+#include <Course.h>
+#include <Student.h>
+
 #include "wet1util.h"
+#include "AvlTree.h"
 
 class TechSystem {
 private:
-    //
-    // Here you may add anything you want
-    //
-    
+
+    AvlTree<int, Student> studentMap;
+    AvlTree<int, Course> courseMap;
+
+
 public:
     // <DO-NOT-MODIFY> {
     TechSystem();
@@ -40,7 +45,7 @@ public:
     StatusType completeCourse(int studentId, int courseId);
 
     StatusType awardAcademicPoints(int points);
-                    
+
     output_t<int> getStudentPoints(int studentId);
 
     // } </DO-NOT-MODIFY>

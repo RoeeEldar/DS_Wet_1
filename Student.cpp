@@ -5,6 +5,7 @@
 #include "Student.h"
 
 int Student::globalBonus = 0;
+
 Student::Student(): bonusPenalty(globalBonus)
 {
 }

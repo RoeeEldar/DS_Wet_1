@@ -14,7 +14,18 @@ void Course::enroll(const int studentId, Student& student)
     enrolledStudents.insert(studentId, &student);
 }
 
-void Course::complete(const int studentId)
-{
-    enrolledStudents.find(studentId);
+void Course::complete(const int studentId) {
+
+    Student** compStudent = enrolledStudents.find(studentId);
+    if (compStudent) {
+        // student found in course
+        (*compStudent) -> Student::unenroll();
+        (*compStudent) -> Student::addCompletionPoints(courseCredit);
+        enrolledStudents.erase(studentId); // should return true,
+
+    }
+    // student not found in course
+    // do something
+
+    //check if course tree empty? why?
 }
