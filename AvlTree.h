@@ -1,5 +1,4 @@
 #pragma once
-#include <cassert>
 
 template <typename KeyType, typename ValueType>
 class AvlTree;
@@ -49,7 +48,6 @@ class AvlTree {
 
     Node* findSuccessor(Node* node) const {
         // caller must ensure that node has right son before function call
-        assert(node && node->right != nullptr);
         Node* temp = node;
         temp = temp->right;
         while (temp->left != nullptr) {
@@ -102,7 +100,6 @@ class AvlTree {
     }
 
     void swap(Node* toDelete, Node* successor) {
-        assert(toDelete && successor);
         // update root
         if (toDelete == root)
         {
@@ -184,8 +181,7 @@ class AvlTree {
     };
 
     int balanceFactor(Node* node) {
-        assert(node != nullptr);
-        //if (node == nullptr) return 0;
+        if (node == nullptr) return 0;
         return getHeight(node->left) - getHeight(node->right);
     }
 
@@ -256,9 +252,7 @@ class AvlTree {
 
     void rollRR(Node* B) {
         // b is the node where the balance factor is disrupted
-        assert(B != nullptr);
         Node* A = B->right;
-        assert(A != nullptr);
         Node* AL = A->left;
         // make the right son of A the left son of B
         B->right = AL;
@@ -288,7 +282,6 @@ class AvlTree {
     }
 
     void rollRL(Node* C) {
-        assert(C!= nullptr);
         Node* A = C->right;
         rollLL(A);
         rollRR(C);
@@ -296,9 +289,7 @@ class AvlTree {
 
     void rollLL(Node* B) {
         // b is the node where the balance factor is disrupted
-        assert(B != nullptr);
         Node* A = B->left;
-        assert(A != nullptr);
         Node* AR = A->right;
         // make the right son of A the left son of B
         B->left = AR;
@@ -328,7 +319,6 @@ class AvlTree {
     }
 
     void rollLR(Node* C) {
-        assert(C!= nullptr);
         Node* A = C->left;
         rollRR(A);
         rollLL(C);
@@ -466,7 +456,7 @@ public:
 
     bool erase(const KeyType& key) // false if doesnt exist
     {
-        Node* toDelete = findNode(key);
+        Node* toDelete = find(key);
         return erase(toDelete);
     }
 
