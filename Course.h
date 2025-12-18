@@ -11,17 +11,18 @@
 
 class Course
 {
-    const int courseCredit;
+    int courseCredit;
 
-    AvlTree<int, Student *> enrolledStudents;
+    AvlTree<int, Student*> enrolledStudents;
 
 public:
 
     explicit Course(int courseCredit);
 
-    void enroll(int studentId, Student &student);
+    bool enroll(int studentId, Student& student);
 
     bool complete(int studentId);
+
     bool isEmpty() const;
 };
 

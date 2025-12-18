@@ -16,7 +16,9 @@ class Node {
     // need to add height to all functions
     Node(KeyType k, ValueType v, Node* p = nullptr)
         : key(k), value(v), parent(p) {}
+
 public:
+
     ValueType& getValue() {
         return value;
     }
