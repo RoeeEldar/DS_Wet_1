@@ -1,108 +1,446 @@
 #include <iostream>
+#include <vector>
+#include <algorithm> // for max, abs, sort
 #include <cassert>
-#include <algorithm> // For std::max
-#include "AvlTree.h"
+#include <cstdlib>   // for rand, srand
+#include <ctime>     // for time
+#include <map>       // used as "Ground Truth" for verification
 
-#define LOG(msg) std::cout << "[TEST] " << msg << std::endl
+#include "AvlTree.h" // Your header file
 
-void Test_Height_SimpleLine() {
-    LOG("Running Height: Simple Line (0->1->2)...");
-    AvlTree<int, int> tree;
+// ============================================================================
+//                               VALIDATION LOGIC
+// ============================================================================
 
-    // 1. Insert Root
-    tree.insert(10, 10);
-    auto n10 = tree.find(10);
-    assert(n10->height == 0); // Leaf height is 0
-
-    // 2. Insert Child (10 -> 20)
-    tree.insert(20, 20);
-    auto n20 = tree.find(20);
-
-    assert(n20->height == 0); // New leaf
-    assert(n10->height == 1); // Root grew
-
-    // 3. Insert Grandchild (10 -> 20 -> 30)
-    tree.insert(30, 30);
-    auto n30 = tree.find(30);
-
-    assert(n30->height == 0);
-    assert(n20->height == 1);
-    assert(n10->height == 2);
-
-    LOG("Height: Simple Line Passed!");
+// Helper to safely get height
+template <typename Node>
+int getHeight(Node* node) {
+    return node ? node->height : -1;
 }
 
-void Test_Height_Branching_Logic() {
-    LOG("Running Height: Branching (The Logic Check)...");
-    AvlTree<int, int> tree;
+// Deep validation of AVL invariants
+template <typename Node>
+bool validateAVLNodes(Node* node) {
+    if (!node) return true;
 
-    // Create a tree with a long right arm:
-    //      10 (h=2)
-    //        \
-    //         20 (h=1)
-    //           \
-    //            30 (h=0)
-    tree.insert(10, 10);
-    tree.insert(20, 20);
-    tree.insert(30, 30);
+    // 1. Verify Parent Pointer
+    if (node->left && node->left->parent != node) {
+        std::cerr << "CRITICAL: Left child of " << node->key << " has wrong parent pointer.\n";
+        return false;
+    }
+    if (node->right && node->right->parent != node) {
+        std::cerr << "CRITICAL: Right child of " << node->key << " has wrong parent pointer.\n";
+        return false;
+    }
 
-    assert(tree.find(10)->height == 2);
+    // 2. Verify BST Property
+    if (node->left && node->left->key >= node->key) {
+        std::cerr << "CRITICAL: BST Violation. Left " << node->left->key << " >= " << node->key << "\n";
+        return false;
+    }
+    if (node->right && node->right->key <= node->key) {
+        std::cerr << "CRITICAL: BST Violation. Right " << node->right->key << " <= " << node->key << "\n";
+        return false;
+    }
 
-    // Now insert to the LEFT of 10.
-    // This creates a path of length 1 on the left.
-    //      10
-    //     /  \
-    //    5    20...
-    //
-    // CRITICAL: The height of 10 should STILL be 2,
-    // because the right side (length 2) is still longer than the left side (length 1).
+    // 3. Verify Height
+    int hLeft = getHeight(node->left);
+    int hRight = getHeight(node->right);
+    int expectedHeight = 1 + std::max(hLeft, hRight);
 
-    tree.insert(5, 5);
+    if (node->height != expectedHeight) {
+        std::cerr << "CRITICAL: Height mismatch for " << node->key
+                  << ". Stored: " << node->height << ", Calc: " << expectedHeight << "\n";
+        return false;
+    }
 
-    auto root = tree.find(10);
-    auto left = tree.find(5);
-    auto right = tree.find(20);
+    // 4. Verify Balance Factor
+    int bf = hLeft - hRight;
+    if (std::abs(bf) > 1) {
+        std::cerr << "CRITICAL: Node " << node->key << " is unbalanced. BF: " << bf << "\n";
+        return false;
+    }
 
-    assert(left->height == 0);
+    return validateAVLNodes(node->left) && validateAVLNodes(node->right);
+}
 
-    // If your logic just does ++height for all parents, this will fail (it will be 3).
-    // In AVL, height = max(left_height, right_height) + 1
-    if (root->height == 3) {
-        std::cout << "\033[31m[WARNING] Logic Error: Root height increased to 3, but longest path is still 2.\033[0m" << std::endl;
-        std::cout << "Your increaseHeight() blindly adds +1 to ancestors." << std::endl;
-        std::cout << "It should be: node->height = max(left, right) + 1" << std::endl;
-    } else {
-        assert(root->height == 2);
-        LOG("Height: Branching Logic Passed!");
+template <typename Tree>
+void check(const Tree& tree) {
+    if (tree.root) {
+        assert(tree.root->parent == nullptr); // Root must have no parent
+    }
+    if (!validateAVLNodes(tree.root)) {
+        std::cerr << "Validation Failed! Aborting.\n";
+        std::abort();
     }
 }
 
-void Test_Height_Erase_Leaf() {
-    LOG("Running Height: Erase Leaf...");
+// ============================================================================
+//                               SPECIFIC TESTS
+// ============================================================================
+
+void testEmptyTree() {
+    std::cout << "[Test] Empty Tree Operations... ";
+    AvlTree<int, int> tree;
+    assert(tree.root == nullptr);
+    assert(tree.erase(10) == false); // Erase from empty
+    assert(tree.find(10) == nullptr); // Find in empty
+    check(tree);
+    std::cout << "OK\n";
+}
+
+void testSingleElement() {
+    std::cout << "[Test] Single Element Lifecycle... ";
     AvlTree<int, int> tree;
 
-    //      10 (h=1)
-    //     /
-    //    5 (h=0)
-    tree.insert(10, 10);
-    tree.insert(5, 5);
+    // Insert
+    assert(tree.insert(10, 100) == true);
+    assert(tree.root != nullptr);
+    assert(tree.root->key == 10);
+    assert(tree.root->height == 0);
+    check(tree);
 
-    assert(tree.find(10)->height == 1);
+    // Duplicate Insert
+    assert(tree.insert(10, 200) == false); // Should fail
 
-    // Delete 5. 10 becomes a leaf (h=0).
+    // Find
+    assert(tree.find(10) != nullptr);
+    assert(tree.find(10)->value == 100);
+
+    // Erase
+    assert(tree.erase(10) == true);
+    assert(tree.root == nullptr);
+    check(tree);
+    std::cout << "OK\n";
+}
+
+void testLLCase() {
+    std::cout << "[Test] Rotation LL (Left-Left)... ";
+    AvlTree<int, int> tree;
+    //     30
+    //    /
+    //   20
+    //  /
+    // 10
+    tree.insert(30, 0);
+    tree.insert(20, 0);
+    tree.insert(10, 0); // Triggers LL rotation
+
+    check(tree);
+    // Root should become 20
+    assert(tree.root->key == 20);
+    assert(tree.root->left->key == 10);
+    assert(tree.root->right->key == 30);
+    assert(tree.root->height == 1);
+    std::cout << "OK\n";
+}
+
+void testRRCase() {
+    std::cout << "[Test] Rotation RR (Right-Right)... ";
+    AvlTree<int, int> tree;
+    // 10
+    //   \
+    //    20
+    //      \
+    //       30
+    tree.insert(10, 0);
+    tree.insert(20, 0);
+    tree.insert(30, 0); // Triggers RR rotation
+
+    check(tree);
+    // Root should become 20
+    assert(tree.root->key == 20);
+    assert(tree.root->left->key == 10);
+    assert(tree.root->right->key == 30);
+    std::cout << "OK\n";
+}
+
+void testLRCase() {
+    std::cout << "[Test] Rotation LR (Left-Right)... ";
+    AvlTree<int, int> tree;
+    //   30
+    //   /
+    // 10
+    //   \
+    //    20
+    tree.insert(30, 0);
+    tree.insert(10, 0);
+    tree.insert(20, 0); // Triggers LR
+
+    check(tree);
+    assert(tree.root->key == 20);
+    assert(tree.root->left->key == 10);
+    assert(tree.root->right->key == 30);
+    std::cout << "OK\n";
+}
+
+void testRLCase() {
+    std::cout << "[Test] Rotation RL (Right-Left)... ";
+    AvlTree<int, int> tree;
+    // 10
+    //   \
+    //    30
+    //    /
+    //   20
+    tree.insert(10, 0);
+    tree.insert(30, 0);
+    tree.insert(20, 0); // Triggers RL
+
+    check(tree);
+    assert(tree.root->key == 20);
+    assert(tree.root->left->key == 10);
+    assert(tree.root->right->key == 30);
+    std::cout << "OK\n";
+}
+
+void testZigZagGrowth() {
+    std::cout << "[Test] Zig-Zag Growth Patterns... ";
+    AvlTree<int, int> tree;
+    // Insert: 50, 20, 80, 10, 30, 70, 90, 25, 28
+    // This forces deep updates
+    int keys[] = {50, 20, 80, 10, 30, 70, 90, 25, 28};
+    for (int k : keys) {
+        tree.insert(k, 0);
+        check(tree);
+    }
+    assert(tree.find(28) != nullptr);
+    std::cout << "OK\n";
+}
+
+void testDeleteLeaf() {
+    std::cout << "[Test] Delete Leaf... ";
+    AvlTree<int, int> tree;
+    tree.insert(10, 0);
+    tree.insert(5, 0); // Left leaf
+    tree.insert(15, 0); // Right leaf
+
     tree.erase(5);
-
+    check(tree);
     assert(tree.find(5) == nullptr);
-    assert(tree.find(10)->height == 0);
+    assert(tree.root->left == nullptr);
 
-    LOG("Height: Erase Leaf Passed!");
+    tree.erase(15);
+    check(tree);
+    assert(tree.find(15) == nullptr);
+    assert(tree.root->right == nullptr);
+    std::cout << "OK\n";
+}
+
+void testDeleteOneChild() {
+    std::cout << "[Test] Delete Node with 1 Child... ";
+    AvlTree<int, int> tree;
+    //      20
+    //     /
+    //   10
+    //     \
+    //      15
+    tree.insert(20, 0);
+    tree.insert(10, 0);
+    tree.insert(15, 0); // Double rotation happens here during insert likely
+
+    // Ensure structure is maintained before delete
+    check(tree);
+
+    // Erase 10 (which should have child 15, or after rotation 15 is root of subtree)
+    // Depending on rotation, structure might be 15 (left 10, right 20).
+    // Let's force a simpler one-child case without rotation interference:
+    AvlTree<int, int> t2;
+    t2.insert(50, 0);
+    t2.insert(40, 0);
+    t2.insert(45, 0); // Balanced now: 45 (L:40, R:50)
+    t2.insert(30, 0);
+    // 45
+    // / \
+    //40  50
+    // /
+    //30
+
+    t2.erase(40); // 40 has one child (30)
+    check(t2);
+    assert(t2.find(40) == nullptr);
+    assert(t2.find(30) != nullptr);
+    // 30 should now be child of 45
+    assert(t2.root->left->key == 30);
+    std::cout << "OK\n";
+}
+
+void testDeleteTwoChildren() {
+    std::cout << "[Test] Delete Node with 2 Children... ";
+    AvlTree<int, int> tree;
+    //      20
+    //     /  \
+    //   10    30
+    //        /  \
+    //       25   35
+    tree.insert(20, 0);
+    tree.insert(10, 0);
+    tree.insert(30, 0);
+    tree.insert(25, 0);
+    tree.insert(35, 0);
+
+    // Erase 30. Successor is 35 (or 25 depending on impl, usually min of right subtree).
+    tree.erase(30);
+    check(tree);
+
+    assert(tree.find(30) == nullptr);
+    // 25 and 35 should still be in the tree
+    assert(tree.find(25) != nullptr);
+    assert(tree.find(35) != nullptr);
+    std::cout << "OK\n";
+}
+
+void testDeleteRoot() {
+    std::cout << "[Test] Delete Root Repeatedly... ";
+    AvlTree<int, int> tree;
+    tree.insert(10, 0);
+    tree.insert(20, 0);
+    tree.insert(5, 0);
+
+    // Delete root (10)
+    tree.erase(10);
+    check(tree);
+    assert(tree.find(10) == nullptr);
+    // New root should be 20 or 5
+
+    // Delete new root
+    int rootKey = tree.root->key;
+    tree.erase(rootKey);
+    check(tree);
+
+    // Delete last one
+    rootKey = tree.root->key;
+    tree.erase(rootKey);
+    check(tree);
+    assert(tree.root == nullptr);
+    std::cout << "OK\n";
+}
+
+// ============================================================================
+//                               FUZZ TESTING (STRESS)
+// ============================================================================
+
+void testFuzzWithOracle() {
+    std::cout << "[Test] Fuzz Testing (AVL vs std::map)... \n";
+    AvlTree<int, int> myTree;
+    std::map<int, int> oracle; // The ground truth
+    std::vector<int> keys;     // Keep track of keys for random selection
+
+    int OPERATIONS = 10000;
+
+    for (int i = 0; i < OPERATIONS; ++i) {
+        int op = rand() % 100;
+        int key = rand() % 5000; // Small range to force collisions
+
+        if (op < 60) {
+            // --- INSERT (60% chance) ---
+            bool myRes = myTree.insert(key, key);
+            auto oracleRes = oracle.insert({key, key});
+
+            if (myRes != oracleRes.second) {
+                std::cerr << "Mismatch on Insert " << key << "! AVL:" << myRes << " Map:" << oracleRes.second << "\n";
+                std::abort();
+            }
+            if (myRes) keys.push_back(key);
+        }
+        else if (op < 90) {
+            // --- ERASE (30% chance) ---
+            if (keys.empty()) continue;
+            int randIdx = rand() % keys.size();
+            int targetKey = keys[randIdx];
+
+            bool myRes = myTree.erase(targetKey);
+            size_t oracleRes = oracle.erase(targetKey);
+
+            if (myRes != (oracleRes > 0)) {
+                std::cerr << "Mismatch on Erase " << targetKey << "! AVL:" << myRes << " Map:" << oracleRes << "\n";
+                std::abort();
+            }
+
+            // Remove from keys vector (swap with back and pop is O(1))
+            keys[randIdx] = keys.back();
+            keys.pop_back();
+        }
+        else {
+            // --- FIND (10% chance) ---
+            int searchKey = rand() % 5000;
+            auto myNode = myTree.find(searchKey);
+            auto oracleIt = oracle.find(searchKey);
+
+            bool myFound = (myNode != nullptr);
+            bool oracleFound = (oracleIt != oracle.end());
+
+            if (myFound != oracleFound) {
+                std::cerr << "Mismatch on Find " << searchKey << "! AVL:" << myFound << " Map:" << oracleFound << "\n";
+                std::abort();
+            }
+        }
+
+        // Validate invariants periodically (it's expensive)
+        if (i % 500 == 0) {
+            check(myTree);
+            // Verify root hasn't drifted
+            if (myTree.root) assert(myTree.root->parent == nullptr);
+        }
+    }
+
+    // Final check
+    check(myTree);
+
+    // Check size match? (Assuming you don't have a size function, we skip)
+    std::cout << "Completed " << OPERATIONS << " random operations successfully.\n";
+}
+
+void testAscendingDescending() {
+    std::cout << "[Test] Worst Case Insert (Sorted Data)... ";
+    AvlTree<int, int> t1;
+    // 1..100
+    for(int i=0; i<100; i++) {
+        t1.insert(i, 0);
+        check(t1); // Validate every step
+    }
+    // Height should be logarithmic ~7 (log2(100) = 6.6)
+    int h = getHeight(t1.root);
+    assert(h <= 8);
+
+    AvlTree<int, int> t2;
+    // 100..1
+    for(int i=100; i>0; i--) {
+        t2.insert(i, 0);
+        check(t2);
+    }
+    h = getHeight(t2.root);
+    assert(h <= 8);
+    std::cout << "OK\n";
 }
 
 int main() {
-    Test_Height_SimpleLine();
-    Test_Height_Branching_Logic();
-    Test_Height_Erase_Leaf();
+    srand(static_cast<unsigned>(time(nullptr)));
+    std::cout << "==========================================\n";
+    std::cout << "      MASSIVE AVL TREE TEST SUITE         \n";
+    std::cout << "==========================================\n";
 
-    std::cout << "\nTests Finished." << std::endl;
+    testEmptyTree();
+    testSingleElement();
+
+    // Rotation Logic
+    testLLCase();
+    testRRCase();
+    testLRCase();
+    testRLCase();
+
+    // Structural Tests
+    testZigZagGrowth();
+    testAscendingDescending();
+
+    // Deletion Logic
+    testDeleteLeaf();
+    testDeleteOneChild();
+    testDeleteTwoChildren();
+    testDeleteRoot();
+
+    // Stress Test
+    testFuzzWithOracle();
+
+    std::cout << "\nALL TESTS PASSED! YOUR TREE IS ROCK SOLID.\n";
     return 0;
 }

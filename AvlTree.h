@@ -4,6 +4,7 @@
 template <typename KeyType, typename ValueType>
 
 class AvlTree {
+
     struct Node {
         KeyType key;
         ValueType value;
@@ -16,13 +17,8 @@ class AvlTree {
 
     Node* root = nullptr;
 
-    // rolls...
-    // blance factor calc
-    // helper function to destroy tree starting from root - if using normal pointers
-    // destructor for Node and or for AvlTree
-    // need to  update height for nodes where its required
-
     bool nodeIsRightSon(Node* node) const {
+        // must make sure it's not null before calling function
         if (node->parent->right == node) {
             return true;
         }
@@ -53,11 +49,11 @@ class AvlTree {
         successor->value = tempValue;
     }
 
-    void updateHeight(Node* node) {
+    static void updateNodeHeight(Node* node) {
         // height of node is the maximum of heights of both subtrees +1
         // null height is -1
-        int leftHeight = (node->left) ? node->left->height : -1;
-        int rightHeight = (node->right) ? node->right->height : -1;
+        const int leftHeight = (node->left) ? node->left->height : -1;
+        const int rightHeight = (node->right) ? node->right->height : -1;
         if (leftHeight >= rightHeight) {
             node->height = leftHeight + 1;
         }
@@ -67,10 +63,9 @@ class AvlTree {
     }
 
     void updateTreeHeights(Node* node) {
-        // to be used in insert function
         while (node != nullptr) {
             int oldHeight = node->height;
-            updateHeight(node);
+            updateNodeHeight(node);
             if (node->height == oldHeight) {
                 // if the height stops changing at some point before the root,
                 // the height of nodes above it also won't change
@@ -78,6 +73,16 @@ class AvlTree {
             }
             node = node->parent;
         }
+    }
+
+    static int getHeight(Node* node) {
+        return (node == nullptr) ? -1 : node->height;
+    };
+
+    int balanceFactor(Node* node) {
+        assert(node != nullptr);
+        //if (node == nullptr) return 0;
+        return getHeight(node->left) - getHeight(node->right);
     }
 
     bool erase(Node* toDelete) {
@@ -132,7 +137,7 @@ class AvlTree {
             return true; // because we swapped by value
         }
 
-        updateTreeHeights(toDelete -> parent);
+        eraseReBalance(toDelete -> parent);
         delete toDelete;
         return true;
     }
@@ -141,9 +146,145 @@ class AvlTree {
         if (root == nullptr) {
             return;
         }
-        destruct(root->left); // destruct left sub-tree
-        destruct(root->right); // destruct right sub-tree
+        destruct(root->left); // destruct left subtree
+        destruct(root->right); // destruct right subtree
         delete root;
+    }
+
+    bool rollHelper(Node* p) {
+        // returns if a roll has been committed
+
+        int bf = balanceFactor(p);
+        if (bf != -2 && bf != 2) {
+            return false;
+        }
+
+        if (bf == 2) {
+            // if bf is 2, we're promised that p has left son
+            if (balanceFactor(p->left) == -1) {
+                rollLR(p);
+            }
+            else { rollLL(p); }
+        }
+        else {
+            // if bf is -2, we're promised that p has right son
+            if (balanceFactor(p->right) == 1) {
+                rollRL(p);
+            }
+            else { rollRR(p); }
+        }
+        return true;
+    }
+
+    void insertReBalance(Node* node) {
+        // input node is newly inserted node - which is always a leaf
+        while (node->parent) {
+            Node* p = node->parent;
+            if (p->height >= node->height + 1) {
+                // adding node didn't change height of parent therefore didn't
+                // change balance factor of any node above parent therefore tree
+                // is still balanced
+                return;
+            }
+            p->height = node->height + 1; // update height
+
+            if (rollHelper(p)) {
+                return;
+            }
+            node = p;
+        }
+    }
+
+    void eraseReBalance(Node* node) {
+        // input node is parent of newly removed node
+        while (node) {
+
+            updateNodeHeight(node); // update height
+
+            rollHelper(node); // determines if roll is necessary and rolls
+
+            node = node -> parent;
+        }
+    }
+
+    void rollRR(Node* B) {
+        // b is the node where the balance factor is disrupted
+        assert(B != nullptr);
+        Node* A = B->right;
+        assert(A != nullptr);
+        Node* AL = A->left;
+        // make the right son of A the left son of B
+        B->right = AL;
+        if (AL != nullptr) {
+            AL->parent = B;
+        }
+        A->parent = B->parent;
+        if (B == root) {
+            // it doesnt have a parent
+            root = A;
+        }
+        else if (nodeIsRightSon(B)) {
+            B->parent->right = A;
+        }
+        else {
+            // B is left son
+            B->parent->left = A;
+        }
+        // rotate A,B
+        A->left = B;
+        B->parent = A;
+
+        // update heights of changed nodes:
+        // update height of B before that of A, because B is now son of A
+        updateNodeHeight(B);
+        updateNodeHeight(A);
+    }
+
+    void rollRL(Node* C) {
+        assert(C!= nullptr);
+        Node* A = C->right;
+        rollLL(A);
+        rollRR(C);
+    }
+
+    void rollLL(Node* B) {
+        // b is the node where the balance factor is disrupted
+        assert(B != nullptr);
+        Node* A = B->left;
+        assert(A != nullptr);
+        Node* AR = A->right;
+        // make the right son of A the left son of B
+        B->left = AR;
+        if (AR != nullptr) {
+            AR->parent = B;
+        }
+        A->parent = B->parent;
+        if (B == root) {
+            // it doesnt have a parent
+            root = A;
+        }
+        else if (nodeIsRightSon(B)) {
+            B->parent->right = A;
+        }
+        else {
+            // B is left son
+            B->parent->left = A;
+        }
+        // rotate A,B
+        A->right = B;
+        B->parent = A;
+
+        // update heights of changed nodes:
+        // update height of B before that of A, because B is now son of A
+        updateNodeHeight(B);
+        updateNodeHeight(A);
+    }
+
+    void rollLR(Node* C) {
+        assert(C!= nullptr);
+        Node* A = C->left;
+        rollRR(A);
+        rollLL(C);
     }
 
 public
@@ -204,14 +345,17 @@ public
                 current = current->right;
             }
         }
+        Node* newNode = new Node{key, value, parent};
+
         if (key < parent->key) {
-            parent->left = new Node{key, value, parent};
-        }
-        if (key > parent->key) {
-            parent->right = new Node{key, value, parent};
+            parent->left = newNode;
         }
 
-        updateTreeHeights(parent);
+        if (key > parent->key) {
+            parent->right = newNode;
+        }
+
+        insertReBalance(newNode);
         return true;
     }
 
@@ -220,4 +364,6 @@ public
         Node* toDelete = find(key);
         return erase(toDelete);
     }
+
+
 };
