@@ -11,7 +11,7 @@ class Student
 
 
     const int bonusPenalty; // to account for coming later than past bonuses
-    int completionPoints = 0;
+    int completionPoints = 0; // number of points student got by finishing courses.
     int courseCnt = 0;
 public:
     static void addToGlobalBonus(int points);

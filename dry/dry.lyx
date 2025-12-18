@@ -1,0 +1,732 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children no
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Data Structures Wet 1 - Dry Part
+\end_layout
+
+\begin_layout Author
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Id
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Roee Eldar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+207637364
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nadav Oved
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+211880257
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Structural Overview
+\end_layout
+
+\begin_layout Standard
+The overall TechSystem data structure consists of:
+\end_layout
+
+\begin_layout Itemize
+studentsMap:
+ an AVL tree owning the instances of Students and maps each student id to its corresponding Student instance.
+ Its size is denoted as 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Student:
+ All students share access a global bonus field.
+ In addition,
+ each student has its own bonus penalty,
+ course count,
+ and completion points.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+courseMap:
+ an AVL tree owning the instances of Courses and maps each course id to its corresponding Course instance.
+ Its size is denoted as 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Course:
+ A wrapper encapsulating an AVL Tree of 
+\bar under
+references
+\bar default
+ to students which are enrolled to a given course Id.
+ Its size is denoted by 
+\begin_inset Formula $n_{courseId}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+The only interface between courses and students is through enroll or complete calls.
+ A student is 
+\series bold
+not 
+\series default
+aware of its courses.
+ A given course is aware of all its students and sends update to them through enroll or complete calls only.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Overall Space Complexity
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Except
+\series default
+ the recursive call stack created in each tree's destructor,
+ in any given point in execution,
+ we store:
+\end_layout
+
+\begin_layout Itemize
+size of a Student:
+ 
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+,
+ contains only some counters.
+\end_layout
+
+\begin_layout Itemize
+size of a Course:
+ 
+\begin_inset Formula $O\left(n_{courseId}\right)$
+\end_inset
+
+,
+ since it contains a single AVL tree with 
+\begin_inset Formula $n_{courseId}$
+\end_inset
+
+ vertices,
+ in which each vertex contains a reference to a student (
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+ each).
+ 
+\end_layout
+
+\begin_layout Itemize
+size of studentsMap:
+ 
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+,
+ since this AVL tree has 
+\begin_inset Formula $n$
+\end_inset
+
+ vertices,
+ each is a Student of 
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+ size as mentioned above.
+\end_layout
+
+\begin_layout Itemize
+size of courseMap:
+ 
+\begin_inset Formula $O\left(m+\sum_{id\in\text{course Ids.}}n_{id}\right)$
+\end_inset
+
+.
+ This is due to the fact that each of its 
+\begin_inset Formula $m$
+\end_inset
+
+ vertices owns a Course instance,
+ which size,
+ as mentioned above,
+ is 
+\begin_inset Formula $O\left(n_{courseId}\right)$
+\end_inset
+
+.
+ So in total,
+ we get:
+ 
+\begin_inset Formula 
+\[
+O\left(\sum_{id\in\text{course Ids.}}\left(1+n_{id}\right)\right)\underbrace{=}_{\left|\text{course Ids.}\right|=m}O\left(m+\sum_{id\in\text{course Ids.}}n_{id}\right)
+\]
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Therefore,
+ in total:
+ 
+\begin_inset Formula $\text{structure space}=\text{size of studentsMap}+\text{size of courseMap}=O\left(n+m+\sum_{id\in\text{course Ids.}}n_{id}\right)$
+\end_inset
+
+.
+ Now,
+ we'll look at each one's recursion depth,
+ which is 
+\begin_inset Formula $O\left(log\left(\text{tree size}\right)\right)$
+\end_inset
+
+,
+ since the destructor performs post order traversal of a balanced AVL tree.
+\end_layout
+
+\begin_layout Enumerate
+Destructing the studentMap would result in 
+\begin_inset Formula $O\left(log\left(n\right)\right)$
+\end_inset
+
+ stack frames.
+\end_layout
+
+\begin_layout Enumerate
+Destructing the courseMap would result in 
+\begin_inset Formula $O\left(log\left(m\right)\right)$
+\end_inset
+
+ stack frames.
+ In this case,
+ we also incur the cost of recursively destructing its tree vertices,
+ which would result in an additional 
+\begin_inset Formula $O\left(log\left(n_{\text{id}}\right)\right)$
+\end_inset
+
+,
+ but since we only destruct one course at a time,
+ we get in total:
+ 
+\begin_inset Formula $O\left(log\left(m\right)+\underset{id\in\text{course Ids.}}{max}\left(log\left(n_{id}\right)\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So,
+ we get that destruction space cost (running destructor 1,2 one at a time) is 
+\begin_inset Formula $O\left(max\left(log\left(n\right),log\left(m\right)+\underset{id\in\text{course Ids.}}{max}\left(log\left(n_{id}\right)\right)\right)\right)$
+\end_inset
+
+,
+ which implies total space cost remains 
+\begin_inset Formula $O\left(n+m+\sum_{id\in\text{course Ids.}}n_{id}\right)$
+\end_inset
+
+ as required.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Overall Time Complexity
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Note:
+
+\series default
+ During enrollCourse(),
+ we take care of not inserting the student's reference to the course's inner tree if it's already there,
+ and we remove students when they unenroll.
+ Therefore,
+ for any given course id,
+ actual size of the course's inner tree is exactly 
+\begin_inset Formula $n_{id}\leq n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+techSystems():
+ default initializes two empty trees:
+ courseMap and studentsMap.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\sim$
+\end_inset
+
+techSystems():
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+releases students tree which is of size 
+\begin_inset Formula $n$
+\end_inset
+
+ in postorder,
+ therefore 
+\begin_inset Formula $O\left(n\right)$
+\end_inset
+
+ time,
+ as releasing each student is 
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+ (simple struct of integers).
+ 
+\end_layout
+
+\begin_layout Itemize
+In same manner,
+ releasing courseMap costs postorder traversal of 
+\begin_inset Formula $O\left(m\right)$
+\end_inset
+
+ nodes,
+ plus an added destruction cost per node of 
+\begin_inset Formula $O\left(n_{id}\right)$
+\end_inset
+
+ for freeing each course's inner tree.
+ Therefore,
+ in total is 
+\begin_inset Formula $O\left(m+\sum_{id\in\text{course Ids.}}n_{id}\right)$
+\end_inset
+
+ time.
+\end_layout
+
+\begin_layout Standard
+Therefore,
+ total time is 
+\begin_inset Formula $O\left(n+m+\sum_{id\in\text{course Ids.}}n_{id}\right)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $n_{id}\leq n$
+\end_inset
+
+ for all 
+\begin_inset Formula $id\in\text{course Ids.}$
+\end_inset
+
+,
+ and size of 
+\begin_inset Formula $\text{course Ids.}$
+\end_inset
+
+ is 
+\begin_inset Formula $m$
+\end_inset
+
+,
+ we get total time of 
+\begin_inset Formula $O\left(n+m+m\cdot n\right)=O\left(m\cdot n\right)$
+\end_inset
+
+ as required.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+addStudent():
+ Involves adding student with default counters (and value of global bonus at join time) to the studentMap.
+ So 
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+ for creating the student instance,
+ plus insertion to and AVL tree of size 
+\begin_inset Formula $n$
+\end_inset
+
+:
+ 
+\begin_inset Formula $O\left(log\left(n\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+removeStudent():
+ Involves removal from the studentMap AVL tree in 
+\begin_inset Formula $O\left(log\left(n\right)\right)$
+\end_inset
+
+ time.
+ Destruction of removed student is 
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+addCourse():
+ Requires insertion of an empty Course (empty inner tree so 
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+ additional overhead) to the courseMap which is of size 
+\begin_inset Formula $m$
+\end_inset
+
+,
+ in 
+\begin_inset Formula $O\left(log\left(m\right)\right)$
+\end_inset
+
+ since courseMap is an AVL tree.
+ So in total:
+ 
+\begin_inset Formula $O\left(log\left(m\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+removeCourse():
+ Since we are always removing an 
+\series bold
+empty course
+\series default
+,
+ its destruction time on its own costs 
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+ (no inner tree traversal).
+ Therefore,
+ the cost is for node removal only from the course tree,
+ so 
+\begin_inset Formula $O\left(log\left(m\right)\right)$
+\end_inset
+
+ in total.
+\end_layout
+
+\begin_layout Itemize
+enrollStudent():
+ This function involves:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+finding the student by id in studentMap - 
+\begin_inset Formula $O\left(log\left(n\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+finding the course by id in courseMap - 
+\begin_inset Formula $O\left(log\left(m\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+inserting a reference to the found student to the found course's inner tree:
+ 
+\begin_inset Formula $O\left(log\left(n_{id}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+incrementing the said student's course count by 1 - 
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $n_{id}\leq n$
+\end_inset
+
+,
+ we get in total 
+\begin_inset Formula $O\left(log\left(n\right)+log\left(m\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+completeCourse():
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+finding the course by id in courseMap - 
+\begin_inset Formula $O\left(log\left(m\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+finding a reference to the student with given id in the found course's inner tree:
+ 
+\begin_inset Formula $O\left(log\left(n_{id}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+decrementing the said student's course count by 1 and adding it the courses' completion points - 
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note we always assume in this function that student is an enrolled one (otherwise,
+ return an error),
+ so we never have to look up student in the student tree.
+ So,
+ in total:
+ 
+\begin_inset Formula $O\left(log\left(n_{id}\right)+log\left(m\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+awardAcademicPoints():
+ Increments the global bonus counter so 
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+getStudentsPoints():
+ returns current global bonus minus global bonus when student joined (bonus penalty),
+ plus the student's completion points.
+ So it correctly enforces that students only benefit from bonuses that were awarded 
+\series bold
+after 
+\series default
+they joined.
+ This is all done in 
+\begin_inset Formula $O\left(1\right)$
+\end_inset
+
+.
+ Therefore,
+ since searching the student in studentMap is 
+\begin_inset Formula $O\left(log\left(n\right)\right)$
+\end_inset
+
+,
+ we get cost of 
+\begin_inset Formula $O\left(log\left(n\right)\right)$
+\end_inset
+
+ in total.
+ 
+\end_layout
+
+\end_body
+\end_document

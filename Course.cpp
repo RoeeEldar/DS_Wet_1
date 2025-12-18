@@ -6,7 +6,7 @@
 
 void Course::enroll(Student& student)
 {
-    // add student ptr to tree, send update of enrollment
+
 }
 
 void Course::complete(const int studentId)
