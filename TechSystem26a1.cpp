@@ -14,9 +14,25 @@ TechSystem::~TechSystem()
     
 }
 
-StatusType TechSystem::addStudent(int studentId)
+StatusType TechSystem::addStudent(const int studentId)
 {
-    return StatusType::FAILURE;
+    if (studentId <= 0)
+    {
+        return StatusType::INVALID_INPUT;
+    }
+    try
+    {
+        const bool hasInserted = studentMap.insert(studentId, {});
+        if (!hasInserted)
+        {
+            return StatusType::FAILURE;
+        }
+
+    } catch (const std::bad_alloc &)
+    {
+        return StatusType::ALLOCATION_ERROR;
+    }
+    return StatusType::SUCCESS;
 }
 
 StatusType TechSystem::removeStudent(int studentId)

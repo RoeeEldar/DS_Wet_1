@@ -20,7 +20,6 @@
 #include "AvlTree.h"
 
 class TechSystem {
-private:
 
     AvlTree<int, Student> studentMap;
     AvlTree<int, Course> courseMap;
