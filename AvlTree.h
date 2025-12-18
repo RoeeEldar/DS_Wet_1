@@ -65,34 +65,39 @@ class AvlTree {
         Node* successorRight = successor->right;
         Node* toDeleteLeft = toDelete->left;
 
-        // update parentOfDelete
+
         if (parentOfDelete) {
-            if (nodeIsRightSon(toDelete))
-            {
+            if (nodeIsRightSon(toDelete)) {
                 parentOfDelete->right = successor;
+            } else {
+                parentOfDelete->left = successor;
             }
-            parentOfDelete->left = successor;
         }
 
-        // update successor
+
         successor->parent = parentOfDelete;
         successor->right = toDelete;
         successor->left = toDeleteLeft;
 
-        // update toDelete
+
         toDelete->parent = successor;
         toDelete->left = successorLeft;
         toDelete->right = successorRight;
 
-        if (toDeleteLeft)
-        {
+
+        if (toDeleteLeft) {
             toDeleteLeft->parent = successor;
         }
 
-        if (successorRight)
-        {
+        if (successorRight) {
             successorRight->parent = toDelete;
         }
+
+
+        if (successorLeft) {
+            successorLeft->parent = toDelete;
+        }
+
         swapFields(toDelete->height, successor->height);
     }
 
