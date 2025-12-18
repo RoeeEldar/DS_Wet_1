@@ -1,5 +1,6 @@
 #pragma once
-#include <stdexcept>
+#include <cassert>
+
 
 template <typename KeyType, typename ValueType>
 
@@ -17,7 +18,8 @@ class AvlTree {
 
     Node* root = nullptr;
 
-    bool nodeIsRightSon(Node* node) const {
+    static bool nodeIsRightSon(Node* node)
+    {
         // must make sure it's not null before calling function
         if (node->parent->right == node) {
             return true;
@@ -27,9 +29,7 @@ class AvlTree {
 
     Node* findSuccessor(Node* node) const {
         // caller must ensure that node has right son before function call
-        if (node->right == nullptr) {
-            throw std::runtime_error("Error, next in order requires right son");
-        }
+        assert(node && node->right != nullptr);
         Node* temp = node;
         temp = temp->right;
         while (temp->left != nullptr) {
@@ -52,8 +52,8 @@ class AvlTree {
     static void updateNodeHeight(Node* node) {
         // height of node is the maximum of heights of both subtrees +1
         // null height is -1
-        const int leftHeight = (node->left) ? node->left->height : -1;
-        const int rightHeight = (node->right) ? node->right->height : -1;
+        const int leftHeight = node->left ? node->left->height : -1;
+        const int rightHeight = node->right ? node->right->height : -1;
         if (leftHeight >= rightHeight) {
             node->height = leftHeight + 1;
         }
@@ -76,7 +76,7 @@ class AvlTree {
     }
 
     static int getHeight(Node* node) {
-        return (node == nullptr) ? -1 : node->height;
+        return node == nullptr ? -1 : node->height;
     };
 
     int balanceFactor(Node* node) {
@@ -142,19 +142,19 @@ class AvlTree {
         return true;
     }
 
-    void destruct(Node* root) {
-        if (root == nullptr) {
+    void destruct(Node* currentRoot) {
+        if (currentRoot == nullptr) {
             return;
         }
-        destruct(root->left); // destruct left subtree
-        destruct(root->right); // destruct right subtree
-        delete root;
+        destruct(currentRoot->left); // destruct left subtree
+        destruct(currentRoot->right); // destruct right subtree
+        delete currentRoot;
     }
 
     bool rollHelper(Node* p) {
         // returns if a roll has been committed
 
-        int bf = balanceFactor(p);
+        const int bf = balanceFactor(p);
         if (bf != -2 && bf != 2) {
             return false;
         }
@@ -294,8 +294,8 @@ public
         destruct(root);
     }
 
-    Node* find(const KeyType& key) const // doesnt change tree, might change node - (why?)
-    // if return as not smart pointer, others might access it after earased..
+    Node* find(const KeyType& key) const
+
     {
         Node* current = root;
         while (current != nullptr) {
@@ -363,6 +363,11 @@ public
     {
         Node* toDelete = find(key);
         return erase(toDelete);
+    }
+
+    bool isEmpty() const
+    {
+        return root == nullptr;
     }
 
 
