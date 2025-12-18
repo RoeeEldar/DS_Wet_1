@@ -4,7 +4,7 @@
 
 #include "Course.h"
 
-Course::Course(const int courseCredit): courseCredit(courseCredit)
+Course::Course(const int courseCredit) : courseCredit(courseCredit)
 {
 }
 
@@ -14,18 +14,20 @@ void Course::enroll(const int studentId, Student& student)
     enrolledStudents.insert(studentId, &student);
 }
 
-void Course::complete(const int studentId) {
+bool Course::complete(const int studentId)
+{
+    auto* findResult = enrolledStudents.find(studentId);
 
-    Student** compStudent = enrolledStudents.find(studentId);
-    if (compStudent) {
-        // student found in course
-        (*compStudent) -> Student::unenroll();
-        (*compStudent) -> Student::addCompletionPoints(courseCredit);
-        enrolledStudents.erase(studentId); // should return true,
+    if (!findResult) return false;
 
-    }
-    // student not found in course
-    // do something
+    Student* student = findResult->getValue();
+    student->unenroll();
+    student->addCompletionPoints(courseCredit);
+    enrolledStudents.erase(findResult);
+    return true;
+}
 
-    //check if course tree empty? why?
+bool Course::isEmpty() const
+{
+    return enrolledStudents.isEmpty();
 }

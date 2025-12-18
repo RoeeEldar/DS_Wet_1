@@ -1,10 +1,12 @@
 #pragma once
 #include <cassert>
 
+template <typename KeyType, typename ValueType>
+class AvlTree;
 
 template <typename KeyType, typename ValueType>
 class Node {
-
+    friend class AvlTree<KeyType, ValueType>;
     KeyType key;
     ValueType value;
     Node* parent = nullptr;
@@ -12,16 +14,17 @@ class Node {
     Node* right = nullptr;
     int height = 0; // to calc balance factor, correct to hold here?
     // need to add height to all functions
+    Node(KeyType k, ValueType v, Node* p = nullptr)
+        : key(k), value(v), parent(p) {}
 public:
-    ValueType* getValue() {
-        
+    ValueType& getValue() {
+        return value;
     }
 
 };
 
 template <typename KeyType, typename ValueType>
 class AvlTree {
-
     using Node = Node<KeyType,ValueType>;
 
     Node* root = nullptr;
@@ -246,7 +249,7 @@ public:
         destruct(root);
     }
 
-    Node* findNode(const KeyType& key) const
+    Node* find(const KeyType& key) const
 
     {
         Node* current = root;

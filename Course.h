@@ -21,8 +21,8 @@ public:
 
     void enroll(int studentId, Student &student);
 
-    void complete(int studentId);
-
+    bool complete(int studentId);
+    bool isEmpty() const;
 };
 
 
